@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3692184425493C0C004A99B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3692184325493C0C004A99B8 /* AppDelegate.m */; };
+		3692184725493C0C004A99B8 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3692184625493C0C004A99B8 /* SceneDelegate.m */; };
+		3692184A25493C0C004A99B8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3692184925493C0C004A99B8 /* ViewController.m */; };
+		3692184D25493C0C004A99B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3692184B25493C0C004A99B8 /* Main.storyboard */; };
+		3692184F25493C0E004A99B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3692184E25493C0E004A99B8 /* Assets.xcassets */; };
+		3692185225493C0E004A99B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3692185025493C0E004A99B8 /* LaunchScreen.storyboard */; };
+		3692185525493C0E004A99B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3692185425493C0E004A99B8 /* main.m */; };
+		3692185F25493C0F004A99B8 /* TFY_POPControllerKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3692185E25493C0F004A99B8 /* TFY_POPControllerKitTests.m */; };
+		3692186A25493C0F004A99B8 /* TFY_POPControllerKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3692186925493C0F004A99B8 /* TFY_POPControllerKitUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3692185B25493C0F004A99B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3692183725493C0C004A99B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3692183E25493C0C004A99B8;
+			remoteInfo = TFY_POPControllerKit;
+		};
+		3692186625493C0F004A99B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3692183725493C0C004A99B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3692183E25493C0C004A99B8;
+			remoteInfo = TFY_POPControllerKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3692183F25493C0C004A99B8 /* TFY_POPControllerKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TFY_POPControllerKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3692184225493C0C004A99B8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3692184325493C0C004A99B8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3692184525493C0C004A99B8 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		3692184625493C0C004A99B8 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		3692184825493C0C004A99B8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3692184925493C0C004A99B8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3692184C25493C0C004A99B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3692184E25493C0E004A99B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3692185125493C0E004A99B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3692185325493C0E004A99B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3692185425493C0E004A99B8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3692185A25493C0F004A99B8 /* TFY_POPControllerKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TFY_POPControllerKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3692185E25493C0F004A99B8 /* TFY_POPControllerKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFY_POPControllerKitTests.m; sourceTree = "<group>"; };
+		3692186025493C0F004A99B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3692186525493C0F004A99B8 /* TFY_POPControllerKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TFY_POPControllerKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3692186925493C0F004A99B8 /* TFY_POPControllerKitUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFY_POPControllerKitUITests.m; sourceTree = "<group>"; };
+		3692186B25493C0F004A99B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3692183C25493C0C004A99B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3692185725493C0F004A99B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3692186225493C0F004A99B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3692183625493C0C004A99B8 = {
+			isa = PBXGroup;
+			children = (
+				3692184125493C0C004A99B8 /* TFY_POPControllerKit */,
+				3692185D25493C0F004A99B8 /* TFY_POPControllerKitTests */,
+				3692186825493C0F004A99B8 /* TFY_POPControllerKitUITests */,
+				3692184025493C0C004A99B8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3692184025493C0C004A99B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3692183F25493C0C004A99B8 /* TFY_POPControllerKit.app */,
+				3692185A25493C0F004A99B8 /* TFY_POPControllerKitTests.xctest */,
+				3692186525493C0F004A99B8 /* TFY_POPControllerKitUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3692184125493C0C004A99B8 /* TFY_POPControllerKit */ = {
+			isa = PBXGroup;
+			children = (
+				3692184225493C0C004A99B8 /* AppDelegate.h */,
+				3692184325493C0C004A99B8 /* AppDelegate.m */,
+				3692184525493C0C004A99B8 /* SceneDelegate.h */,
+				3692184625493C0C004A99B8 /* SceneDelegate.m */,
+				3692184825493C0C004A99B8 /* ViewController.h */,
+				3692184925493C0C004A99B8 /* ViewController.m */,
+				3692184B25493C0C004A99B8 /* Main.storyboard */,
+				3692184E25493C0E004A99B8 /* Assets.xcassets */,
+				3692185025493C0E004A99B8 /* LaunchScreen.storyboard */,
+				3692185325493C0E004A99B8 /* Info.plist */,
+				3692185425493C0E004A99B8 /* main.m */,
+			);
+			path = TFY_POPControllerKit;
+			sourceTree = "<group>";
+		};
+		3692185D25493C0F004A99B8 /* TFY_POPControllerKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				3692185E25493C0F004A99B8 /* TFY_POPControllerKitTests.m */,
+				3692186025493C0F004A99B8 /* Info.plist */,
+			);
+			path = TFY_POPControllerKitTests;
+			sourceTree = "<group>";
+		};
+		3692186825493C0F004A99B8 /* TFY_POPControllerKitUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3692186925493C0F004A99B8 /* TFY_POPControllerKitUITests.m */,
+				3692186B25493C0F004A99B8 /* Info.plist */,
+			);
+			path = TFY_POPControllerKitUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3692183E25493C0C004A99B8 /* TFY_POPControllerKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3692186E25493C0F004A99B8 /* Build configuration list for PBXNativeTarget "TFY_POPControllerKit" */;
+			buildPhases = (
+				3692183B25493C0C004A99B8 /* Sources */,
+				3692183C25493C0C004A99B8 /* Frameworks */,
+				3692183D25493C0C004A99B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TFY_POPControllerKit;
+			productName = TFY_POPControllerKit;
+			productReference = 3692183F25493C0C004A99B8 /* TFY_POPControllerKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3692185925493C0F004A99B8 /* TFY_POPControllerKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3692187125493C0F004A99B8 /* Build configuration list for PBXNativeTarget "TFY_POPControllerKitTests" */;
+			buildPhases = (
+				3692185625493C0F004A99B8 /* Sources */,
+				3692185725493C0F004A99B8 /* Frameworks */,
+				3692185825493C0F004A99B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3692185C25493C0F004A99B8 /* PBXTargetDependency */,
+			);
+			name = TFY_POPControllerKitTests;
+			productName = TFY_POPControllerKitTests;
+			productReference = 3692185A25493C0F004A99B8 /* TFY_POPControllerKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3692186425493C0F004A99B8 /* TFY_POPControllerKitUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3692187425493C0F004A99B8 /* Build configuration list for PBXNativeTarget "TFY_POPControllerKitUITests" */;
+			buildPhases = (
+				3692186125493C0F004A99B8 /* Sources */,
+				3692186225493C0F004A99B8 /* Frameworks */,
+				3692186325493C0F004A99B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3692186725493C0F004A99B8 /* PBXTargetDependency */,
+			);
+			name = TFY_POPControllerKitUITests;
+			productName = TFY_POPControllerKitUITests;
+			productReference = 3692186525493C0F004A99B8 /* TFY_POPControllerKitUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3692183725493C0C004A99B8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					3692183E25493C0C004A99B8 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					3692185925493C0F004A99B8 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 3692183E25493C0C004A99B8;
+					};
+					3692186425493C0F004A99B8 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 3692183E25493C0C004A99B8;
+					};
+				};
+			};
+			buildConfigurationList = 3692183A25493C0C004A99B8 /* Build configuration list for PBXProject "TFY_POPControllerKit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3692183625493C0C004A99B8;
+			productRefGroup = 3692184025493C0C004A99B8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3692183E25493C0C004A99B8 /* TFY_POPControllerKit */,
+				3692185925493C0F004A99B8 /* TFY_POPControllerKitTests */,
+				3692186425493C0F004A99B8 /* TFY_POPControllerKitUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3692183D25493C0C004A99B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3692185225493C0E004A99B8 /* LaunchScreen.storyboard in Resources */,
+				3692184F25493C0E004A99B8 /* Assets.xcassets in Resources */,
+				3692184D25493C0C004A99B8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3692185825493C0F004A99B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3692186325493C0F004A99B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3692183B25493C0C004A99B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3692184A25493C0C004A99B8 /* ViewController.m in Sources */,
+				3692184425493C0C004A99B8 /* AppDelegate.m in Sources */,
+				3692185525493C0E004A99B8 /* main.m in Sources */,
+				3692184725493C0C004A99B8 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3692185625493C0F004A99B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3692185F25493C0F004A99B8 /* TFY_POPControllerKitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3692186125493C0F004A99B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3692186A25493C0F004A99B8 /* TFY_POPControllerKitUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3692185C25493C0F004A99B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3692183E25493C0C004A99B8 /* TFY_POPControllerKit */;
+			targetProxy = 3692185B25493C0F004A99B8 /* PBXContainerItemProxy */;
+		};
+		3692186725493C0F004A99B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3692183E25493C0C004A99B8 /* TFY_POPControllerKit */;
+			targetProxy = 3692186625493C0F004A99B8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3692184B25493C0C004A99B8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3692184C25493C0C004A99B8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3692185025493C0E004A99B8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3692185125493C0E004A99B8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3692186C25493C0F004A99B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3692186D25493C0F004A99B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3692186F25493C0F004A99B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QH95759TSS;
+				INFOPLIST_FILE = TFY_POPControllerKit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "comCache.TFY-POPControllerKit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3692187025493C0F004A99B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QH95759TSS;
+				INFOPLIST_FILE = TFY_POPControllerKit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "comCache.TFY-POPControllerKit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3692187225493C0F004A99B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QH95759TSS;
+				INFOPLIST_FILE = TFY_POPControllerKitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "comCache.TFY-POPControllerKitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TFY_POPControllerKit.app/TFY_POPControllerKit";
+			};
+			name = Debug;
+		};
+		3692187325493C0F004A99B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QH95759TSS;
+				INFOPLIST_FILE = TFY_POPControllerKitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "comCache.TFY-POPControllerKitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TFY_POPControllerKit.app/TFY_POPControllerKit";
+			};
+			name = Release;
+		};
+		3692187525493C0F004A99B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QH95759TSS;
+				INFOPLIST_FILE = TFY_POPControllerKitUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "comCache.TFY-POPControllerKitUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TFY_POPControllerKit;
+			};
+			name = Debug;
+		};
+		3692187625493C0F004A99B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QH95759TSS;
+				INFOPLIST_FILE = TFY_POPControllerKitUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "comCache.TFY-POPControllerKitUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TFY_POPControllerKit;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3692183A25493C0C004A99B8 /* Build configuration list for PBXProject "TFY_POPControllerKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3692186C25493C0F004A99B8 /* Debug */,
+				3692186D25493C0F004A99B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3692186E25493C0F004A99B8 /* Build configuration list for PBXNativeTarget "TFY_POPControllerKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3692186F25493C0F004A99B8 /* Debug */,
+				3692187025493C0F004A99B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3692187125493C0F004A99B8 /* Build configuration list for PBXNativeTarget "TFY_POPControllerKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3692187225493C0F004A99B8 /* Debug */,
+				3692187325493C0F004A99B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3692187425493C0F004A99B8 /* Build configuration list for PBXNativeTarget "TFY_POPControllerKitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3692187525493C0F004A99B8 /* Debug */,
+				3692187625493C0F004A99B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3692183725493C0C004A99B8 /* Project object */;
+}
