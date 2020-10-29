@@ -12,10 +12,6 @@
 #import <TFY_LayoutCategoryKit/TFY_LayoutCategoryKit.h>
 
 //弹出框容器头文件
-#import "TFY_PopController.h"
-#import "UIViewController+TFY_PopController.h"
-#import "TFY_PopControllerAnimationProtocol.h"
-#import "TFY_PopControllerAnimatedTransitioning.h"
-
+#import "TFY_PopControllerKit.h"
 
 #endif /* POP_PrefixHeader_pch */

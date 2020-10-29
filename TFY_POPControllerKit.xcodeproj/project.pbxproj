@@ -109,6 +109,7 @@
 		369218B225493D5F004A99B8 /* CatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatViewController.h; sourceTree = "<group>"; };
 		369218B325493D5F004A99B8 /* POP_SevenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POP_SevenController.h; sourceTree = "<group>"; };
 		369218C625493DB5004A99B8 /* POP_PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = POP_PrefixHeader.pch; sourceTree = "<group>"; };
+		36A7A800254A984F00802F0A /* TFY_PopControllerKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFY_PopControllerKit.h; sourceTree = "<group>"; };
 		3831D0E259283F306757DEAC /* Pods_TFY_POPControllerKit_TFY_POPControllerKitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TFY_POPControllerKit_TFY_POPControllerKitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		408B31AE914C2E1B66A6D337 /* Pods-TFY_POPControllerKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFY_POPControllerKit.release.xcconfig"; path = "Target Support Files/Pods-TFY_POPControllerKit/Pods-TFY_POPControllerKit.release.xcconfig"; sourceTree = "<group>"; };
 		50359B422D9174B696210D44 /* Pods-TFY_POPControllerKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFY_POPControllerKitTests.debug.xcconfig"; path = "Target Support Files/Pods-TFY_POPControllerKitTests/Pods-TFY_POPControllerKitTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -218,12 +219,13 @@
 		3692188025493CB6004A99B8 /* TFY_PopController */ = {
 			isa = PBXGroup;
 			children = (
+				36A7A800254A984F00802F0A /* TFY_PopControllerKit.h */,
 				3692188525493CB6004A99B8 /* TFY_PopController.h */,
 				3692188F25493CB6004A99B8 /* TFY_PopController.m */,
-				3692188125493CB6004A99B8 /* TFY_NavAnimatedTransitioning.h */,
-				3692188A25493CB6004A99B8 /* TFY_NavAnimatedTransitioning.m */,
 				3692188E25493CB6004A99B8 /* TFY_NavAnimatedController.h */,
 				3692188625493CB6004A99B8 /* TFY_NavAnimatedController.m */,
+				3692188125493CB6004A99B8 /* TFY_NavAnimatedTransitioning.h */,
+				3692188A25493CB6004A99B8 /* TFY_NavAnimatedTransitioning.m */,
 				3692188B25493CB6004A99B8 /* TFY_PopTransitioningDelegate.h */,
 				3692188425493CB6004A99B8 /* TFY_PopTransitioningDelegate.m */,
 				3692188225493CB6004A99B8 /* TFY_PopControllerAnimationProtocol.h */,
