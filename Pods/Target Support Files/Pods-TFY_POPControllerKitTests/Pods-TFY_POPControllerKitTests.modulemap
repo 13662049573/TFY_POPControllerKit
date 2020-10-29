@@ -1,0 +1,6 @@
+framework module Pods_TFY_POPControllerKitTests {
+  umbrella header "Pods-TFY_POPControllerKitTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

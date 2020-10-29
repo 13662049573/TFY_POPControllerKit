@@ -3,19 +3,38 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E4753A142752065A7CB0B37 /* Pods_TFY_POPControllerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53BA868F645F1E70A56D390C /* Pods_TFY_POPControllerKit.framework */; };
+		32A9475C8AFFCA862FB27255 /* Pods_TFY_POPControllerKit_TFY_POPControllerKitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3831D0E259283F306757DEAC /* Pods_TFY_POPControllerKit_TFY_POPControllerKitUITests.framework */; };
 		3692184425493C0C004A99B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3692184325493C0C004A99B8 /* AppDelegate.m */; };
 		3692184725493C0C004A99B8 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3692184625493C0C004A99B8 /* SceneDelegate.m */; };
-		3692184A25493C0C004A99B8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3692184925493C0C004A99B8 /* ViewController.m */; };
-		3692184D25493C0C004A99B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3692184B25493C0C004A99B8 /* Main.storyboard */; };
 		3692184F25493C0E004A99B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3692184E25493C0E004A99B8 /* Assets.xcassets */; };
 		3692185225493C0E004A99B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3692185025493C0E004A99B8 /* LaunchScreen.storyboard */; };
 		3692185525493C0E004A99B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3692185425493C0E004A99B8 /* main.m */; };
 		3692185F25493C0F004A99B8 /* TFY_POPControllerKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3692185E25493C0F004A99B8 /* TFY_POPControllerKitTests.m */; };
 		3692186A25493C0F004A99B8 /* TFY_POPControllerKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3692186925493C0F004A99B8 /* TFY_POPControllerKitUITests.m */; };
+		3692189025493CB6004A99B8 /* UIViewController+TFY_PopController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3692188325493CB6004A99B8 /* UIViewController+TFY_PopController.m */; };
+		3692189125493CB6004A99B8 /* TFY_PopTransitioningDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3692188425493CB6004A99B8 /* TFY_PopTransitioningDelegate.m */; };
+		3692189225493CB6004A99B8 /* TFY_NavAnimatedController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3692188625493CB6004A99B8 /* TFY_NavAnimatedController.m */; };
+		3692189325493CB6004A99B8 /* TFY_DefaultPopAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3692188825493CB6004A99B8 /* TFY_DefaultPopAnimator.m */; };
+		3692189425493CB6004A99B8 /* TFY_NavAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 3692188A25493CB6004A99B8 /* TFY_NavAnimatedTransitioning.m */; };
+		3692189525493CB6004A99B8 /* TFY_PopControllerAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 3692188D25493CB6004A99B8 /* TFY_PopControllerAnimatedTransitioning.m */; };
+		3692189625493CB6004A99B8 /* TFY_PopController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3692188F25493CB6004A99B8 /* TFY_PopController.m */; };
+		369218B425493D5F004A99B8 /* POP_TwoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3692189F25493D5F004A99B8 /* POP_TwoController.m */; };
+		369218B525493D5F004A99B8 /* POP_OneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 369218A025493D5F004A99B8 /* POP_OneController.m */; };
+		369218B625493D5F004A99B8 /* POP_FiveController.m in Sources */ = {isa = PBXBuildFile; fileRef = 369218A225493D5F004A99B8 /* POP_FiveController.m */; };
+		369218B725493D5F004A99B8 /* POP_SevenController.m in Sources */ = {isa = PBXBuildFile; fileRef = 369218A425493D5F004A99B8 /* POP_SevenController.m */; };
+		369218B825493D5F004A99B8 /* CatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 369218A525493D5F004A99B8 /* CatViewController.m */; };
+		369218B925493D5F004A99B8 /* POP_NavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 369218A625493D5F004A99B8 /* POP_NavViewController.m */; };
+		369218BA25493D5F004A99B8 /* POP_PickTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 369218AA25493D5F004A99B8 /* POP_PickTypeViewController.m */; };
+		369218BB25493D5F004A99B8 /* POP_SixController.m in Sources */ = {isa = PBXBuildFile; fileRef = 369218AB25493D5F004A99B8 /* POP_SixController.m */; };
+		369218BC25493D5F004A99B8 /* POP_EightController.m in Sources */ = {isa = PBXBuildFile; fileRef = 369218AD25493D5F004A99B8 /* POP_EightController.m */; };
+		369218BD25493D5F004A99B8 /* POP_FourController.m in Sources */ = {isa = PBXBuildFile; fileRef = 369218AF25493D5F004A99B8 /* POP_FourController.m */; };
+		369218BE25493D5F004A99B8 /* POP_ThreeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 369218B025493D5F004A99B8 /* POP_ThreeController.m */; };
+		8ED13E5A3DC3370C69DA4438 /* Pods_TFY_POPControllerKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002BB4B9D68DDBB16BA7170A /* Pods_TFY_POPControllerKitTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,14 +55,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		002BB4B9D68DDBB16BA7170A /* Pods_TFY_POPControllerKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TFY_POPControllerKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3692183F25493C0C004A99B8 /* TFY_POPControllerKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TFY_POPControllerKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3692184225493C0C004A99B8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3692184325493C0C004A99B8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3692184525493C0C004A99B8 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		3692184625493C0C004A99B8 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		3692184825493C0C004A99B8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3692184925493C0C004A99B8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		3692184C25493C0C004A99B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3692184E25493C0E004A99B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3692185125493C0E004A99B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3692185325493C0E004A99B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,6 +71,52 @@
 		3692186525493C0F004A99B8 /* TFY_POPControllerKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TFY_POPControllerKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3692186925493C0F004A99B8 /* TFY_POPControllerKitUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFY_POPControllerKitUITests.m; sourceTree = "<group>"; };
 		3692186B25493C0F004A99B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3692188125493CB6004A99B8 /* TFY_NavAnimatedTransitioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFY_NavAnimatedTransitioning.h; sourceTree = "<group>"; };
+		3692188225493CB6004A99B8 /* TFY_PopControllerAnimationProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFY_PopControllerAnimationProtocol.h; sourceTree = "<group>"; };
+		3692188325493CB6004A99B8 /* UIViewController+TFY_PopController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TFY_PopController.m"; sourceTree = "<group>"; };
+		3692188425493CB6004A99B8 /* TFY_PopTransitioningDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFY_PopTransitioningDelegate.m; sourceTree = "<group>"; };
+		3692188525493CB6004A99B8 /* TFY_PopController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFY_PopController.h; sourceTree = "<group>"; };
+		3692188625493CB6004A99B8 /* TFY_NavAnimatedController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFY_NavAnimatedController.m; sourceTree = "<group>"; };
+		3692188725493CB6004A99B8 /* TFY_PopControllerAnimatedTransitioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFY_PopControllerAnimatedTransitioning.h; sourceTree = "<group>"; };
+		3692188825493CB6004A99B8 /* TFY_DefaultPopAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFY_DefaultPopAnimator.m; sourceTree = "<group>"; };
+		3692188925493CB6004A99B8 /* UIViewController+TFY_PopController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TFY_PopController.h"; sourceTree = "<group>"; };
+		3692188A25493CB6004A99B8 /* TFY_NavAnimatedTransitioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFY_NavAnimatedTransitioning.m; sourceTree = "<group>"; };
+		3692188B25493CB6004A99B8 /* TFY_PopTransitioningDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFY_PopTransitioningDelegate.h; sourceTree = "<group>"; };
+		3692188C25493CB6004A99B8 /* TFY_DefaultPopAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFY_DefaultPopAnimator.h; sourceTree = "<group>"; };
+		3692188D25493CB6004A99B8 /* TFY_PopControllerAnimatedTransitioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFY_PopControllerAnimatedTransitioning.m; sourceTree = "<group>"; };
+		3692188E25493CB6004A99B8 /* TFY_NavAnimatedController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFY_NavAnimatedController.h; sourceTree = "<group>"; };
+		3692188F25493CB6004A99B8 /* TFY_PopController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFY_PopController.m; sourceTree = "<group>"; };
+		3692189E25493D5F004A99B8 /* POP_PickTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POP_PickTypeViewController.h; sourceTree = "<group>"; };
+		3692189F25493D5F004A99B8 /* POP_TwoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POP_TwoController.m; sourceTree = "<group>"; };
+		369218A025493D5F004A99B8 /* POP_OneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POP_OneController.m; sourceTree = "<group>"; };
+		369218A125493D5F004A99B8 /* POP_SixController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POP_SixController.h; sourceTree = "<group>"; };
+		369218A225493D5F004A99B8 /* POP_FiveController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POP_FiveController.m; sourceTree = "<group>"; };
+		369218A325493D5F004A99B8 /* POP_EightController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POP_EightController.h; sourceTree = "<group>"; };
+		369218A425493D5F004A99B8 /* POP_SevenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POP_SevenController.m; sourceTree = "<group>"; };
+		369218A525493D5F004A99B8 /* CatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatViewController.m; sourceTree = "<group>"; };
+		369218A625493D5F004A99B8 /* POP_NavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POP_NavViewController.m; sourceTree = "<group>"; };
+		369218A725493D5F004A99B8 /* POP_ThreeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POP_ThreeController.h; sourceTree = "<group>"; };
+		369218A825493D5F004A99B8 /* POP_FourController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POP_FourController.h; sourceTree = "<group>"; };
+		369218A925493D5F004A99B8 /* POP_TwoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POP_TwoController.h; sourceTree = "<group>"; };
+		369218AA25493D5F004A99B8 /* POP_PickTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POP_PickTypeViewController.m; sourceTree = "<group>"; };
+		369218AB25493D5F004A99B8 /* POP_SixController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POP_SixController.m; sourceTree = "<group>"; };
+		369218AC25493D5F004A99B8 /* POP_OneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POP_OneController.h; sourceTree = "<group>"; };
+		369218AD25493D5F004A99B8 /* POP_EightController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POP_EightController.m; sourceTree = "<group>"; };
+		369218AE25493D5F004A99B8 /* POP_FiveController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POP_FiveController.h; sourceTree = "<group>"; };
+		369218AF25493D5F004A99B8 /* POP_FourController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POP_FourController.m; sourceTree = "<group>"; };
+		369218B025493D5F004A99B8 /* POP_ThreeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POP_ThreeController.m; sourceTree = "<group>"; };
+		369218B125493D5F004A99B8 /* POP_NavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POP_NavViewController.h; sourceTree = "<group>"; };
+		369218B225493D5F004A99B8 /* CatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatViewController.h; sourceTree = "<group>"; };
+		369218B325493D5F004A99B8 /* POP_SevenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POP_SevenController.h; sourceTree = "<group>"; };
+		369218C625493DB5004A99B8 /* POP_PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = POP_PrefixHeader.pch; sourceTree = "<group>"; };
+		3831D0E259283F306757DEAC /* Pods_TFY_POPControllerKit_TFY_POPControllerKitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TFY_POPControllerKit_TFY_POPControllerKitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		408B31AE914C2E1B66A6D337 /* Pods-TFY_POPControllerKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFY_POPControllerKit.release.xcconfig"; path = "Target Support Files/Pods-TFY_POPControllerKit/Pods-TFY_POPControllerKit.release.xcconfig"; sourceTree = "<group>"; };
+		50359B422D9174B696210D44 /* Pods-TFY_POPControllerKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFY_POPControllerKitTests.debug.xcconfig"; path = "Target Support Files/Pods-TFY_POPControllerKitTests/Pods-TFY_POPControllerKitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		53BA868F645F1E70A56D390C /* Pods_TFY_POPControllerKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TFY_POPControllerKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		648CBBED4481A27F9C39DD2B /* Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests.debug.xcconfig"; path = "Target Support Files/Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests/Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9C06F0783267BD3AA60E2576 /* Pods-TFY_POPControllerKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFY_POPControllerKitTests.release.xcconfig"; path = "Target Support Files/Pods-TFY_POPControllerKitTests/Pods-TFY_POPControllerKitTests.release.xcconfig"; sourceTree = "<group>"; };
+		C0D7267EFD0C68312BF1C6AD /* Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests.release.xcconfig"; path = "Target Support Files/Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests/Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E4A40C6B4680D2855C8DBAE6 /* Pods-TFY_POPControllerKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFY_POPControllerKit.debug.xcconfig"; path = "Target Support Files/Pods-TFY_POPControllerKit/Pods-TFY_POPControllerKit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E4753A142752065A7CB0B37 /* Pods_TFY_POPControllerKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8ED13E5A3DC3370C69DA4438 /* Pods_TFY_POPControllerKitTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,12 +140,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32A9475C8AFFCA862FB27255 /* Pods_TFY_POPControllerKit_TFY_POPControllerKitUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1CFC87E1810B1BFFE88CE737 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53BA868F645F1E70A56D390C /* Pods_TFY_POPControllerKit.framework */,
+				3831D0E259283F306757DEAC /* Pods_TFY_POPControllerKit_TFY_POPControllerKitUITests.framework */,
+				002BB4B9D68DDBB16BA7170A /* Pods_TFY_POPControllerKitTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3692183625493C0C004A99B8 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +164,8 @@
 				3692185D25493C0F004A99B8 /* TFY_POPControllerKitTests */,
 				3692186825493C0F004A99B8 /* TFY_POPControllerKitUITests */,
 				3692184025493C0C004A99B8 /* Products */,
+				C4ADF45500EA97CF3C31A9E3 /* Pods */,
+				1CFC87E1810B1BFFE88CE737 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,13 +182,13 @@
 		3692184125493C0C004A99B8 /* TFY_POPControllerKit */ = {
 			isa = PBXGroup;
 			children = (
+				369218C525493D9D004A99B8 /* PCH */,
+				3692189D25493D5F004A99B8 /* POP */,
+				3692188025493CB6004A99B8 /* TFY_PopController */,
 				3692184225493C0C004A99B8 /* AppDelegate.h */,
 				3692184325493C0C004A99B8 /* AppDelegate.m */,
 				3692184525493C0C004A99B8 /* SceneDelegate.h */,
 				3692184625493C0C004A99B8 /* SceneDelegate.m */,
-				3692184825493C0C004A99B8 /* ViewController.h */,
-				3692184925493C0C004A99B8 /* ViewController.m */,
-				3692184B25493C0C004A99B8 /* Main.storyboard */,
 				3692184E25493C0E004A99B8 /* Assets.xcassets */,
 				3692185025493C0E004A99B8 /* LaunchScreen.storyboard */,
 				3692185325493C0E004A99B8 /* Info.plist */,
@@ -137,6 +215,78 @@
 			path = TFY_POPControllerKitUITests;
 			sourceTree = "<group>";
 		};
+		3692188025493CB6004A99B8 /* TFY_PopController */ = {
+			isa = PBXGroup;
+			children = (
+				3692188525493CB6004A99B8 /* TFY_PopController.h */,
+				3692188F25493CB6004A99B8 /* TFY_PopController.m */,
+				3692188125493CB6004A99B8 /* TFY_NavAnimatedTransitioning.h */,
+				3692188A25493CB6004A99B8 /* TFY_NavAnimatedTransitioning.m */,
+				3692188E25493CB6004A99B8 /* TFY_NavAnimatedController.h */,
+				3692188625493CB6004A99B8 /* TFY_NavAnimatedController.m */,
+				3692188B25493CB6004A99B8 /* TFY_PopTransitioningDelegate.h */,
+				3692188425493CB6004A99B8 /* TFY_PopTransitioningDelegate.m */,
+				3692188225493CB6004A99B8 /* TFY_PopControllerAnimationProtocol.h */,
+				3692188925493CB6004A99B8 /* UIViewController+TFY_PopController.h */,
+				3692188325493CB6004A99B8 /* UIViewController+TFY_PopController.m */,
+				3692188725493CB6004A99B8 /* TFY_PopControllerAnimatedTransitioning.h */,
+				3692188D25493CB6004A99B8 /* TFY_PopControllerAnimatedTransitioning.m */,
+				3692188C25493CB6004A99B8 /* TFY_DefaultPopAnimator.h */,
+				3692188825493CB6004A99B8 /* TFY_DefaultPopAnimator.m */,
+			);
+			path = TFY_PopController;
+			sourceTree = "<group>";
+		};
+		3692189D25493D5F004A99B8 /* POP */ = {
+			isa = PBXGroup;
+			children = (
+				3692189E25493D5F004A99B8 /* POP_PickTypeViewController.h */,
+				369218AA25493D5F004A99B8 /* POP_PickTypeViewController.m */,
+				3692189F25493D5F004A99B8 /* POP_TwoController.m */,
+				369218AC25493D5F004A99B8 /* POP_OneController.h */,
+				369218A025493D5F004A99B8 /* POP_OneController.m */,
+				369218A125493D5F004A99B8 /* POP_SixController.h */,
+				369218A225493D5F004A99B8 /* POP_FiveController.m */,
+				369218A325493D5F004A99B8 /* POP_EightController.h */,
+				369218A425493D5F004A99B8 /* POP_SevenController.m */,
+				369218A525493D5F004A99B8 /* CatViewController.m */,
+				369218A625493D5F004A99B8 /* POP_NavViewController.m */,
+				369218A725493D5F004A99B8 /* POP_ThreeController.h */,
+				369218A825493D5F004A99B8 /* POP_FourController.h */,
+				369218A925493D5F004A99B8 /* POP_TwoController.h */,
+				369218AB25493D5F004A99B8 /* POP_SixController.m */,
+				369218AD25493D5F004A99B8 /* POP_EightController.m */,
+				369218AE25493D5F004A99B8 /* POP_FiveController.h */,
+				369218AF25493D5F004A99B8 /* POP_FourController.m */,
+				369218B025493D5F004A99B8 /* POP_ThreeController.m */,
+				369218B125493D5F004A99B8 /* POP_NavViewController.h */,
+				369218B225493D5F004A99B8 /* CatViewController.h */,
+				369218B325493D5F004A99B8 /* POP_SevenController.h */,
+			);
+			path = POP;
+			sourceTree = "<group>";
+		};
+		369218C525493D9D004A99B8 /* PCH */ = {
+			isa = PBXGroup;
+			children = (
+				369218C625493DB5004A99B8 /* POP_PrefixHeader.pch */,
+			);
+			path = PCH;
+			sourceTree = "<group>";
+		};
+		C4ADF45500EA97CF3C31A9E3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E4A40C6B4680D2855C8DBAE6 /* Pods-TFY_POPControllerKit.debug.xcconfig */,
+				408B31AE914C2E1B66A6D337 /* Pods-TFY_POPControllerKit.release.xcconfig */,
+				648CBBED4481A27F9C39DD2B /* Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests.debug.xcconfig */,
+				C0D7267EFD0C68312BF1C6AD /* Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests.release.xcconfig */,
+				50359B422D9174B696210D44 /* Pods-TFY_POPControllerKitTests.debug.xcconfig */,
+				9C06F0783267BD3AA60E2576 /* Pods-TFY_POPControllerKitTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,9 +294,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3692186E25493C0F004A99B8 /* Build configuration list for PBXNativeTarget "TFY_POPControllerKit" */;
 			buildPhases = (
+				49CE2B5A99CBEE5547A99272 /* [CP] Check Pods Manifest.lock */,
 				3692183B25493C0C004A99B8 /* Sources */,
 				3692183C25493C0C004A99B8 /* Frameworks */,
 				3692183D25493C0C004A99B8 /* Resources */,
+				A3C21650F59B5EC4221FB754 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -161,6 +313,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3692187125493C0F004A99B8 /* Build configuration list for PBXNativeTarget "TFY_POPControllerKitTests" */;
 			buildPhases = (
+				9283B67D3BE8144F63AC93BB /* [CP] Check Pods Manifest.lock */,
 				3692185625493C0F004A99B8 /* Sources */,
 				3692185725493C0F004A99B8 /* Frameworks */,
 				3692185825493C0F004A99B8 /* Resources */,
@@ -179,9 +332,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3692187425493C0F004A99B8 /* Build configuration list for PBXNativeTarget "TFY_POPControllerKitUITests" */;
 			buildPhases = (
+				B19C5660D3E90810893EDAEB /* [CP] Check Pods Manifest.lock */,
 				3692186125493C0F004A99B8 /* Sources */,
 				3692186225493C0F004A99B8 /* Frameworks */,
 				3692186325493C0F004A99B8 /* Resources */,
+				1AD7CDC62D2738EBA8E2DF71 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -241,7 +396,6 @@
 			files = (
 				3692185225493C0E004A99B8 /* LaunchScreen.storyboard in Resources */,
 				3692184F25493C0E004A99B8 /* Assets.xcassets in Resources */,
-				3692184D25493C0C004A99B8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,15 +415,135 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1AD7CDC62D2738EBA8E2DF71 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests/Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests/Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests/Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		49CE2B5A99CBEE5547A99272 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TFY_POPControllerKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9283B67D3BE8144F63AC93BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TFY_POPControllerKitTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3C21650F59B5EC4221FB754 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TFY_POPControllerKit/Pods-TFY_POPControllerKit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TFY_POPControllerKit/Pods-TFY_POPControllerKit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TFY_POPControllerKit/Pods-TFY_POPControllerKit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B19C5660D3E90810893EDAEB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3692183B25493C0C004A99B8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3692184A25493C0C004A99B8 /* ViewController.m in Sources */,
+				3692189225493CB6004A99B8 /* TFY_NavAnimatedController.m in Sources */,
+				3692189025493CB6004A99B8 /* UIViewController+TFY_PopController.m in Sources */,
+				369218BC25493D5F004A99B8 /* POP_EightController.m in Sources */,
+				369218BE25493D5F004A99B8 /* POP_ThreeController.m in Sources */,
+				3692189125493CB6004A99B8 /* TFY_PopTransitioningDelegate.m in Sources */,
+				3692189325493CB6004A99B8 /* TFY_DefaultPopAnimator.m in Sources */,
+				369218B825493D5F004A99B8 /* CatViewController.m in Sources */,
 				3692184425493C0C004A99B8 /* AppDelegate.m in Sources */,
+				369218B425493D5F004A99B8 /* POP_TwoController.m in Sources */,
+				369218B925493D5F004A99B8 /* POP_NavViewController.m in Sources */,
+				369218BB25493D5F004A99B8 /* POP_SixController.m in Sources */,
+				369218BA25493D5F004A99B8 /* POP_PickTypeViewController.m in Sources */,
+				369218B725493D5F004A99B8 /* POP_SevenController.m in Sources */,
+				369218B625493D5F004A99B8 /* POP_FiveController.m in Sources */,
 				3692185525493C0E004A99B8 /* main.m in Sources */,
+				369218B525493D5F004A99B8 /* POP_OneController.m in Sources */,
+				3692189625493CB6004A99B8 /* TFY_PopController.m in Sources */,
 				3692184725493C0C004A99B8 /* SceneDelegate.m in Sources */,
+				369218BD25493D5F004A99B8 /* POP_FourController.m in Sources */,
+				3692189525493CB6004A99B8 /* TFY_PopControllerAnimatedTransitioning.m in Sources */,
+				3692189425493CB6004A99B8 /* TFY_NavAnimatedTransitioning.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,14 +579,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3692184B25493C0C004A99B8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3692184C25493C0C004A99B8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3692185025493C0E004A99B8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -438,16 +704,22 @@
 		};
 		3692186F25493C0F004A99B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4A40C6B4680D2855C8DBAE6 /* Pods-TFY_POPControllerKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.0;
 				DEVELOPMENT_TEAM = QH95759TSS;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TFY_POPControllerKit/PCH/POP_PrefixHeader.pch;
 				INFOPLIST_FILE = TFY_POPControllerKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "comCache.TFY-POPControllerKit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -456,16 +728,22 @@
 		};
 		3692187025493C0F004A99B8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 408B31AE914C2E1B66A6D337 /* Pods-TFY_POPControllerKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.0;
 				DEVELOPMENT_TEAM = QH95759TSS;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TFY_POPControllerKit/PCH/POP_PrefixHeader.pch;
 				INFOPLIST_FILE = TFY_POPControllerKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "comCache.TFY-POPControllerKit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -474,6 +752,7 @@
 		};
 		3692187225493C0F004A99B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50359B422D9174B696210D44 /* Pods-TFY_POPControllerKitTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -494,6 +773,7 @@
 		};
 		3692187325493C0F004A99B8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C06F0783267BD3AA60E2576 /* Pods-TFY_POPControllerKitTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -514,6 +794,7 @@
 		};
 		3692187525493C0F004A99B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 648CBBED4481A27F9C39DD2B /* Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QH95759TSS;
@@ -532,6 +813,7 @@
 		};
 		3692187625493C0F004A99B8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0D7267EFD0C68312BF1C6AD /* Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QH95759TSS;

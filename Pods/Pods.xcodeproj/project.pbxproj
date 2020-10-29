@@ -1,0 +1,1973 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		014EED78AF0D6D8062862E18455AA1A9 /* Pods-TFY_POPControllerKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F80B782BBE8451697F08C32CD7E609 /* Pods-TFY_POPControllerKit-dummy.m */; };
+		01821FF0C23B1936015A4FDCF7EF1339 /* Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BAE3F9462F369D209C99C104E8C69CA /* Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		02145D7FA68D8C2E1AAE2DD7C5E17DFC /* TFY_LayoutCategoryKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FAF72D0541D54D87CE6E20712A3DAD9 /* TFY_LayoutCategoryKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0247BBFDF9A1912298366F6E061CF883 /* UITableViewCell+TFY_Chain.m in Sources */ = {isa = PBXBuildFile; fileRef = C3AD3FD8028F5CCD90ED88866E4B74E2 /* UITableViewCell+TFY_Chain.m */; };
+		04B33CB0BC41BFD99552AD1821428366 /* TFY_ControlChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC093E727883B8A8655E98CB900FA33 /* TFY_ControlChainModel.m */; };
+		0593F96AFCC49AA9B9F9C6C425014508 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		06089C12E2B975BE3190A53E08E5D331 /* TFY_ScrollLayerChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D71E53DDFDD5A0DE93E523255221BAF4 /* TFY_ScrollLayerChainModel.m */; };
+		072039F33B4C068B1CAB4CD5255B7CB6 /* TFY_ImageViewChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = CAA2AB69062956CBD466213E0C370EC9 /* TFY_ImageViewChainModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0834942C8551807F8BE6A745158D73FB /* TFY_ProgressViewChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 408735720E67C6E3F77B3B6C3095599C /* TFY_ProgressViewChainModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08DEF64C18C60C2ACF7DC3B15830B6D6 /* UIDevice+TFY_Tools.h in Headers */ = {isa = PBXBuildFile; fileRef = F79CF5E2B4C80214F1B1CA0658F19E0B /* UIDevice+TFY_Tools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B7A3114D9590518B47E289F91B52526 /* UIButton+TFY_Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C6D28DEBBED7B396F062B9585E6D071 /* UIButton+TFY_Tools.m */; };
+		0C0AA518F2034F308ABDE4F6AF2ABBDD /* TFY_ScrollViewChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 712FE4BBDF7BDB3A89276062D064C0C1 /* TFY_ScrollViewChainModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0D76BDAB4B991D9CCB4D598969A40469 /* TFY_Scene.h in Headers */ = {isa = PBXBuildFile; fileRef = CA7D80C27BFB1589A893754240696A64 /* TFY_Scene.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0DE7036976E8101ED6F81C0A15928F69 /* TFY_Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B178C2A7E5D6366BD2C5F0209174B16 /* TFY_Utils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E2879E24C05E6AB15F3342DF3491419 /* TFY_ControlChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8324A07801C5BB876262D4A3ACD7ED88 /* TFY_ControlChainModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F0B61A0B21DAAC2C3FBCC5D626616BE /* UIWindow+TFY_Tools.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D3F24AE7E49AA921E78669CB4F03461 /* UIWindow+TFY_Tools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0FA627FEB822B03EA6DAE59A7C61A01D /* NSNumber+TFY_Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 670FCCB70E807B2EFC9B8A530F13D3D3 /* NSNumber+TFY_Tools.m */; };
+		12A3BF44906DDE3A4B3BA8B48195FB0B /* TFY_TapGestureChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E3C16B60C97E4B5B02BE614710E2581F /* TFY_TapGestureChainModel.m */; };
+		12C6E1B090D2CF4324BD3F316A3772A7 /* TFY_SliderViewChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5F76A7D62C0A58D19030784FCDFD1E /* TFY_SliderViewChainModel.m */; };
+		13159C401134180542095D16247B7E2F /* TFY_ReplicatorLayerChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E245D303DB917284A491FB92EED8F68 /* TFY_ReplicatorLayerChainModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13AAB86F92B9B5EE55FB55A1656149A9 /* UITextView+TFY_Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = DC148054A32B855E1B7E00DFCBC452DF /* UITextView+TFY_Tools.m */; };
+		14E2C98F1D2893FCB201AD623D9646DA /* CALayer+TFY_Frame.h in Headers */ = {isa = PBXBuildFile; fileRef = 50C849DFF63F161826D3B699609E967C /* CALayer+TFY_Frame.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		160FC0651E54CE2AFDD4DCF0BF58D722 /* UIView+TFY_AutoLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = E6E0359FA45FF51536BD875D6B9A4CF8 /* UIView+TFY_AutoLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		178E9D6C98D7DF9839A7CA5BB4E828B5 /* TFY_ScrollViewChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C13DA3A10123B04447AC790BF7AFAF9 /* TFY_ScrollViewChainModel.m */; };
+		194E2058FD21D0826C47D853BF522D5E /* TFY_ProgressViewChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AE7DC6B192A0A10DAA03515678E1A5 /* TFY_ProgressViewChainModel.m */; };
+		1A22D792798A8995AECB0F7F94CB7011 /* NSFileManager+TFY_Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 646F602DD7618432FCC042A7F79E0EAF /* NSFileManager+TFY_Tools.m */; };
+		1A2B3BCE15BC2206954882FFE3F25656 /* TFY_LabelChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8098F05C04E8A1CDE10AE85AEBDB0A50 /* TFY_LabelChainModel.m */; };
+		1D6F75B67E3CE98C125F9B15B154AFE5 /* TFY_TableViewChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA0783C10245CFFAAA008ADCB72291D /* TFY_TableViewChainModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F51CC1F39546072D1DEFDC9C34BC287 /* TFY_SwitchChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B09B27B0B7BEC3447E064D970B65A45 /* TFY_SwitchChainModel.m */; };
+		20B76EF20AB979B5286A510DA0B0F6F4 /* UITextField+TFY_Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 752C08FE2CBFD82616C3142F1FF29CCA /* UITextField+TFY_Tools.m */; };
+		20E903B3C2C2B8F899CB5136A6587228 /* TFY_ChainBaseModel+TFY_Tools.h in Headers */ = {isa = PBXBuildFile; fileRef = C85B74C245EA6CD81B7E021FD2C3EBED /* TFY_ChainBaseModel+TFY_Tools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		21BF1AF6AF9272ABC140830C38F28573 /* UIDevice+TFY_Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 701ADFC584CAA48C5987970283FCB01F /* UIDevice+TFY_Tools.m */; };
+		24395111AD5EB916D9362FAA9C14756F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		244E3DCB70C15E434DDAEF604D8367E9 /* Pods-TFY_POPControllerKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C8A351BD6BF28F9135C0DFAA07B8B7FE /* Pods-TFY_POPControllerKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2773CD20704221E52D7EE637A5BEBE98 /* UIView+TFY_Tools.h in Headers */ = {isa = PBXBuildFile; fileRef = B1D8C35593805ED7A7BA86A9C2EA5717 /* UIView+TFY_Tools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		28F3CD257732028E62AEA31506B903AD /* UIWindow+TFY_Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D71EAE490245160A5C02F35AC52436 /* UIWindow+TFY_Tools.m */; };
+		2A2F8D4D042A03C7B307F075EC1DBD38 /* UIColor+TFY_Tools.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDA10CA2BD5665CAFF60AF3307E459E /* UIColor+TFY_Tools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B99F2664C3BB4760C01010E17690EC8 /* TFY_BaseGestureChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CA5263B857269FFCF2E53FDDAD35934 /* TFY_BaseGestureChainModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BE24024577227E770DA41168CCB5141 /* TFY_PickerViewChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 800CF5298FCF6EABC8D0F5C72A586A15 /* TFY_PickerViewChainModel.m */; };
+		2D370F2F46F42728BBB784B61C9DDBFD /* UIApplication+TFY_Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB3B5A0AC9D556DF25F10A5E3A0E02F /* UIApplication+TFY_Tools.m */; };
+		2E715095AC26FBE0256BAC543A4820AD /* TFY_ToolsHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 053CD44E76F22A05CDFAF97C922811A2 /* TFY_ToolsHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E787D55FA12580FD1017074ED2897FE /* TFY_ActivityIndicatorViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = C1AAF81FE581D074E61ECC722DB6627A /* TFY_ActivityIndicatorViewModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3099EBA4484CADEAEC95CB842260DBD6 /* TFY_ButtonChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 43B34734CCA7D068FBC343EDEECEFB74 /* TFY_ButtonChainModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30FF5BACB6A27A587DF185639E1C3B83 /* UIView+TFY_Frame.h in Headers */ = {isa = PBXBuildFile; fileRef = 8474F111CD46C75F4E8A715428C3EAC1 /* UIView+TFY_Frame.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31BE834AFA7F1E425D62A0888BF70AF6 /* TFY_ButtonChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C8C92F80B1EC86557E27741B889417A /* TFY_ButtonChainModel.m */; };
+		321E6C1A3282B6E2A1F077E22128D132 /* TFY_SwitchChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A68D46EA50CF23D37EBC31B6DBAA264 /* TFY_SwitchChainModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		324FD2BDF322965E8BA763190407EA66 /* TFY_SwipeGestureChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 13A819CE96613BF38911DBF64B78AAEE /* TFY_SwipeGestureChainModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33BFA9F0F0F88E6176953E5BF83D0B84 /* TFY_TextViewChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8286FA9554127B54904311AAFFAA6206 /* TFY_TextViewChainModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34BB0190A0B41984DE999F790B3D179C /* TFY_TiledLayerChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 72926A911E403C7C15E43C0C515C52F2 /* TFY_TiledLayerChainModel.m */; };
+		35D312B7685563B8D18E934D3CF07296 /* TFY_TransFormLayerChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 717E41A996447DC17872E48E6352F6FD /* TFY_TransFormLayerChainModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		39DABA535D0805F812CE05ADE0D00FB3 /* TFY_BaseViewChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9978A365AB3D28514A8657EB7A89FB89 /* TFY_BaseViewChainModel.m */; };
+		39ECCD5368A7D315DC60394C863DC003 /* TFY_UIHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = C91C2359C9683DFFA35A82A48F785793 /* TFY_UIHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A096C6FB43CBAFE8776E9AFB43DBC3F /* UIScrollView+TFY_Tools.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C849D2C9302B66C903247FDF04D508E /* UIScrollView+TFY_Tools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A7FD807F1D902BB686131F568DBD6D0 /* TFY_ChainHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 72E8ACD080107B54494FF70080431C17 /* TFY_ChainHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A8F1DA72824E9530619E75BCFE867FD /* NSNumber+TFY_Tools.h in Headers */ = {isa = PBXBuildFile; fileRef = E2878D0614E87D40D4A70B358450CF10 /* NSNumber+TFY_Tools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B9BE316ECB49BDA9E998FFBE3E2852B /* TFY_SegmentedControlChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 82642080924D00000EDB6685032049A2 /* TFY_SegmentedControlChainModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CC58ED68FFB9E8F5AC28FDFEF47B39B /* TFY_AutoLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 267C3DB1E04F80B4AC82899FDB829CA0 /* TFY_AutoLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3DD0F65B87A4513F9C6D8FEE78865FE0 /* TFY_EmiiterLayerChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AE96EEEB3496878746AA73297595079 /* TFY_EmiiterLayerChainModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F07EC3C1E9480B28DF0C9C7C6D2043E /* TFY_LabelChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = F5C1F336612E6009C691C15703391618 /* TFY_LabelChainModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41F99C36AD37A9003D00CF7C2ED772FE /* TFY_SliderViewChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = B0322F5732625AAA72F66497A8ACC06C /* TFY_SliderViewChainModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		439C55038170C4812A1EADF7B52832FF /* TFY_CollectionViewChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB816F6F4C8D2B3FCA56D06B1394EDD /* TFY_CollectionViewChainModel.m */; };
+		43E68B0F088DF5BD3CB0935DA567B181 /* TFY_ViewHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A049CA396BE109B006B62BF01197046 /* TFY_ViewHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		440B14C9F3A0A8B1FFD47B19790B2C0A /* TFY_LongPressGestureChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 69C9A1DA771E031CFA3CC56A1C3C8EB0 /* TFY_LongPressGestureChainModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44F54FCFBA25F8923B017E1F3B43CBF3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
+		452D81DA087FCA9136593B0AD6CB8D88 /* UITextView+TFY_Tools.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BDDE7602A908547B79EFE7BF4C96344 /* UITextView+TFY_Tools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45A3FCAE484AF98D6733B0D94F55D1C5 /* TFY_LayerChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DAF7311199514D0BAA2925F173F59E /* TFY_LayerChainModel.m */; };
+		4756D783C3ED0B958071ADCAF58D3AEE /* TFY_TextFieldChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = E46EE424F4EA89488BA013EC663FC030 /* TFY_TextFieldChainModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47C51FFB4C88F5A63B804390F8949361 /* TFY_ShaperLayerChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FD08B34FBB71452FBECBA5B4BC8BB9F /* TFY_ShaperLayerChainModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48058D953CD31F9F1A07BEAA5EA61694 /* Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9362B8B746C8AA01E14BFCEF1A59144E /* Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests-dummy.m */; };
+		48C5605753F65B4CD030806EDAD537BC /* UIApplication+TFY_Tools.h in Headers */ = {isa = PBXBuildFile; fileRef = EA4F63706089BFEC6AE049A14335463E /* UIApplication+TFY_Tools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		496CE80FDBE97C707D5AAD3BB3776206 /* TFY_BaseViewChainModel+Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = 477C11422B383D78DCB5D0630E3BB57A /* TFY_BaseViewChainModel+Masonry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5294620A6EC6FB6B02B7AC4BA8E8FE74 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
+		53D658BC346B8FAD24E9F9BBD89FCA16 /* NSFileManager+TFY_Tools.h in Headers */ = {isa = PBXBuildFile; fileRef = B80047AFDAA399943BF26985029B16D0 /* NSFileManager+TFY_Tools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		557CD4650D17CC08F2B5E1C24FA7A9EE /* TFY_DatePickerViewChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 83231FE2513F35AA4C18337BE1DDF727 /* TFY_DatePickerViewChainModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55E33106A223D3EBF2C655172530ECF5 /* NSData+TFY_Data.m in Sources */ = {isa = PBXBuildFile; fileRef = B813CBA5D692BC245F056303BD89F8D4 /* NSData+TFY_Data.m */; };
+		565FC8A96BAA738D1E32DC4DC89C770D /* UITableView+TFY_LayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8ECBA8793EF1E122EF08CB21F266EF /* UITableView+TFY_LayoutCell.m */; };
+		567670B2D0786598B1790952C0104ED6 /* UITextField+TFY_Tools.h in Headers */ = {isa = PBXBuildFile; fileRef = 861E98D23583C79755D08091AAF149E0 /* UITextField+TFY_Tools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5957E74326D82670D031FB7F5B516494 /* WKWebView+TFY_Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A9629EBD778D168BD04132F548F476 /* WKWebView+TFY_Extension.m */; };
+		59AACEDAE67F930F7872D16D082EB5CB /* TFY_GradientLayerChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 949E20E142C4F1B88C3DA6408498DCEB /* TFY_GradientLayerChainModel.m */; };
+		5BE23D40EA8AF5641BF3C175A035951B /* UITableViewCell+TFY_AutoHeightForCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B83A97FB26BA6E5E351318C6BD108F9F /* UITableViewCell+TFY_AutoHeightForCell.m */; };
+		5C9D8115610249FAD43A8AAFBDA56AAE /* TFY_ScrollLayerChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 5588A070ABE365302B815715BD872916 /* TFY_ScrollLayerChainModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D0DF622C511E243066C7F1DDD2237FC /* TFY_PinchGestureChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = C321C6C09EF6274C887D06F37EE286F7 /* TFY_PinchGestureChainModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D4BD15BD39B731E65B9636A76523AEF /* TFY_TiledLayerChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 053C0ECB1B931F28C7CFA503C22B9F6A /* TFY_TiledLayerChainModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E317F23F2FBBC7F1A39A041087C962A /* TFY_BaseGestureChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3461D17AF4E47C80BA2EA57435D68FF2 /* TFY_BaseGestureChainModel.m */; };
+		5E55EF416D2CB1AA6830AC4BEB19CD1C /* UIViewController+TFY_Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B06A4FAB9C38046685198574AD42C9 /* UIViewController+TFY_Tools.m */; };
+		62ED30CEE29B04ECB523F368AF6BE7C6 /* NSTimer+TFY_Tools.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DB2EC94B931DC7C0C00B39D218775BE /* NSTimer+TFY_Tools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63C291BB79BDE819D64A73E761E58416 /* TFY_Video.m in Sources */ = {isa = PBXBuildFile; fileRef = E910E06045567F04A14F752B03C48FB4 /* TFY_Video.m */; };
+		646B86D03ABC71A38806C20BFC709536 /* UIView+TFY_AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = BBF293D6A3976C25F0AB09935355FB8B /* UIView+TFY_AutoLayout.m */; };
+		64C36B22BBD2D5647974408AC2E0F13E /* TFY_VisualEffectViewChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FB61C3D89B45EE842AC5AA3F9CE632BC /* TFY_VisualEffectViewChainModel.m */; };
+		651369F92C28B1DB321BB0107E35D8AF /* CALayer+TFY_Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1408140891EF03EBC3E5ED8D2B4B6F /* CALayer+TFY_Frame.m */; };
+		66DC106DB999C5C5B09CD118EF7E6A7D /* TFY_Video.h in Headers */ = {isa = PBXBuildFile; fileRef = 3952953ECA0D27BBE8A9B3E0EDDE2D00 /* TFY_Video.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		715CA05FC2820EE179019C0C263B6C0B /* NSDate+TFY_Date.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E98ED8A914FAC8BDA30A95A6BF96AD1 /* NSDate+TFY_Date.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		71A9DC360872542DE0C4D0505233C298 /* UIAlertController+TFY_Chain.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D54EDA5017C6193E334CE011DA68075 /* UIAlertController+TFY_Chain.m */; };
+		71AFBAF9460E83120003690BFE2871AC /* TFY_ShaperLayerChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 94E3D3719E26595B15EC4C713E05D396 /* TFY_ShaperLayerChainModel.m */; };
+		71DDF9F78BB5ABD1DFFBE6B9A8678B30 /* TFY_LayerChainHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = A2689B1699BE21DEFC981DAD5383DA0A /* TFY_LayerChainHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7340832E5F99EF3466135D3F386831DB /* TFY_BaseLayerChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A96EAF3AADFD58283E9DE5142BC6BFC /* TFY_BaseLayerChainModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73C8F1D49095A14CCE35E1DADCC817DD /* UIFont+TFY_Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9915205EB9BE7DC31F91DFB0EA2222 /* UIFont+TFY_Tools.m */; };
+		7491132B875181F82DE6B8E1E624BD73 /* TFY_SegmentedControlChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9839C83FE536EE32AF5B5AC2700065 /* TFY_SegmentedControlChainModel.m */; };
+		78182098EF8A2E365E72F6EBDEBB93D3 /* TFY_DatePickerViewChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E78AEE5D9387912B0686189E7FBEB32 /* TFY_DatePickerViewChainModel.m */; };
+		796443B562006786A1B098DA68206135 /* TFY_FoundationHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = C9A11BE531569338AF3501FE0E2C0844 /* TFY_FoundationHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7A7D9B432D9311AFB0FF35278653127E /* NSObject+TFY_Tools.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BD04D82FBC369ED20C5413A3E9D53EF /* NSObject+TFY_Tools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BE95366D60B9ED3627EC2C0C3D6BE3F /* TFY_LayoutCategoryKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BA36A7EB12917D1E1AF36405E26F8A6B /* TFY_LayoutCategoryKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E969B47AF1F6FB427BE39B9EE472FEF /* UIControl+TFY_Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF6BD4AC0DDD70E3654E09AEF497B0E /* UIControl+TFY_Tools.m */; };
+		84C60702D1BC9B7D20B3BDA3F7DEB112 /* UITableViewCell+TFY_AutoHeightForCell.h in Headers */ = {isa = PBXBuildFile; fileRef = A64A694EE790526E711FC6D53A57A73A /* UITableViewCell+TFY_AutoHeightForCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		85AB29E3495D37BF5C5CB5FBDE77C591 /* TFY_WebViewChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D74B3704AA472D9EE66AC0798AFBDED /* TFY_WebViewChainModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		85D28F9A06CED6C6CC5D63AEE44789AE /* NSData+TFY_Data.h in Headers */ = {isa = PBXBuildFile; fileRef = C4D33F56DFC947B1E72EB2F17CE27C4B /* NSData+TFY_Data.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		899E5995D516754AFD444C1FF8556406 /* TFY_TransFormLayerChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B143093CC00EBC72D36330A90C64C6 /* TFY_TransFormLayerChainModel.m */; };
+		8AEDFFB39ED8CE2878EAE3F6294074A8 /* UILabel+TFY_Tools.h in Headers */ = {isa = PBXBuildFile; fileRef = E73CCB8D3A01A61AE5E8F28D500ADAC5 /* UILabel+TFY_Tools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8FC057F0C214FC3727080FC42E04A49A /* TFY_LayerChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CAEB5CE443F99EDA86D6925CC9D03DD /* TFY_LayerChainModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91B52B120C279C743F33EAD4B76D429E /* UILayoutGuide+TFY_AutoLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 42A0ADDBAC406F8663ACC5D36BFE1AC4 /* UILayoutGuide+TFY_AutoLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9211F7A26B20DED094BA669AB0038C24 /* NSDictionary+TFY_Tools.h in Headers */ = {isa = PBXBuildFile; fileRef = C33C86E503643F5A4F42BED1E7802521 /* NSDictionary+TFY_Tools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		935B6DAC73468B0BB13CC938C0FED962 /* TFY_ReplicatorLayerChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E81F203175FB4E1F9BB3B20E3CEE5B8B /* TFY_ReplicatorLayerChainModel.m */; };
+		95AD6433FA8406CDBA3317AB144089B3 /* TFY_CategoriesHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 834B9138ED7013E3E2694011758FB9DF /* TFY_CategoriesHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9633756EB3C588AE53AA718850788559 /* Pods-TFY_POPControllerKitTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C8F648CC863F44A2D1FEFF7515AC3B4A /* Pods-TFY_POPControllerKitTests-dummy.m */; };
+		97642A0A94B6F347AA45704FC932E196 /* UIGestureRecognizer+TFY_Tools.h in Headers */ = {isa = PBXBuildFile; fileRef = 077A9FE1D7213DF53CD655138EBFC093 /* UIGestureRecognizer+TFY_Tools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99F360D363B6EE54050C76281919E0AD /* TFY_PinchGestureChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CD67D3B8E64C11D0CE5C5F32CB4A2627 /* TFY_PinchGestureChainModel.m */; };
+		9B79385E1A69B7133D3823F8ADCE3142 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		9CD6E3B0822E521E9266DBE3E2D0A201 /* TFY_SwipeGestureChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E73D84F2C508F746EA83FAC5C52788 /* TFY_SwipeGestureChainModel.m */; };
+		9D819580C37463EF62CB09A5BB646466 /* UIImage+TFY_Tools.h in Headers */ = {isa = PBXBuildFile; fileRef = ABA595E5CECE12B93F50573312A51C0E /* UIImage+TFY_Tools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9E64329837CA3D718D7B6F7B07DE00BE /* TFY_Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = C07559966453E0E14C2A1398659A5E5E /* TFY_Utils.m */; };
+		9EB550453E53EB1F48CFDA47B795952B /* NSObject+TFY_Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BADE62CDCF1470B7972FA73B35922EE /* NSObject+TFY_Tools.m */; };
+		A02BA477E4896815AB51C170F55BC3A5 /* UIColor+TFY_Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = BE62F185D9D372B1DA7C05E11BAC56D6 /* UIColor+TFY_Tools.m */; };
+		A191F6F37D3A71E72BA3DF380E5952D9 /* TFY_RotationGestureChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 503AA6B10FCC942770D02126A297B91D /* TFY_RotationGestureChainModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A296D86113A3434D581F2C2B41F082EA /* UIFont+TFY_Tools.h in Headers */ = {isa = PBXBuildFile; fileRef = 856CBE082422E2E644E6B7A17FBA8B30 /* UIFont+TFY_Tools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A5ACC9EEB66263B18E04A63C9E0231E0 /* TFY_TableViewChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F3C69F99B95470394404197ED51A8D /* TFY_TableViewChainModel.m */; };
+		A718F406EF1E5903C19D95F0AD30E9B0 /* TFY_LongPressGestureChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE26419C78E43A244B859914A5E0B2F /* TFY_LongPressGestureChainModel.m */; };
+		A792A3AF3A0F24A1B759194131EEFE97 /* TFY_ChainBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D61ECB5563FC965FCBF23FCC379D34E /* TFY_ChainBaseModel.m */; };
+		A80590567FB057088A44F0C37D1EEA94 /* UIImage+TFY_Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 6984214AC3F0EA5B37A011260D173591 /* UIImage+TFY_Tools.m */; };
+		A9585B581B420A7DE7497963294CD7DA /* NSAttributedString+TFY_Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A79E9B02FCDC5B904DE80B6D8EA0CE5 /* NSAttributedString+TFY_Tools.m */; };
+		ABD39ED9230C6148F1E4F82FFDDCAA30 /* UIButton+TFY_Tools.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B9F0AF0908C9163F798FB6DAA4B404E /* UIButton+TFY_Tools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ACDE11F3396988A3D68AB96CC5623B5A /* TFY_AutoLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ECB5CE8DF51AD702FF285696D90D8191 /* TFY_AutoLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B09EE7F47A2F3D2CC9E2E431004ABDAD /* TFY_Define.h in Headers */ = {isa = PBXBuildFile; fileRef = 629E0514518C7B51F8151559405C309D /* TFY_Define.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0CAD2D7B8E55D301C5FF590221F6189 /* UIScreen+TFY_Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = A0AE69943A679566621D658E78400823 /* UIScreen+TFY_Tools.m */; };
+		B25075F4298944A18D9B7185A41ECB81 /* TFY_ActivityIndicatorViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF00D01DF60FDEFEB92AF3A61A24B6B /* TFY_ActivityIndicatorViewModel.m */; };
+		B53E27A109A7100C5D06C0B3C969E3CC /* TFY_LayoutCategoryKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 68959D9B19CD47554426EB392705A7F9 /* TFY_LayoutCategoryKit-dummy.m */; };
+		B6F324CC5979E98B46D61D19458A17A7 /* Pods-TFY_POPControllerKitTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A78D59DDC7D52BF906D00431DCD7527 /* Pods-TFY_POPControllerKitTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B760C4F5333EEDC39C72CC2ABCBC2E6A /* TFY_PanGestureChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A14991D47122FE38A41026C98D009AE2 /* TFY_PanGestureChainModel.m */; };
+		BA5FD2028107EFC23BB4DF1D51719F3B /* TFY_CollectionViewChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = CEA6F4A34038F01E295AE096296100D5 /* TFY_CollectionViewChainModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC93B84DACD176C0530863DF7422BD20 /* NSString+TFY_String.h in Headers */ = {isa = PBXBuildFile; fileRef = 11B2FB3283B462EDDEBEDAEFC47535F9 /* NSString+TFY_String.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BDE7A01C18595A2AC854ECE86E157C97 /* TFY_TableViewCellChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B5165631194FC71D91B420F529F09D9 /* TFY_TableViewCellChainModel.m */; };
+		BEE89A4B9AAAF59B434A88DFC5AD7D70 /* TFY_GestureChainHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 946876819F9F702321F150FF77E4C91D /* TFY_GestureChainHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEEBA5AF3668BA7A3C604F4D30076F5F /* TFY_TextLayerChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C5C9334938682D50D981602E01B70F8 /* TFY_TextLayerChainModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF10B3C6C483160FD7DD17CAE4849E45 /* UIViewController+TFY_Tools.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AE5F111155A115EF820043E303F32D8 /* UIViewController+TFY_Tools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C23D512EA0098FBD8FF9AFC3082825B3 /* TFY_BaseControlChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BD726D1E7C0E1E7DBA3A4967AA8BECC5 /* TFY_BaseControlChainModel.m */; };
+		C35D0CB6AA6DDB3B66433734DD9E90AB /* TFY_EmiiterLayerChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B5BB44E0792F413628FF9295FBAB78 /* TFY_EmiiterLayerChainModel.m */; };
+		C3C29DB4C7697F1EF06D45F32568B30D /* NSAttributedString+TFY_Tools.h in Headers */ = {isa = PBXBuildFile; fileRef = E2396170DC2739EDB33AADFCB2DD2CC0 /* NSAttributedString+TFY_Tools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C40A96B0023BB6BAF47A1BFC5520BD34 /* UIScrollView+TFY_Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA9942875066712F213A2965A64600 /* UIScrollView+TFY_Tools.m */; };
+		C42E57270D59D2F780A9C4BB4AE286DD /* UITableView+TFY_LayoutCell.h in Headers */ = {isa = PBXBuildFile; fileRef = A4231D63617E8E86521765E530FB2ACA /* UITableView+TFY_LayoutCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C5C50E4691129792B3F3A5896C619376 /* UIView+TFY_Chain.m in Sources */ = {isa = PBXBuildFile; fileRef = FA36A0E80EA9E45C6717F23FCCEAB0FB /* UIView+TFY_Chain.m */; };
+		C7F9F6B5BBF63580D21691C24D26230C /* TFY_BaseViewChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = A94D9D1BA45ADFC0291190D05595257A /* TFY_BaseViewChainModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C94E95571DE8559A144F43F6AFBCA61F /* TFY_PanGestureChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = BF0FCABCBBFAE7AB184038788D283C41 /* TFY_PanGestureChainModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C97C78081AE9577AC1CB9C3CE42AB9D6 /* TFY_ImageViewChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D94D416BBFB43DA807ABB6012B113EE /* TFY_ImageViewChainModel.m */; };
+		CC849CF2A9D6B250BC41C6F369AF3BA6 /* UIScreen+TFY_Tools.h in Headers */ = {isa = PBXBuildFile; fileRef = EA7B99B90C8AFDAD83BA5E5BAB5BFA2A /* UIScreen+TFY_Tools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CCB35FD3965A9758CE21A5D2B3CAD5AB /* TFY_BaseLayerChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 17429F22A6D12250449B36DC05DCB576 /* TFY_BaseLayerChainModel.m */; };
+		D12E0DCEDE5AD40F16CB4C3D1241C242 /* TFY_BaseScrollViewChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDA9AFA0B1F2BC72791D30AABCC5C31 /* TFY_BaseScrollViewChainModel.m */; };
+		D35179BCFB35D6BC5CFEC06E999B6DEE /* TFY_TableViewCellChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 52D24C3EC63990CB080FC4610641C3D9 /* TFY_TableViewCellChainModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D61C8B119F51E4B1F29B9745D44FD6D7 /* TFY_WebViewChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 674090D075CF3DE7CFAE3A07EDDA1A5B /* TFY_WebViewChainModel.m */; };
+		D980818C645EFF098F1144AB993BD674 /* NSTimer+TFY_Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 392AF085D1BE80991AD4DD01CDC1D1E2 /* NSTimer+TFY_Tools.m */; };
+		D9DA8DC55891ECC72E5E42EC47608440 /* UIView+TFY_Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F674580A72891C570691A411FB8BED5 /* UIView+TFY_Tools.m */; };
+		D9F6F7143B93D7EADC50AFFB6F6974F4 /* TFY_ChainDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = BE318BBAE95B34230BB13406EFADB9E3 /* TFY_ChainDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB1CB6DB7C3A464BB406A01DA796CA40 /* TFY_Scene.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9BE372BC585F25E3F81BCFACA795BD /* TFY_Scene.m */; };
+		DB761A7D0930D46F4BCE1F714D9A6C17 /* NSArray+TFY_Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B372E37363EE0D3C5368F55290D6D1C /* NSArray+TFY_Tools.m */; };
+		DC1842E9B5AF6DE076DDDBE6C094AD4B /* TFY_TextViewChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B455F5D7ACECE743D29B0E43FB3B145 /* TFY_TextViewChainModel.m */; };
+		DCE744EE3F3AC6FC44AF8714716904DD /* TFY_VisualEffectViewChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = F1C06D4C7CC3846B344755EF8658ED50 /* TFY_VisualEffectViewChainModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD0965102247F4AF1F193468BCD0D37C /* NSDate+TFY_Date.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB7FD0967CF1D900FFA54E9777BA2D7 /* NSDate+TFY_Date.m */; };
+		DE153DB90F5E5B0DFF01CF57FEDFCBB4 /* TFY_BaseScrollViewChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = EC97EF77B2BC83A07479B7CF3D0CE930 /* TFY_BaseScrollViewChainModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF68728837299DA304B9503F71EEFBD6 /* CALayer+TFY_Chain.h in Headers */ = {isa = PBXBuildFile; fileRef = AF3DA2D3DA64D7FE3134F455485AA6AB /* CALayer+TFY_Chain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E24BCB06025486D07E85E2EE8BB464BA /* UIControl+TFY_Tools.h in Headers */ = {isa = PBXBuildFile; fileRef = 25D5AB8A7DBDABA5354B8C081FE4F002 /* UIControl+TFY_Tools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E25E54476697CC8C3C2D22208BF8D09D /* WKWebView+TFY_Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = B7478F0F6243B1074FEE74A92E462F72 /* WKWebView+TFY_Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E2A412918AA3A0A13EBB4380690D3CA0 /* TFY_AutoLayoutHerder.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E62A49CE723076EC2821E6745C1C0CE /* TFY_AutoLayoutHerder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E3230E4B271584BF24D3424144D00572 /* TFY_BaseViewChainModel+Masonry.m in Sources */ = {isa = PBXBuildFile; fileRef = 73474FF2249A36FB612A5090D9880927 /* TFY_BaseViewChainModel+Masonry.m */; };
+		E34336E8CEE5F49F4B1551B3C008ABDF /* TFY_ViewChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = DCAA9F0F3EA54857BD145FED8D591BC4 /* TFY_ViewChainModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E392CB76CF0C49FE40D7F3EE9B804F72 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		E4124A6562586664192CA733DC8C8080 /* TFY_Timer.h in Headers */ = {isa = PBXBuildFile; fileRef = 63DEF5B11765F0451073D0A3E37C2DE5 /* TFY_Timer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E5725E27D8DC579A62C0A480F97393A6 /* UITableViewCell+TFY_Chain.h in Headers */ = {isa = PBXBuildFile; fileRef = C7BEA6536ECAB6F606B3DD5DC6B03879 /* UITableViewCell+TFY_Chain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E5BC2F6A7E22C6532B4DDB6A121912FE /* TFY_BaseControlChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A8FBDF8EB56C7CA5AF51E90B506005F /* TFY_BaseControlChainModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9215AA809A16E77D13FA6A26F9108F2 /* NSDictionary+TFY_Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = CC99CED28D5B35ABD5C85C5AE97A18B1 /* NSDictionary+TFY_Tools.m */; };
+		E97F7D6526F4AD2FBF3911968E1D2109 /* UIView+TFY_Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FD456FA4747AB95337A56CAA7BF859 /* UIView+TFY_Frame.m */; };
+		EA0DC5FD0810BE278AFB6E334BF8FD90 /* UILayoutGuide+TFY_AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 048CEF6528BA06E7B33BE3D47E908FEC /* UILayoutGuide+TFY_AutoLayout.m */; };
+		EA80AA27DCDDB14668962A6AF502683D /* TFY_TapGestureChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = C4A0DC1DB66CF3E2B2BC07B2D41C904B /* TFY_TapGestureChainModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EAB7B1BE4BECA37CEDE8C047DBA8FD8A /* TFY_ChainBaseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = D72807571B5EA7C2E9CE11FB70080AA3 /* TFY_ChainBaseModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB33E980C15DFF2D93973F97EDC44A76 /* TFY_PickerViewChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 04E7F6B6284E711090BFDA74708B7114 /* TFY_PickerViewChainModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBF76B7A2AE1C1F12A38C2DDA365D37E /* TFY_Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BFF9477C1B78F8A175E7751B67726CF /* TFY_Timer.m */; };
+		ECB52837378BD038F58AACF55323F1EE /* CALayer+TFY_Chain.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B8D8561BB78C122BDC7E964AE2AE0F7 /* CALayer+TFY_Chain.m */; };
+		EEB680AC29FEE3328967E2FDBFC18676 /* UILabel+TFY_Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D95DCFD520877C2AE4F716DCAEB79B1 /* UILabel+TFY_Tools.m */; };
+		EEE01AEFCBC57BED23E356825C24CDDD /* TFY_GradientLayerChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C6DEE3AE902DB7EED8142911BB31564 /* TFY_GradientLayerChainModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF2AE7B256CEEF5A362E09E602733549 /* TFY_RotationGestureChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3617B3E090B8CA57D06C216EA66CBA47 /* TFY_RotationGestureChainModel.m */; };
+		EF3A224018D98A6390AA31CECABD987C /* TFY_TextLayerChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 50122AA88CF54FFA238CC69E76380907 /* TFY_TextLayerChainModel.m */; };
+		F261260D273989B8DCAD6B9694D5B1EC /* NSArray+TFY_Tools.h in Headers */ = {isa = PBXBuildFile; fileRef = ED44C940DE6F0F4DE76D7F38AAC3FB65 /* NSArray+TFY_Tools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F2B8F208041EAEEB8CBCC10D6D456865 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		F2BA9B35A45CA927F184F7304123C351 /* TFY_ViewChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A9364D3BE4EEBC4093154F414890C /* TFY_ViewChainModel.m */; };
+		F450F83B5061D39BEB654B2C5DE5691B /* TFY_TextFieldChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 536905BE5956C3FA0275B98996A6E59F /* TFY_TextFieldChainModel.m */; };
+		F8E8D95BA2F707C03CC8D92B8660FFEC /* UIAlertController+TFY_Chain.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A4C80CD73882B3D0DB9D83364109F12 /* UIAlertController+TFY_Chain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F9CDCED83085AACA14C1B82380E4C6B8 /* NSString+TFY_String.m in Sources */ = {isa = PBXBuildFile; fileRef = BDA2CE69A377D8CD612904D0CE491A2B /* NSString+TFY_String.m */; };
+		FA61D28ECD5E79A49713289E4925C734 /* TFY_AutoLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B4C20481A5E76E95FF42AE08078E5A /* TFY_AutoLayout-dummy.m */; };
+		FB9AEBB56A2251F390FC32DE4BC5C5D4 /* UIGestureRecognizer+TFY_Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E174DC089C9E9FB07F6CF921C30A51 /* UIGestureRecognizer+TFY_Tools.m */; };
+		FDD6277F335D4568785188EFCE9DF8A8 /* UIView+TFY_Chain.h in Headers */ = {isa = PBXBuildFile; fileRef = C5AF65035042C467EFEA3F59A8B68587 /* UIView+TFY_Chain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		60D59E0041A2DC702ED65EF3719427A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 317D10A38D199CFB6B8630CC267AB458;
+			remoteInfo = "Pods-TFY_POPControllerKit";
+		};
+		78A44F262A2881D79C6BC658BB3F44C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB38751CB9B6AE62A4CBCBDA7BDC7A8A;
+			remoteInfo = TFY_LayoutCategoryKit;
+		};
+		AF2846649F6F2CCFA0317003852BDD97 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB38751CB9B6AE62A4CBCBDA7BDC7A8A;
+			remoteInfo = TFY_LayoutCategoryKit;
+		};
+		D3D5F6BD7AFC37BC3D72C93AE7A446B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9E76FB4A93BC2ADB548F9935D98A4E2C;
+			remoteInfo = TFY_AutoLayout;
+		};
+		DAF7FF6ED10872B5CB5A82EEEAE4FAD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9E76FB4A93BC2ADB548F9935D98A4E2C;
+			remoteInfo = TFY_AutoLayout;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		048CEF6528BA06E7B33BE3D47E908FEC /* UILayoutGuide+TFY_AutoLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UILayoutGuide+TFY_AutoLayout.m"; path = "TFY_AutoLayout/TFY_AutoLayout/MAC_Layout/UILayoutGuide+TFY_AutoLayout.m"; sourceTree = "<group>"; };
+		04C8B277CDD12DB2B7E8C398D1A491CC /* TFY_LayoutCategoryKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TFY_LayoutCategoryKit.modulemap; sourceTree = "<group>"; };
+		04E7F6B6284E711090BFDA74708B7114 /* TFY_PickerViewChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_PickerViewChainModel.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIView/TFY_PickerViewChainModel.h; sourceTree = "<group>"; };
+		053C0ECB1B931F28C7CFA503C22B9F6A /* TFY_TiledLayerChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_TiledLayerChainModel.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_CALayer/TFY_TiledLayerChainModel.h; sourceTree = "<group>"; };
+		053CD44E76F22A05CDFAF97C922811A2 /* TFY_ToolsHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_ToolsHeader.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Tools/TFY_ToolsHeader.h; sourceTree = "<group>"; };
+		077A9FE1D7213DF53CD655138EBFC093 /* UIGestureRecognizer+TFY_Tools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIGestureRecognizer+TFY_Tools.h"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_UI/UIGestureRecognizer+TFY_Tools.h"; sourceTree = "<group>"; };
+		0A78D59DDC7D52BF906D00431DCD7527 /* Pods-TFY_POPControllerKitTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TFY_POPControllerKitTests-umbrella.h"; sourceTree = "<group>"; };
+		0A79E9B02FCDC5B904DE80B6D8EA0CE5 /* NSAttributedString+TFY_Tools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSAttributedString+TFY_Tools.m"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_Foundation/NSAttributedString+TFY_Tools.m"; sourceTree = "<group>"; };
+		0B178C2A7E5D6366BD2C5F0209174B16 /* TFY_Utils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_Utils.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Tools/TFY_Utils.h; sourceTree = "<group>"; };
+		0BDDE7602A908547B79EFE7BF4C96344 /* UITextView+TFY_Tools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextView+TFY_Tools.h"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_UI/UITextView+TFY_Tools.h"; sourceTree = "<group>"; };
+		0C5298ABFFFA86D97598428A3F8ECBC7 /* Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		0E245D303DB917284A491FB92EED8F68 /* TFY_ReplicatorLayerChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_ReplicatorLayerChainModel.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_CALayer/TFY_ReplicatorLayerChainModel.h; sourceTree = "<group>"; };
+		0F6B50A4F0F10D916AEA437E44AD65ED /* Pods-TFY_POPControllerKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TFY_POPControllerKitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		10AE7DC6B192A0A10DAA03515678E1A5 /* TFY_ProgressViewChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TFY_ProgressViewChainModel.m; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIView/TFY_ProgressViewChainModel.m; sourceTree = "<group>"; };
+		11B2FB3283B462EDDEBEDAEFC47535F9 /* NSString+TFY_String.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+TFY_String.h"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_Foundation/NSString+TFY_String.h"; sourceTree = "<group>"; };
+		13A819CE96613BF38911DBF64B78AAEE /* TFY_SwipeGestureChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_SwipeGestureChainModel.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIGesture/TFY_SwipeGestureChainModel.h; sourceTree = "<group>"; };
+		17429F22A6D12250449B36DC05DCB576 /* TFY_BaseLayerChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TFY_BaseLayerChainModel.m; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_CALayer/TFY_BaseLayerChainModel.m; sourceTree = "<group>"; };
+		18B4C20481A5E76E95FF42AE08078E5A /* TFY_AutoLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TFY_AutoLayout-dummy.m"; sourceTree = "<group>"; };
+		1901CDF70D23A68CA0B9E02D2F70C422 /* TFY_AutoLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TFY_AutoLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		19B5BB44E0792F413628FF9295FBAB78 /* TFY_EmiiterLayerChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TFY_EmiiterLayerChainModel.m; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_CALayer/TFY_EmiiterLayerChainModel.m; sourceTree = "<group>"; };
+		1A049CA396BE109B006B62BF01197046 /* TFY_ViewHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_ViewHeader.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIView/TFY_ViewHeader.h; sourceTree = "<group>"; };
+		1A9839C83FE536EE32AF5B5AC2700065 /* TFY_SegmentedControlChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TFY_SegmentedControlChainModel.m; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIView/TFY_SegmentedControlChainModel.m; sourceTree = "<group>"; };
+		1B372E37363EE0D3C5368F55290D6D1C /* NSArray+TFY_Tools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+TFY_Tools.m"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_Foundation/NSArray+TFY_Tools.m"; sourceTree = "<group>"; };
+		1C834A1956A36FD4110C462AF9F896BE /* Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1FF45DA6BD3263474314B951A5B7F5D3 /* TFY_LayoutCategoryKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TFY_LayoutCategoryKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		25D5AB8A7DBDABA5354B8C081FE4F002 /* UIControl+TFY_Tools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIControl+TFY_Tools.h"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_Foundation/UIControl+TFY_Tools.h"; sourceTree = "<group>"; };
+		267C3DB1E04F80B4AC82899FDB829CA0 /* TFY_AutoLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_AutoLayout.h; path = TFY_AutoLayout/TFY_AutoLayout/TFY_AutoLayout.h; sourceTree = "<group>"; };
+		2AE96EEEB3496878746AA73297595079 /* TFY_EmiiterLayerChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_EmiiterLayerChainModel.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_CALayer/TFY_EmiiterLayerChainModel.h; sourceTree = "<group>"; };
+		2B8D8561BB78C122BDC7E964AE2AE0F7 /* CALayer+TFY_Chain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CALayer+TFY_Chain.m"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_CALayer/CALayer+TFY_Chain.m"; sourceTree = "<group>"; };
+		2BA0783C10245CFFAAA008ADCB72291D /* TFY_TableViewChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_TableViewChainModel.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIView/TFY_TableViewChainModel.h; sourceTree = "<group>"; };
+		2BB816F6F4C8D2B3FCA56D06B1394EDD /* TFY_CollectionViewChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TFY_CollectionViewChainModel.m; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIView/TFY_CollectionViewChainModel.m; sourceTree = "<group>"; };
+		2C849D2C9302B66C903247FDF04D508E /* UIScrollView+TFY_Tools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+TFY_Tools.h"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_UI/UIScrollView+TFY_Tools.h"; sourceTree = "<group>"; };
+		2DB2EC94B931DC7C0C00B39D218775BE /* NSTimer+TFY_Tools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSTimer+TFY_Tools.h"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_Foundation/NSTimer+TFY_Tools.h"; sourceTree = "<group>"; };
+		2F674580A72891C570691A411FB8BED5 /* UIView+TFY_Tools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+TFY_Tools.m"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_UI/UIView+TFY_Tools.m"; sourceTree = "<group>"; };
+		31C417EFDCECA68925807AC5383452B2 /* Pods-TFY_POPControllerKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TFY_POPControllerKitTests.release.xcconfig"; sourceTree = "<group>"; };
+		3461D17AF4E47C80BA2EA57435D68FF2 /* TFY_BaseGestureChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TFY_BaseGestureChainModel.m; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIGesture/TFY_BaseGestureChainModel.m; sourceTree = "<group>"; };
+		353A9364D3BE4EEBC4093154F414890C /* TFY_ViewChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TFY_ViewChainModel.m; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIView/TFY_ViewChainModel.m; sourceTree = "<group>"; };
+		3617B3E090B8CA57D06C216EA66CBA47 /* TFY_RotationGestureChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TFY_RotationGestureChainModel.m; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIGesture/TFY_RotationGestureChainModel.m; sourceTree = "<group>"; };
+		36A9629EBD778D168BD04132F548F476 /* WKWebView+TFY_Extension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "WKWebView+TFY_Extension.m"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_UI/WKWebView+TFY_Extension.m"; sourceTree = "<group>"; };
+		3730D8BCCB618B9ADDD71CFC4B908021 /* Pods-TFY_POPControllerKitTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TFY_POPControllerKitTests-Info.plist"; sourceTree = "<group>"; };
+		392AF085D1BE80991AD4DD01CDC1D1E2 /* NSTimer+TFY_Tools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSTimer+TFY_Tools.m"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_Foundation/NSTimer+TFY_Tools.m"; sourceTree = "<group>"; };
+		3952953ECA0D27BBE8A9B3E0EDDE2D00 /* TFY_Video.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_Video.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Tools/TFY_Video.h; sourceTree = "<group>"; };
+		3BADE62CDCF1470B7972FA73B35922EE /* NSObject+TFY_Tools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+TFY_Tools.m"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_Foundation/NSObject+TFY_Tools.m"; sourceTree = "<group>"; };
+		3BD04D82FBC369ED20C5413A3E9D53EF /* NSObject+TFY_Tools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+TFY_Tools.h"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_Foundation/NSObject+TFY_Tools.h"; sourceTree = "<group>"; };
+		3BDA10CA2BD5665CAFF60AF3307E459E /* UIColor+TFY_Tools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+TFY_Tools.h"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_UI/UIColor+TFY_Tools.h"; sourceTree = "<group>"; };
+		3D61ECB5563FC965FCBF23FCC379D34E /* TFY_ChainBaseModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TFY_ChainBaseModel.m; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_ChainBase/TFY_ChainBaseModel.m; sourceTree = "<group>"; };
+		408735720E67C6E3F77B3B6C3095599C /* TFY_ProgressViewChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_ProgressViewChainModel.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIView/TFY_ProgressViewChainModel.h; sourceTree = "<group>"; };
+		42A0ADDBAC406F8663ACC5D36BFE1AC4 /* UILayoutGuide+TFY_AutoLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UILayoutGuide+TFY_AutoLayout.h"; path = "TFY_AutoLayout/TFY_AutoLayout/MAC_Layout/UILayoutGuide+TFY_AutoLayout.h"; sourceTree = "<group>"; };
+		43B34734CCA7D068FBC343EDEECEFB74 /* TFY_ButtonChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_ButtonChainModel.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIView/TFY_ButtonChainModel.h; sourceTree = "<group>"; };
+		477C11422B383D78DCB5D0630E3BB57A /* TFY_BaseViewChainModel+Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "TFY_BaseViewChainModel+Masonry.h"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIView/TFY_BaseViewChainModel+Masonry.h"; sourceTree = "<group>"; };
+		49073947075A5E481C723646338A504C /* Pods-TFY_POPControllerKitTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TFY_POPControllerKitTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		4A4C80CD73882B3D0DB9D83364109F12 /* UIAlertController+TFY_Chain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAlertController+TFY_Chain.h"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_Foundation/UIAlertController+TFY_Chain.h"; sourceTree = "<group>"; };
+		4A68D46EA50CF23D37EBC31B6DBAA264 /* TFY_SwitchChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_SwitchChainModel.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIView/TFY_SwitchChainModel.h; sourceTree = "<group>"; };
+		4AE3D4D783A8F14F250A3A14DD9A7E82 /* TFY_LayoutCategoryKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TFY_LayoutCategoryKit-Info.plist"; sourceTree = "<group>"; };
+		4AE5F111155A115EF820043E303F32D8 /* UIViewController+TFY_Tools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+TFY_Tools.h"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_UI/UIViewController+TFY_Tools.h"; sourceTree = "<group>"; };
+		4B5165631194FC71D91B420F529F09D9 /* TFY_TableViewCellChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TFY_TableViewCellChainModel.m; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIView/TFY_TableViewCellChainModel.m; sourceTree = "<group>"; };
+		4CA5263B857269FFCF2E53FDDAD35934 /* TFY_BaseGestureChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_BaseGestureChainModel.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIGesture/TFY_BaseGestureChainModel.h; sourceTree = "<group>"; };
+		4CAEB5CE443F99EDA86D6925CC9D03DD /* TFY_LayerChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_LayerChainModel.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_CALayer/TFY_LayerChainModel.h; sourceTree = "<group>"; };
+		4FAF72D0541D54D87CE6E20712A3DAD9 /* TFY_LayoutCategoryKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_LayoutCategoryKit.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_LayoutCategoryKit.h; sourceTree = "<group>"; };
+		50122AA88CF54FFA238CC69E76380907 /* TFY_TextLayerChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TFY_TextLayerChainModel.m; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_CALayer/TFY_TextLayerChainModel.m; sourceTree = "<group>"; };
+		503AA6B10FCC942770D02126A297B91D /* TFY_RotationGestureChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_RotationGestureChainModel.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIGesture/TFY_RotationGestureChainModel.h; sourceTree = "<group>"; };
+		50C849DFF63F161826D3B699609E967C /* CALayer+TFY_Frame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CALayer+TFY_Frame.h"; path = "TFY_AutoLayout/TFY_AutoLayout/MAC_Layout/CALayer+TFY_Frame.h"; sourceTree = "<group>"; };
+		52D24C3EC63990CB080FC4610641C3D9 /* TFY_TableViewCellChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_TableViewCellChainModel.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIView/TFY_TableViewCellChainModel.h; sourceTree = "<group>"; };
+		52E5A6EA85535DE9C664FF6D77144261 /* Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests-frameworks.sh"; sourceTree = "<group>"; };
+		52F80B782BBE8451697F08C32CD7E609 /* Pods-TFY_POPControllerKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TFY_POPControllerKit-dummy.m"; sourceTree = "<group>"; };
+		536905BE5956C3FA0275B98996A6E59F /* TFY_TextFieldChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TFY_TextFieldChainModel.m; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIView/TFY_TextFieldChainModel.m; sourceTree = "<group>"; };
+		5588A070ABE365302B815715BD872916 /* TFY_ScrollLayerChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_ScrollLayerChainModel.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_CALayer/TFY_ScrollLayerChainModel.h; sourceTree = "<group>"; };
+		5BFF9477C1B78F8A175E7751B67726CF /* TFY_Timer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TFY_Timer.m; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Tools/TFY_Timer.m; sourceTree = "<group>"; };
+		5C8C92F80B1EC86557E27741B889417A /* TFY_ButtonChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TFY_ButtonChainModel.m; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIView/TFY_ButtonChainModel.m; sourceTree = "<group>"; };
+		5D95DCFD520877C2AE4F716DCAEB79B1 /* UILabel+TFY_Tools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UILabel+TFY_Tools.m"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_UI/UILabel+TFY_Tools.m"; sourceTree = "<group>"; };
+		629E0514518C7B51F8151559405C309D /* TFY_Define.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_Define.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_Define.h; sourceTree = "<group>"; };
+		63DEF5B11765F0451073D0A3E37C2DE5 /* TFY_Timer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_Timer.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Tools/TFY_Timer.h; sourceTree = "<group>"; };
+		646F602DD7618432FCC042A7F79E0EAF /* NSFileManager+TFY_Tools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSFileManager+TFY_Tools.m"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_Foundation/NSFileManager+TFY_Tools.m"; sourceTree = "<group>"; };
+		65A0C866F7029C0B8F3C86C6453D4113 /* Pods-TFY_POPControllerKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TFY_POPControllerKit-Info.plist"; sourceTree = "<group>"; };
+		66E73D84F2C508F746EA83FAC5C52788 /* TFY_SwipeGestureChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TFY_SwipeGestureChainModel.m; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIGesture/TFY_SwipeGestureChainModel.m; sourceTree = "<group>"; };
+		670FCCB70E807B2EFC9B8A530F13D3D3 /* NSNumber+TFY_Tools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNumber+TFY_Tools.m"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_Foundation/NSNumber+TFY_Tools.m"; sourceTree = "<group>"; };
+		674090D075CF3DE7CFAE3A07EDDA1A5B /* TFY_WebViewChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TFY_WebViewChainModel.m; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIView/TFY_WebViewChainModel.m; sourceTree = "<group>"; };
+		67C2AF78DCF12E691D9ADCD1CC98B258 /* Pods-TFY_POPControllerKitTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TFY_POPControllerKitTests.modulemap"; sourceTree = "<group>"; };
+		68959D9B19CD47554426EB392705A7F9 /* TFY_LayoutCategoryKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TFY_LayoutCategoryKit-dummy.m"; sourceTree = "<group>"; };
+		693C593C3A0BE659440A85E2A40181D4 /* Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6984214AC3F0EA5B37A011260D173591 /* UIImage+TFY_Tools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+TFY_Tools.m"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_UI/UIImage+TFY_Tools.m"; sourceTree = "<group>"; };
+		69C9A1DA771E031CFA3CC56A1C3C8EB0 /* TFY_LongPressGestureChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_LongPressGestureChainModel.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIGesture/TFY_LongPressGestureChainModel.h; sourceTree = "<group>"; };
+		6A8FBDF8EB56C7CA5AF51E90B506005F /* TFY_BaseControlChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_BaseControlChainModel.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIView/TFY_BaseControlChainModel.h; sourceTree = "<group>"; };
+		6A96EAF3AADFD58283E9DE5142BC6BFC /* TFY_BaseLayerChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_BaseLayerChainModel.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_CALayer/TFY_BaseLayerChainModel.h; sourceTree = "<group>"; };
+		6B455F5D7ACECE743D29B0E43FB3B145 /* TFY_TextViewChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TFY_TextViewChainModel.m; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIView/TFY_TextViewChainModel.m; sourceTree = "<group>"; };
+		6BAE3F9462F369D209C99C104E8C69CA /* Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests-umbrella.h"; sourceTree = "<group>"; };
+		6C241A3040434BA4F033C886D02FADC7 /* TFY_AutoLayout-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TFY_AutoLayout-Info.plist"; sourceTree = "<group>"; };
+		6C6D28DEBBED7B396F062B9585E6D071 /* UIButton+TFY_Tools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+TFY_Tools.m"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_UI/UIButton+TFY_Tools.m"; sourceTree = "<group>"; };
+		6E62A49CE723076EC2821E6745C1C0CE /* TFY_AutoLayoutHerder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_AutoLayoutHerder.h; path = TFY_AutoLayout/TFY_AutoLayout/Util/TFY_AutoLayoutHerder.h; sourceTree = "<group>"; };
+		6E78AEE5D9387912B0686189E7FBEB32 /* TFY_DatePickerViewChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TFY_DatePickerViewChainModel.m; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIView/TFY_DatePickerViewChainModel.m; sourceTree = "<group>"; };
+		701ADFC584CAA48C5987970283FCB01F /* UIDevice+TFY_Tools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIDevice+TFY_Tools.m"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_Foundation/UIDevice+TFY_Tools.m"; sourceTree = "<group>"; };
+		712FE4BBDF7BDB3A89276062D064C0C1 /* TFY_ScrollViewChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_ScrollViewChainModel.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIView/TFY_ScrollViewChainModel.h; sourceTree = "<group>"; };
+		717E41A996447DC17872E48E6352F6FD /* TFY_TransFormLayerChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_TransFormLayerChainModel.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_CALayer/TFY_TransFormLayerChainModel.h; sourceTree = "<group>"; };
+		72926A911E403C7C15E43C0C515C52F2 /* TFY_TiledLayerChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TFY_TiledLayerChainModel.m; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_CALayer/TFY_TiledLayerChainModel.m; sourceTree = "<group>"; };
+		72E8ACD080107B54494FF70080431C17 /* TFY_ChainHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_ChainHeader.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_ChainHeader.h; sourceTree = "<group>"; };
+		73474FF2249A36FB612A5090D9880927 /* TFY_BaseViewChainModel+Masonry.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "TFY_BaseViewChainModel+Masonry.m"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIView/TFY_BaseViewChainModel+Masonry.m"; sourceTree = "<group>"; };
+		75157CE965BC61F432688BCDD04DFA36 /* Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests.modulemap"; sourceTree = "<group>"; };
+		752C08FE2CBFD82616C3142F1FF29CCA /* UITextField+TFY_Tools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextField+TFY_Tools.m"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_Foundation/UITextField+TFY_Tools.m"; sourceTree = "<group>"; };
+		7869DDBE158A6BE8B08A68B7255B42F7 /* TFY_AutoLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TFY_AutoLayout.modulemap; sourceTree = "<group>"; };
+		7BFA9942875066712F213A2965A64600 /* UIScrollView+TFY_Tools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+TFY_Tools.m"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_UI/UIScrollView+TFY_Tools.m"; sourceTree = "<group>"; };
+		7C6DEE3AE902DB7EED8142911BB31564 /* TFY_GradientLayerChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_GradientLayerChainModel.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_CALayer/TFY_GradientLayerChainModel.h; sourceTree = "<group>"; };
+		7D3F24AE7E49AA921E78669CB4F03461 /* UIWindow+TFY_Tools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWindow+TFY_Tools.h"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Tools/UIWindow+TFY_Tools.h"; sourceTree = "<group>"; };
+		800CF5298FCF6EABC8D0F5C72A586A15 /* TFY_PickerViewChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TFY_PickerViewChainModel.m; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIView/TFY_PickerViewChainModel.m; sourceTree = "<group>"; };
+		8098F05C04E8A1CDE10AE85AEBDB0A50 /* TFY_LabelChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TFY_LabelChainModel.m; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIView/TFY_LabelChainModel.m; sourceTree = "<group>"; };
+		82642080924D00000EDB6685032049A2 /* TFY_SegmentedControlChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_SegmentedControlChainModel.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIView/TFY_SegmentedControlChainModel.h; sourceTree = "<group>"; };
+		8286FA9554127B54904311AAFFAA6206 /* TFY_TextViewChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_TextViewChainModel.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIView/TFY_TextViewChainModel.h; sourceTree = "<group>"; };
+		83231FE2513F35AA4C18337BE1DDF727 /* TFY_DatePickerViewChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_DatePickerViewChainModel.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIView/TFY_DatePickerViewChainModel.h; sourceTree = "<group>"; };
+		8324A07801C5BB876262D4A3ACD7ED88 /* TFY_ControlChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_ControlChainModel.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIView/TFY_ControlChainModel.h; sourceTree = "<group>"; };
+		834B9138ED7013E3E2694011758FB9DF /* TFY_CategoriesHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_CategoriesHeader.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_CategoriesHeader.h; sourceTree = "<group>"; };
+		8474F111CD46C75F4E8A715428C3EAC1 /* UIView+TFY_Frame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+TFY_Frame.h"; path = "TFY_AutoLayout/TFY_AutoLayout/IOS_Layout/UIView+TFY_Frame.h"; sourceTree = "<group>"; };
+		856CBE082422E2E644E6B7A17FBA8B30 /* UIFont+TFY_Tools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIFont+TFY_Tools.h"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_Foundation/UIFont+TFY_Tools.h"; sourceTree = "<group>"; };
+		861E98D23583C79755D08091AAF149E0 /* UITextField+TFY_Tools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextField+TFY_Tools.h"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_Foundation/UITextField+TFY_Tools.h"; sourceTree = "<group>"; };
+		87E993C715C948D901B27A7806B07B3E /* Pods-TFY_POPControllerKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TFY_POPControllerKit.debug.xcconfig"; sourceTree = "<group>"; };
+		8B09B27B0B7BEC3447E064D970B65A45 /* TFY_SwitchChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TFY_SwitchChainModel.m; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIView/TFY_SwitchChainModel.m; sourceTree = "<group>"; };
+		8B9F0AF0908C9163F798FB6DAA4B404E /* UIButton+TFY_Tools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+TFY_Tools.h"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_UI/UIButton+TFY_Tools.h"; sourceTree = "<group>"; };
+		8C1A3F5902100B6BB6115A4262A255E6 /* Pods-TFY_POPControllerKit-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TFY_POPControllerKit-frameworks.sh"; sourceTree = "<group>"; };
+		8C5C9334938682D50D981602E01B70F8 /* TFY_TextLayerChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_TextLayerChainModel.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_CALayer/TFY_TextLayerChainModel.h; sourceTree = "<group>"; };
+		8D74B3704AA472D9EE66AC0798AFBDED /* TFY_WebViewChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_WebViewChainModel.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIView/TFY_WebViewChainModel.h; sourceTree = "<group>"; };
+		92DAF7311199514D0BAA2925F173F59E /* TFY_LayerChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TFY_LayerChainModel.m; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_CALayer/TFY_LayerChainModel.m; sourceTree = "<group>"; };
+		9362B8B746C8AA01E14BFCEF1A59144E /* Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests-dummy.m"; sourceTree = "<group>"; };
+		946876819F9F702321F150FF77E4C91D /* TFY_GestureChainHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_GestureChainHeader.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIGesture/TFY_GestureChainHeader.h; sourceTree = "<group>"; };
+		949E20E142C4F1B88C3DA6408498DCEB /* TFY_GradientLayerChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TFY_GradientLayerChainModel.m; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_CALayer/TFY_GradientLayerChainModel.m; sourceTree = "<group>"; };
+		94E3D3719E26595B15EC4C713E05D396 /* TFY_ShaperLayerChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TFY_ShaperLayerChainModel.m; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_CALayer/TFY_ShaperLayerChainModel.m; sourceTree = "<group>"; };
+		9540713BEE34632473DB6391101B16B4 /* Pods_TFY_POPControllerKit_TFY_POPControllerKitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TFY_POPControllerKit_TFY_POPControllerKitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9594AFF6070E72F5EA8F941FDE0F61E6 /* TFY_AutoLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TFY_AutoLayout-prefix.pch"; sourceTree = "<group>"; };
+		9978A365AB3D28514A8657EB7A89FB89 /* TFY_BaseViewChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TFY_BaseViewChainModel.m; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIView/TFY_BaseViewChainModel.m; sourceTree = "<group>"; };
+		9C13DA3A10123B04447AC790BF7AFAF9 /* TFY_ScrollViewChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TFY_ScrollViewChainModel.m; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIView/TFY_ScrollViewChainModel.m; sourceTree = "<group>"; };
+		9D54EDA5017C6193E334CE011DA68075 /* UIAlertController+TFY_Chain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAlertController+TFY_Chain.m"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_Foundation/UIAlertController+TFY_Chain.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D94D416BBFB43DA807ABB6012B113EE /* TFY_ImageViewChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TFY_ImageViewChainModel.m; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIView/TFY_ImageViewChainModel.m; sourceTree = "<group>"; };
+		9DCAEAD2CD0953BBA1A78C48835B67E3 /* TFY_AutoLayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TFY_AutoLayout.release.xcconfig; sourceTree = "<group>"; };
+		9E98ED8A914FAC8BDA30A95A6BF96AD1 /* NSDate+TFY_Date.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+TFY_Date.h"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_Foundation/NSDate+TFY_Date.h"; sourceTree = "<group>"; };
+		9EFA2076FBB6D6B4A0BBA0BE857E9158 /* TFY_LayoutCategoryKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TFY_LayoutCategoryKit-prefix.pch"; sourceTree = "<group>"; };
+		9FD08B34FBB71452FBECBA5B4BC8BB9F /* TFY_ShaperLayerChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_ShaperLayerChainModel.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_CALayer/TFY_ShaperLayerChainModel.h; sourceTree = "<group>"; };
+		A0AE69943A679566621D658E78400823 /* UIScreen+TFY_Tools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScreen+TFY_Tools.m"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_Foundation/UIScreen+TFY_Tools.m"; sourceTree = "<group>"; };
+		A14991D47122FE38A41026C98D009AE2 /* TFY_PanGestureChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TFY_PanGestureChainModel.m; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIGesture/TFY_PanGestureChainModel.m; sourceTree = "<group>"; };
+		A2689B1699BE21DEFC981DAD5383DA0A /* TFY_LayerChainHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_LayerChainHeader.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_CALayer/TFY_LayerChainHeader.h; sourceTree = "<group>"; };
+		A2D71EAE490245160A5C02F35AC52436 /* UIWindow+TFY_Tools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWindow+TFY_Tools.m"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Tools/UIWindow+TFY_Tools.m"; sourceTree = "<group>"; };
+		A3B143093CC00EBC72D36330A90C64C6 /* TFY_TransFormLayerChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TFY_TransFormLayerChainModel.m; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_CALayer/TFY_TransFormLayerChainModel.m; sourceTree = "<group>"; };
+		A4231D63617E8E86521765E530FB2ACA /* UITableView+TFY_LayoutCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableView+TFY_LayoutCell.h"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_UI/UITableView+TFY_LayoutCell.h"; sourceTree = "<group>"; };
+		A64A694EE790526E711FC6D53A57A73A /* UITableViewCell+TFY_AutoHeightForCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableViewCell+TFY_AutoHeightForCell.h"; path = "TFY_AutoLayout/TFY_AutoLayout/IOS_Layout/UITableViewCell+TFY_AutoHeightForCell.h"; sourceTree = "<group>"; };
+		A94D9D1BA45ADFC0291190D05595257A /* TFY_BaseViewChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_BaseViewChainModel.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIView/TFY_BaseViewChainModel.h; sourceTree = "<group>"; };
+		A9FD456FA4747AB95337A56CAA7BF859 /* UIView+TFY_Frame.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+TFY_Frame.m"; path = "TFY_AutoLayout/TFY_AutoLayout/IOS_Layout/UIView+TFY_Frame.m"; sourceTree = "<group>"; };
+		ABA595E5CECE12B93F50573312A51C0E /* UIImage+TFY_Tools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+TFY_Tools.h"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_UI/UIImage+TFY_Tools.h"; sourceTree = "<group>"; };
+		AD9BE372BC585F25E3F81BCFACA795BD /* TFY_Scene.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TFY_Scene.m; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Tools/TFY_Scene.m; sourceTree = "<group>"; };
+		AF3DA2D3DA64D7FE3134F455485AA6AB /* CALayer+TFY_Chain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CALayer+TFY_Chain.h"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_CALayer/CALayer+TFY_Chain.h"; sourceTree = "<group>"; };
+		B00A62817E87E8324BD34164D7F6A0E6 /* Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B0322F5732625AAA72F66497A8ACC06C /* TFY_SliderViewChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_SliderViewChainModel.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIView/TFY_SliderViewChainModel.h; sourceTree = "<group>"; };
+		B1D8C35593805ED7A7BA86A9C2EA5717 /* UIView+TFY_Tools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+TFY_Tools.h"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_UI/UIView+TFY_Tools.h"; sourceTree = "<group>"; };
+		B36A784D36F3048F12CF09F9C6BF0112 /* Pods_TFY_POPControllerKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TFY_POPControllerKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3DDA3023FEB75449AB4D6153EA61A50 /* Pods-TFY_POPControllerKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TFY_POPControllerKit.modulemap"; sourceTree = "<group>"; };
+		B7478F0F6243B1074FEE74A92E462F72 /* WKWebView+TFY_Extension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "WKWebView+TFY_Extension.h"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_UI/WKWebView+TFY_Extension.h"; sourceTree = "<group>"; };
+		B80047AFDAA399943BF26985029B16D0 /* NSFileManager+TFY_Tools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSFileManager+TFY_Tools.h"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_Foundation/NSFileManager+TFY_Tools.h"; sourceTree = "<group>"; };
+		B813CBA5D692BC245F056303BD89F8D4 /* NSData+TFY_Data.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+TFY_Data.m"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_Foundation/NSData+TFY_Data.m"; sourceTree = "<group>"; };
+		B83A97FB26BA6E5E351318C6BD108F9F /* UITableViewCell+TFY_AutoHeightForCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableViewCell+TFY_AutoHeightForCell.m"; path = "TFY_AutoLayout/TFY_AutoLayout/IOS_Layout/UITableViewCell+TFY_AutoHeightForCell.m"; sourceTree = "<group>"; };
+		BA1408140891EF03EBC3E5ED8D2B4B6F /* CALayer+TFY_Frame.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CALayer+TFY_Frame.m"; path = "TFY_AutoLayout/TFY_AutoLayout/MAC_Layout/CALayer+TFY_Frame.m"; sourceTree = "<group>"; };
+		BA36A7EB12917D1E1AF36405E26F8A6B /* TFY_LayoutCategoryKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TFY_LayoutCategoryKit-umbrella.h"; sourceTree = "<group>"; };
+		BBF293D6A3976C25F0AB09935355FB8B /* UIView+TFY_AutoLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+TFY_AutoLayout.m"; path = "TFY_AutoLayout/TFY_AutoLayout/IOS_Layout/UIView+TFY_AutoLayout.m"; sourceTree = "<group>"; };
+		BCB7FD0967CF1D900FFA54E9777BA2D7 /* NSDate+TFY_Date.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+TFY_Date.m"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_Foundation/NSDate+TFY_Date.m"; sourceTree = "<group>"; };
+		BCF00D01DF60FDEFEB92AF3A61A24B6B /* TFY_ActivityIndicatorViewModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TFY_ActivityIndicatorViewModel.m; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIView/TFY_ActivityIndicatorViewModel.m; sourceTree = "<group>"; };
+		BD726D1E7C0E1E7DBA3A4967AA8BECC5 /* TFY_BaseControlChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TFY_BaseControlChainModel.m; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIView/TFY_BaseControlChainModel.m; sourceTree = "<group>"; };
+		BDA2CE69A377D8CD612904D0CE491A2B /* NSString+TFY_String.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+TFY_String.m"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_Foundation/NSString+TFY_String.m"; sourceTree = "<group>"; };
+		BE318BBAE95B34230BB13406EFADB9E3 /* TFY_ChainDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_ChainDefine.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_ChainBase/TFY_ChainDefine.h; sourceTree = "<group>"; };
+		BE62F185D9D372B1DA7C05E11BAC56D6 /* UIColor+TFY_Tools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+TFY_Tools.m"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_UI/UIColor+TFY_Tools.m"; sourceTree = "<group>"; };
+		BF0FCABCBBFAE7AB184038788D283C41 /* TFY_PanGestureChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_PanGestureChainModel.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIGesture/TFY_PanGestureChainModel.h; sourceTree = "<group>"; };
+		BF5F76A7D62C0A58D19030784FCDFD1E /* TFY_SliderViewChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TFY_SliderViewChainModel.m; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIView/TFY_SliderViewChainModel.m; sourceTree = "<group>"; };
+		C07559966453E0E14C2A1398659A5E5E /* TFY_Utils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TFY_Utils.m; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Tools/TFY_Utils.m; sourceTree = "<group>"; };
+		C1AAF81FE581D074E61ECC722DB6627A /* TFY_ActivityIndicatorViewModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_ActivityIndicatorViewModel.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIView/TFY_ActivityIndicatorViewModel.h; sourceTree = "<group>"; };
+		C321C6C09EF6274C887D06F37EE286F7 /* TFY_PinchGestureChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_PinchGestureChainModel.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIGesture/TFY_PinchGestureChainModel.h; sourceTree = "<group>"; };
+		C33C86E503643F5A4F42BED1E7802521 /* NSDictionary+TFY_Tools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+TFY_Tools.h"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_Foundation/NSDictionary+TFY_Tools.h"; sourceTree = "<group>"; };
+		C3AD3FD8028F5CCD90ED88866E4B74E2 /* UITableViewCell+TFY_Chain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableViewCell+TFY_Chain.m"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_UI/UITableViewCell+TFY_Chain.m"; sourceTree = "<group>"; };
+		C4A0DC1DB66CF3E2B2BC07B2D41C904B /* TFY_TapGestureChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_TapGestureChainModel.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIGesture/TFY_TapGestureChainModel.h; sourceTree = "<group>"; };
+		C4D33F56DFC947B1E72EB2F17CE27C4B /* NSData+TFY_Data.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+TFY_Data.h"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_Foundation/NSData+TFY_Data.h"; sourceTree = "<group>"; };
+		C5AF65035042C467EFEA3F59A8B68587 /* UIView+TFY_Chain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+TFY_Chain.h"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIView/UIView+TFY_Chain.h"; sourceTree = "<group>"; };
+		C7BEA6536ECAB6F606B3DD5DC6B03879 /* UITableViewCell+TFY_Chain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableViewCell+TFY_Chain.h"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_UI/UITableViewCell+TFY_Chain.h"; sourceTree = "<group>"; };
+		C85B74C245EA6CD81B7E021FD2C3EBED /* TFY_ChainBaseModel+TFY_Tools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "TFY_ChainBaseModel+TFY_Tools.h"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_ChainBase/TFY_ChainBaseModel+TFY_Tools.h"; sourceTree = "<group>"; };
+		C8A351BD6BF28F9135C0DFAA07B8B7FE /* Pods-TFY_POPControllerKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TFY_POPControllerKit-umbrella.h"; sourceTree = "<group>"; };
+		C8F648CC863F44A2D1FEFF7515AC3B4A /* Pods-TFY_POPControllerKitTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TFY_POPControllerKitTests-dummy.m"; sourceTree = "<group>"; };
+		C91C2359C9683DFFA35A82A48F785793 /* TFY_UIHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_UIHeader.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_UI/TFY_UIHeader.h; sourceTree = "<group>"; };
+		C9A11BE531569338AF3501FE0E2C0844 /* TFY_FoundationHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_FoundationHeader.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_Foundation/TFY_FoundationHeader.h; sourceTree = "<group>"; };
+		CA7D80C27BFB1589A893754240696A64 /* TFY_Scene.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_Scene.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Tools/TFY_Scene.h; sourceTree = "<group>"; };
+		CAA2AB69062956CBD466213E0C370EC9 /* TFY_ImageViewChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_ImageViewChainModel.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIView/TFY_ImageViewChainModel.h; sourceTree = "<group>"; };
+		CC99CED28D5B35ABD5C85C5AE97A18B1 /* NSDictionary+TFY_Tools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+TFY_Tools.m"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_Foundation/NSDictionary+TFY_Tools.m"; sourceTree = "<group>"; };
+		CC9E47978C5EF2B96D56B8FD08C504F5 /* Pods-TFY_POPControllerKit-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TFY_POPControllerKit-acknowledgements.plist"; sourceTree = "<group>"; };
+		CD67D3B8E64C11D0CE5C5F32CB4A2627 /* TFY_PinchGestureChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TFY_PinchGestureChainModel.m; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIGesture/TFY_PinchGestureChainModel.m; sourceTree = "<group>"; };
+		CEA6F4A34038F01E295AE096296100D5 /* TFY_CollectionViewChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_CollectionViewChainModel.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIView/TFY_CollectionViewChainModel.h; sourceTree = "<group>"; };
+		CEDA9AFA0B1F2BC72791D30AABCC5C31 /* TFY_BaseScrollViewChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TFY_BaseScrollViewChainModel.m; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIView/TFY_BaseScrollViewChainModel.m; sourceTree = "<group>"; };
+		CFE26419C78E43A244B859914A5E0B2F /* TFY_LongPressGestureChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TFY_LongPressGestureChainModel.m; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIGesture/TFY_LongPressGestureChainModel.m; sourceTree = "<group>"; };
+		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		D71E53DDFDD5A0DE93E523255221BAF4 /* TFY_ScrollLayerChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TFY_ScrollLayerChainModel.m; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_CALayer/TFY_ScrollLayerChainModel.m; sourceTree = "<group>"; };
+		D72807571B5EA7C2E9CE11FB70080AA3 /* TFY_ChainBaseModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_ChainBaseModel.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_ChainBase/TFY_ChainBaseModel.h; sourceTree = "<group>"; };
+		D9B06A4FAB9C38046685198574AD42C9 /* UIViewController+TFY_Tools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+TFY_Tools.m"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_UI/UIViewController+TFY_Tools.m"; sourceTree = "<group>"; };
+		D9FB864557ACF9F28290CFCD10BFEA88 /* Pods_TFY_POPControllerKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TFY_POPControllerKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC148054A32B855E1B7E00DFCBC452DF /* UITextView+TFY_Tools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextView+TFY_Tools.m"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_UI/UITextView+TFY_Tools.m"; sourceTree = "<group>"; };
+		DCAA9F0F3EA54857BD145FED8D591BC4 /* TFY_ViewChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_ViewChainModel.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIView/TFY_ViewChainModel.h; sourceTree = "<group>"; };
+		DCB0BEAA5762C2E3FBAEF63125AAF06E /* TFY_LayoutCategoryKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TFY_LayoutCategoryKit.debug.xcconfig; sourceTree = "<group>"; };
+		DDF6BD4AC0DDD70E3654E09AEF497B0E /* UIControl+TFY_Tools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIControl+TFY_Tools.m"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_Foundation/UIControl+TFY_Tools.m"; sourceTree = "<group>"; };
+		DF379946CDE3AB285B68244406B4B8E7 /* Pods-TFY_POPControllerKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TFY_POPControllerKit.release.xcconfig"; sourceTree = "<group>"; };
+		E2396170DC2739EDB33AADFCB2DD2CC0 /* NSAttributedString+TFY_Tools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSAttributedString+TFY_Tools.h"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_Foundation/NSAttributedString+TFY_Tools.h"; sourceTree = "<group>"; };
+		E2878D0614E87D40D4A70B358450CF10 /* NSNumber+TFY_Tools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNumber+TFY_Tools.h"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_Foundation/NSNumber+TFY_Tools.h"; sourceTree = "<group>"; };
+		E3C16B60C97E4B5B02BE614710E2581F /* TFY_TapGestureChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TFY_TapGestureChainModel.m; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIGesture/TFY_TapGestureChainModel.m; sourceTree = "<group>"; };
+		E46EE424F4EA89488BA013EC663FC030 /* TFY_TextFieldChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_TextFieldChainModel.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIView/TFY_TextFieldChainModel.h; sourceTree = "<group>"; };
+		E6E0359FA45FF51536BD875D6B9A4CF8 /* UIView+TFY_AutoLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+TFY_AutoLayout.h"; path = "TFY_AutoLayout/TFY_AutoLayout/IOS_Layout/UIView+TFY_AutoLayout.h"; sourceTree = "<group>"; };
+		E73CCB8D3A01A61AE5E8F28D500ADAC5 /* UILabel+TFY_Tools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UILabel+TFY_Tools.h"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_UI/UILabel+TFY_Tools.h"; sourceTree = "<group>"; };
+		E8124C692C3356181A754DE07A87CD2F /* Pods-TFY_POPControllerKit-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TFY_POPControllerKit-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E81F203175FB4E1F9BB3B20E3CEE5B8B /* TFY_ReplicatorLayerChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TFY_ReplicatorLayerChainModel.m; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_CALayer/TFY_ReplicatorLayerChainModel.m; sourceTree = "<group>"; };
+		E910E06045567F04A14F752B03C48FB4 /* TFY_Video.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TFY_Video.m; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Tools/TFY_Video.m; sourceTree = "<group>"; };
+		EA4F63706089BFEC6AE049A14335463E /* UIApplication+TFY_Tools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+TFY_Tools.h"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Tools/UIApplication+TFY_Tools.h"; sourceTree = "<group>"; };
+		EA7B99B90C8AFDAD83BA5E5BAB5BFA2A /* UIScreen+TFY_Tools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScreen+TFY_Tools.h"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_Foundation/UIScreen+TFY_Tools.h"; sourceTree = "<group>"; };
+		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		EAC093E727883B8A8655E98CB900FA33 /* TFY_ControlChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TFY_ControlChainModel.m; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIView/TFY_ControlChainModel.m; sourceTree = "<group>"; };
+		EBE0F08BFCE80A4FF53988D42E4AA9BC /* TFY_LayoutCategoryKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TFY_LayoutCategoryKit.release.xcconfig; sourceTree = "<group>"; };
+		EC97EF77B2BC83A07479B7CF3D0CE930 /* TFY_BaseScrollViewChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_BaseScrollViewChainModel.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIView/TFY_BaseScrollViewChainModel.h; sourceTree = "<group>"; };
+		ECB5CE8DF51AD702FF285696D90D8191 /* TFY_AutoLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TFY_AutoLayout-umbrella.h"; sourceTree = "<group>"; };
+		ED44C940DE6F0F4DE76D7F38AAC3FB65 /* NSArray+TFY_Tools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+TFY_Tools.h"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_Foundation/NSArray+TFY_Tools.h"; sourceTree = "<group>"; };
+		EE8ECBA8793EF1E122EF08CB21F266EF /* UITableView+TFY_LayoutCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableView+TFY_LayoutCell.m"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_UI/UITableView+TFY_LayoutCell.m"; sourceTree = "<group>"; };
+		F1C06D4C7CC3846B344755EF8658ED50 /* TFY_VisualEffectViewChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_VisualEffectViewChainModel.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIView/TFY_VisualEffectViewChainModel.h; sourceTree = "<group>"; };
+		F3F3C69F99B95470394404197ED51A8D /* TFY_TableViewChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TFY_TableViewChainModel.m; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIView/TFY_TableViewChainModel.m; sourceTree = "<group>"; };
+		F5C1F336612E6009C691C15703391618 /* TFY_LabelChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_LabelChainModel.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIView/TFY_LabelChainModel.h; sourceTree = "<group>"; };
+		F6E174DC089C9E9FB07F6CF921C30A51 /* UIGestureRecognizer+TFY_Tools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIGestureRecognizer+TFY_Tools.m"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_UI/UIGestureRecognizer+TFY_Tools.m"; sourceTree = "<group>"; };
+		F79CF5E2B4C80214F1B1CA0658F19E0B /* UIDevice+TFY_Tools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIDevice+TFY_Tools.h"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_Foundation/UIDevice+TFY_Tools.h"; sourceTree = "<group>"; };
+		F8C9AC52218EFCFC5624757994ACCFCA /* TFY_AutoLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TFY_AutoLayout.debug.xcconfig; sourceTree = "<group>"; };
+		F9BCE9ECB7D6DB064DD0DEA1BE8A7E36 /* Pods-TFY_POPControllerKitTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TFY_POPControllerKitTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FA36A0E80EA9E45C6717F23FCCEAB0FB /* UIView+TFY_Chain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+TFY_Chain.m"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIView/UIView+TFY_Chain.m"; sourceTree = "<group>"; };
+		FB61C3D89B45EE842AC5AA3F9CE632BC /* TFY_VisualEffectViewChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TFY_VisualEffectViewChainModel.m; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIView/TFY_VisualEffectViewChainModel.m; sourceTree = "<group>"; };
+		FD04ECDA5B41736FA65217401A422019 /* Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests-Info.plist"; sourceTree = "<group>"; };
+		FEB3B5A0AC9D556DF25F10A5E3A0E02F /* UIApplication+TFY_Tools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+TFY_Tools.m"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Tools/UIApplication+TFY_Tools.m"; sourceTree = "<group>"; };
+		FF9915205EB9BE7DC31F91DFB0EA2222 /* UIFont+TFY_Tools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIFont+TFY_Tools.m"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_Foundation/UIFont+TFY_Tools.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2B5ABAED71A5261C557F2B9078BD7F9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E392CB76CF0C49FE40D7F3EE9B804F72 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C5782FE4D7D18BEE5620A9D7421DA5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2B8F208041EAEEB8CBCC10D6D456865 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8621BCA4B44919DBE2B5FCC52D0D118A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0593F96AFCC49AA9B9F9C6C425014508 /* Foundation.framework in Frameworks */,
+				5294620A6EC6FB6B02B7AC4BA8E8FE74 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B095AF06D5A9B97334C42F809E6A19EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B79385E1A69B7133D3823F8ADCE3142 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F07950B655670537139F34260C1ACE79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24395111AD5EB916D9362FAA9C14756F /* Foundation.framework in Frameworks */,
+				44F54FCFBA25F8923B017E1F3B43CBF3 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05F74EA6430E9641299039E8E0EA536D /* TFY_Categories */ = {
+			isa = PBXGroup;
+			children = (
+				834B9138ED7013E3E2694011758FB9DF /* TFY_CategoriesHeader.h */,
+				629E0514518C7B51F8151559405C309D /* TFY_Define.h */,
+				F481FC789E49A715FC202F240DC39636 /* TFY_Foundation */,
+				E41AD218759003717F73D98682E6C12A /* TFY_UI */,
+			);
+			name = TFY_Categories;
+			sourceTree = "<group>";
+		};
+		108F672183B24EED896A0F9518438853 /* TFY_UIView */ = {
+			isa = PBXGroup;
+			children = (
+				C1AAF81FE581D074E61ECC722DB6627A /* TFY_ActivityIndicatorViewModel.h */,
+				BCF00D01DF60FDEFEB92AF3A61A24B6B /* TFY_ActivityIndicatorViewModel.m */,
+				6A8FBDF8EB56C7CA5AF51E90B506005F /* TFY_BaseControlChainModel.h */,
+				BD726D1E7C0E1E7DBA3A4967AA8BECC5 /* TFY_BaseControlChainModel.m */,
+				EC97EF77B2BC83A07479B7CF3D0CE930 /* TFY_BaseScrollViewChainModel.h */,
+				CEDA9AFA0B1F2BC72791D30AABCC5C31 /* TFY_BaseScrollViewChainModel.m */,
+				A94D9D1BA45ADFC0291190D05595257A /* TFY_BaseViewChainModel.h */,
+				9978A365AB3D28514A8657EB7A89FB89 /* TFY_BaseViewChainModel.m */,
+				477C11422B383D78DCB5D0630E3BB57A /* TFY_BaseViewChainModel+Masonry.h */,
+				73474FF2249A36FB612A5090D9880927 /* TFY_BaseViewChainModel+Masonry.m */,
+				43B34734CCA7D068FBC343EDEECEFB74 /* TFY_ButtonChainModel.h */,
+				5C8C92F80B1EC86557E27741B889417A /* TFY_ButtonChainModel.m */,
+				CEA6F4A34038F01E295AE096296100D5 /* TFY_CollectionViewChainModel.h */,
+				2BB816F6F4C8D2B3FCA56D06B1394EDD /* TFY_CollectionViewChainModel.m */,
+				8324A07801C5BB876262D4A3ACD7ED88 /* TFY_ControlChainModel.h */,
+				EAC093E727883B8A8655E98CB900FA33 /* TFY_ControlChainModel.m */,
+				83231FE2513F35AA4C18337BE1DDF727 /* TFY_DatePickerViewChainModel.h */,
+				6E78AEE5D9387912B0686189E7FBEB32 /* TFY_DatePickerViewChainModel.m */,
+				CAA2AB69062956CBD466213E0C370EC9 /* TFY_ImageViewChainModel.h */,
+				9D94D416BBFB43DA807ABB6012B113EE /* TFY_ImageViewChainModel.m */,
+				F5C1F336612E6009C691C15703391618 /* TFY_LabelChainModel.h */,
+				8098F05C04E8A1CDE10AE85AEBDB0A50 /* TFY_LabelChainModel.m */,
+				04E7F6B6284E711090BFDA74708B7114 /* TFY_PickerViewChainModel.h */,
+				800CF5298FCF6EABC8D0F5C72A586A15 /* TFY_PickerViewChainModel.m */,
+				408735720E67C6E3F77B3B6C3095599C /* TFY_ProgressViewChainModel.h */,
+				10AE7DC6B192A0A10DAA03515678E1A5 /* TFY_ProgressViewChainModel.m */,
+				712FE4BBDF7BDB3A89276062D064C0C1 /* TFY_ScrollViewChainModel.h */,
+				9C13DA3A10123B04447AC790BF7AFAF9 /* TFY_ScrollViewChainModel.m */,
+				82642080924D00000EDB6685032049A2 /* TFY_SegmentedControlChainModel.h */,
+				1A9839C83FE536EE32AF5B5AC2700065 /* TFY_SegmentedControlChainModel.m */,
+				B0322F5732625AAA72F66497A8ACC06C /* TFY_SliderViewChainModel.h */,
+				BF5F76A7D62C0A58D19030784FCDFD1E /* TFY_SliderViewChainModel.m */,
+				4A68D46EA50CF23D37EBC31B6DBAA264 /* TFY_SwitchChainModel.h */,
+				8B09B27B0B7BEC3447E064D970B65A45 /* TFY_SwitchChainModel.m */,
+				52D24C3EC63990CB080FC4610641C3D9 /* TFY_TableViewCellChainModel.h */,
+				4B5165631194FC71D91B420F529F09D9 /* TFY_TableViewCellChainModel.m */,
+				2BA0783C10245CFFAAA008ADCB72291D /* TFY_TableViewChainModel.h */,
+				F3F3C69F99B95470394404197ED51A8D /* TFY_TableViewChainModel.m */,
+				E46EE424F4EA89488BA013EC663FC030 /* TFY_TextFieldChainModel.h */,
+				536905BE5956C3FA0275B98996A6E59F /* TFY_TextFieldChainModel.m */,
+				8286FA9554127B54904311AAFFAA6206 /* TFY_TextViewChainModel.h */,
+				6B455F5D7ACECE743D29B0E43FB3B145 /* TFY_TextViewChainModel.m */,
+				DCAA9F0F3EA54857BD145FED8D591BC4 /* TFY_ViewChainModel.h */,
+				353A9364D3BE4EEBC4093154F414890C /* TFY_ViewChainModel.m */,
+				1A049CA396BE109B006B62BF01197046 /* TFY_ViewHeader.h */,
+				F1C06D4C7CC3846B344755EF8658ED50 /* TFY_VisualEffectViewChainModel.h */,
+				FB61C3D89B45EE842AC5AA3F9CE632BC /* TFY_VisualEffectViewChainModel.m */,
+				8D74B3704AA472D9EE66AC0798AFBDED /* TFY_WebViewChainModel.h */,
+				674090D075CF3DE7CFAE3A07EDDA1A5B /* TFY_WebViewChainModel.m */,
+				C5AF65035042C467EFEA3F59A8B68587 /* UIView+TFY_Chain.h */,
+				FA36A0E80EA9E45C6717F23FCCEAB0FB /* UIView+TFY_Chain.m */,
+			);
+			name = TFY_UIView;
+			sourceTree = "<group>";
+		};
+		1141DBD8E7E9E710B568BF5A19937AC6 /* MAC_Layout */ = {
+			isa = PBXGroup;
+			children = (
+				50C849DFF63F161826D3B699609E967C /* CALayer+TFY_Frame.h */,
+				BA1408140891EF03EBC3E5ED8D2B4B6F /* CALayer+TFY_Frame.m */,
+				42A0ADDBAC406F8663ACC5D36BFE1AC4 /* UILayoutGuide+TFY_AutoLayout.h */,
+				048CEF6528BA06E7B33BE3D47E908FEC /* UILayoutGuide+TFY_AutoLayout.m */,
+			);
+			name = MAC_Layout;
+			sourceTree = "<group>";
+		};
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2C278F38DC1A4EE5451F02F111198DDA /* TFY_UIGesture */ = {
+			isa = PBXGroup;
+			children = (
+				4CA5263B857269FFCF2E53FDDAD35934 /* TFY_BaseGestureChainModel.h */,
+				3461D17AF4E47C80BA2EA57435D68FF2 /* TFY_BaseGestureChainModel.m */,
+				946876819F9F702321F150FF77E4C91D /* TFY_GestureChainHeader.h */,
+				69C9A1DA771E031CFA3CC56A1C3C8EB0 /* TFY_LongPressGestureChainModel.h */,
+				CFE26419C78E43A244B859914A5E0B2F /* TFY_LongPressGestureChainModel.m */,
+				BF0FCABCBBFAE7AB184038788D283C41 /* TFY_PanGestureChainModel.h */,
+				A14991D47122FE38A41026C98D009AE2 /* TFY_PanGestureChainModel.m */,
+				C321C6C09EF6274C887D06F37EE286F7 /* TFY_PinchGestureChainModel.h */,
+				CD67D3B8E64C11D0CE5C5F32CB4A2627 /* TFY_PinchGestureChainModel.m */,
+				503AA6B10FCC942770D02126A297B91D /* TFY_RotationGestureChainModel.h */,
+				3617B3E090B8CA57D06C216EA66CBA47 /* TFY_RotationGestureChainModel.m */,
+				13A819CE96613BF38911DBF64B78AAEE /* TFY_SwipeGestureChainModel.h */,
+				66E73D84F2C508F746EA83FAC5C52788 /* TFY_SwipeGestureChainModel.m */,
+				C4A0DC1DB66CF3E2B2BC07B2D41C904B /* TFY_TapGestureChainModel.h */,
+				E3C16B60C97E4B5B02BE614710E2581F /* TFY_TapGestureChainModel.m */,
+			);
+			name = TFY_UIGesture;
+			sourceTree = "<group>";
+		};
+		359A6EBDB684A852E5BD0BA31A0B96CC /* Pods-TFY_POPControllerKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				67C2AF78DCF12E691D9ADCD1CC98B258 /* Pods-TFY_POPControllerKitTests.modulemap */,
+				F9BCE9ECB7D6DB064DD0DEA1BE8A7E36 /* Pods-TFY_POPControllerKitTests-acknowledgements.markdown */,
+				49073947075A5E481C723646338A504C /* Pods-TFY_POPControllerKitTests-acknowledgements.plist */,
+				C8F648CC863F44A2D1FEFF7515AC3B4A /* Pods-TFY_POPControllerKitTests-dummy.m */,
+				3730D8BCCB618B9ADDD71CFC4B908021 /* Pods-TFY_POPControllerKitTests-Info.plist */,
+				0A78D59DDC7D52BF906D00431DCD7527 /* Pods-TFY_POPControllerKitTests-umbrella.h */,
+				0F6B50A4F0F10D916AEA437E44AD65ED /* Pods-TFY_POPControllerKitTests.debug.xcconfig */,
+				31C417EFDCECA68925807AC5383452B2 /* Pods-TFY_POPControllerKitTests.release.xcconfig */,
+			);
+			name = "Pods-TFY_POPControllerKitTests";
+			path = "Target Support Files/Pods-TFY_POPControllerKitTests";
+			sourceTree = "<group>";
+		};
+		49F4DB04FBD1A262FBA75B6445021D7A /* TFY_Chain */ = {
+			isa = PBXGroup;
+			children = (
+				72E8ACD080107B54494FF70080431C17 /* TFY_ChainHeader.h */,
+				6D5C0BAC6F6941907EB905A7F66BF6B4 /* TFY_CALayer */,
+				DE7FA1553119D12568E9C720329F72F8 /* TFY_ChainBase */,
+				2C278F38DC1A4EE5451F02F111198DDA /* TFY_UIGesture */,
+				108F672183B24EED896A0F9518438853 /* TFY_UIView */,
+			);
+			name = TFY_Chain;
+			sourceTree = "<group>";
+		};
+		59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */,
+				D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		645EA5079A06BF00D983ADA8410828DF /* Pods-TFY_POPControllerKit */ = {
+			isa = PBXGroup;
+			children = (
+				B3DDA3023FEB75449AB4D6153EA61A50 /* Pods-TFY_POPControllerKit.modulemap */,
+				E8124C692C3356181A754DE07A87CD2F /* Pods-TFY_POPControllerKit-acknowledgements.markdown */,
+				CC9E47978C5EF2B96D56B8FD08C504F5 /* Pods-TFY_POPControllerKit-acknowledgements.plist */,
+				52F80B782BBE8451697F08C32CD7E609 /* Pods-TFY_POPControllerKit-dummy.m */,
+				8C1A3F5902100B6BB6115A4262A255E6 /* Pods-TFY_POPControllerKit-frameworks.sh */,
+				65A0C866F7029C0B8F3C86C6453D4113 /* Pods-TFY_POPControllerKit-Info.plist */,
+				C8A351BD6BF28F9135C0DFAA07B8B7FE /* Pods-TFY_POPControllerKit-umbrella.h */,
+				87E993C715C948D901B27A7806B07B3E /* Pods-TFY_POPControllerKit.debug.xcconfig */,
+				DF379946CDE3AB285B68244406B4B8E7 /* Pods-TFY_POPControllerKit.release.xcconfig */,
+			);
+			name = "Pods-TFY_POPControllerKit";
+			path = "Target Support Files/Pods-TFY_POPControllerKit";
+			sourceTree = "<group>";
+		};
+		68C893BEE9FCB8B0BE0C4FF797BA2826 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6B86E3CED977ABE808731F26F7CF8F7B /* TFY_AutoLayout */,
+				AE68F730A9B5B6CC58C7EB5815D99965 /* TFY_LayoutCategoryKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6B86E3CED977ABE808731F26F7CF8F7B /* TFY_AutoLayout */ = {
+			isa = PBXGroup;
+			children = (
+				267C3DB1E04F80B4AC82899FDB829CA0 /* TFY_AutoLayout.h */,
+				B9E155A212E0F6CEF325ED0ACF8CEE18 /* IOS_Layout */,
+				1141DBD8E7E9E710B568BF5A19937AC6 /* MAC_Layout */,
+				A3CCB61D53FD20EBD85C3DF3BA4BDEEE /* Support Files */,
+				D3E33DF75A3C527DEE585E3FE6D48310 /* Util */,
+			);
+			path = TFY_AutoLayout;
+			sourceTree = "<group>";
+		};
+		6D5C0BAC6F6941907EB905A7F66BF6B4 /* TFY_CALayer */ = {
+			isa = PBXGroup;
+			children = (
+				AF3DA2D3DA64D7FE3134F455485AA6AB /* CALayer+TFY_Chain.h */,
+				2B8D8561BB78C122BDC7E964AE2AE0F7 /* CALayer+TFY_Chain.m */,
+				6A96EAF3AADFD58283E9DE5142BC6BFC /* TFY_BaseLayerChainModel.h */,
+				17429F22A6D12250449B36DC05DCB576 /* TFY_BaseLayerChainModel.m */,
+				2AE96EEEB3496878746AA73297595079 /* TFY_EmiiterLayerChainModel.h */,
+				19B5BB44E0792F413628FF9295FBAB78 /* TFY_EmiiterLayerChainModel.m */,
+				7C6DEE3AE902DB7EED8142911BB31564 /* TFY_GradientLayerChainModel.h */,
+				949E20E142C4F1B88C3DA6408498DCEB /* TFY_GradientLayerChainModel.m */,
+				A2689B1699BE21DEFC981DAD5383DA0A /* TFY_LayerChainHeader.h */,
+				4CAEB5CE443F99EDA86D6925CC9D03DD /* TFY_LayerChainModel.h */,
+				92DAF7311199514D0BAA2925F173F59E /* TFY_LayerChainModel.m */,
+				0E245D303DB917284A491FB92EED8F68 /* TFY_ReplicatorLayerChainModel.h */,
+				E81F203175FB4E1F9BB3B20E3CEE5B8B /* TFY_ReplicatorLayerChainModel.m */,
+				5588A070ABE365302B815715BD872916 /* TFY_ScrollLayerChainModel.h */,
+				D71E53DDFDD5A0DE93E523255221BAF4 /* TFY_ScrollLayerChainModel.m */,
+				9FD08B34FBB71452FBECBA5B4BC8BB9F /* TFY_ShaperLayerChainModel.h */,
+				94E3D3719E26595B15EC4C713E05D396 /* TFY_ShaperLayerChainModel.m */,
+				8C5C9334938682D50D981602E01B70F8 /* TFY_TextLayerChainModel.h */,
+				50122AA88CF54FFA238CC69E76380907 /* TFY_TextLayerChainModel.m */,
+				053C0ECB1B931F28C7CFA503C22B9F6A /* TFY_TiledLayerChainModel.h */,
+				72926A911E403C7C15E43C0C515C52F2 /* TFY_TiledLayerChainModel.m */,
+				717E41A996447DC17872E48E6352F6FD /* TFY_TransFormLayerChainModel.h */,
+				A3B143093CC00EBC72D36330A90C64C6 /* TFY_TransFormLayerChainModel.m */,
+			);
+			name = TFY_CALayer;
+			sourceTree = "<group>";
+		};
+		6E25F6C2B2264EC136B3359B22A7B118 /* Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests */ = {
+			isa = PBXGroup;
+			children = (
+				75157CE965BC61F432688BCDD04DFA36 /* Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests.modulemap */,
+				1C834A1956A36FD4110C462AF9F896BE /* Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests-acknowledgements.markdown */,
+				0C5298ABFFFA86D97598428A3F8ECBC7 /* Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests-acknowledgements.plist */,
+				9362B8B746C8AA01E14BFCEF1A59144E /* Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests-dummy.m */,
+				52E5A6EA85535DE9C664FF6D77144261 /* Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests-frameworks.sh */,
+				FD04ECDA5B41736FA65217401A422019 /* Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests-Info.plist */,
+				6BAE3F9462F369D209C99C104E8C69CA /* Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests-umbrella.h */,
+				B00A62817E87E8324BD34164D7F6A0E6 /* Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests.debug.xcconfig */,
+				693C593C3A0BE659440A85E2A40181D4 /* Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests.release.xcconfig */,
+			);
+			name = "Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests";
+			path = "Target Support Files/Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests";
+			sourceTree = "<group>";
+		};
+		A3CCB61D53FD20EBD85C3DF3BA4BDEEE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7869DDBE158A6BE8B08A68B7255B42F7 /* TFY_AutoLayout.modulemap */,
+				18B4C20481A5E76E95FF42AE08078E5A /* TFY_AutoLayout-dummy.m */,
+				6C241A3040434BA4F033C886D02FADC7 /* TFY_AutoLayout-Info.plist */,
+				9594AFF6070E72F5EA8F941FDE0F61E6 /* TFY_AutoLayout-prefix.pch */,
+				ECB5CE8DF51AD702FF285696D90D8191 /* TFY_AutoLayout-umbrella.h */,
+				F8C9AC52218EFCFC5624757994ACCFCA /* TFY_AutoLayout.debug.xcconfig */,
+				9DCAEAD2CD0953BBA1A78C48835B67E3 /* TFY_AutoLayout.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TFY_AutoLayout";
+			sourceTree = "<group>";
+		};
+		AE68F730A9B5B6CC58C7EB5815D99965 /* TFY_LayoutCategoryKit */ = {
+			isa = PBXGroup;
+			children = (
+				4FAF72D0541D54D87CE6E20712A3DAD9 /* TFY_LayoutCategoryKit.h */,
+				FAA4CCAE56D8F12F12837EEE94346ADF /* Support Files */,
+				05F74EA6430E9641299039E8E0EA536D /* TFY_Categories */,
+				49F4DB04FBD1A262FBA75B6445021D7A /* TFY_Chain */,
+				E74B780278129116C006359C26A247E8 /* TFY_Tools */,
+			);
+			path = TFY_LayoutCategoryKit;
+			sourceTree = "<group>";
+		};
+		B9E155A212E0F6CEF325ED0ACF8CEE18 /* IOS_Layout */ = {
+			isa = PBXGroup;
+			children = (
+				A64A694EE790526E711FC6D53A57A73A /* UITableViewCell+TFY_AutoHeightForCell.h */,
+				B83A97FB26BA6E5E351318C6BD108F9F /* UITableViewCell+TFY_AutoHeightForCell.m */,
+				E6E0359FA45FF51536BD875D6B9A4CF8 /* UIView+TFY_AutoLayout.h */,
+				BBF293D6A3976C25F0AB09935355FB8B /* UIView+TFY_AutoLayout.m */,
+				8474F111CD46C75F4E8A715428C3EAC1 /* UIView+TFY_Frame.h */,
+				A9FD456FA4747AB95337A56CAA7BF859 /* UIView+TFY_Frame.m */,
+			);
+			name = IOS_Layout;
+			sourceTree = "<group>";
+		};
+		BAD0E4802E0778C6A148D4C1F2470F8E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				645EA5079A06BF00D983ADA8410828DF /* Pods-TFY_POPControllerKit */,
+				6E25F6C2B2264EC136B3359B22A7B118 /* Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests */,
+				359A6EBDB684A852E5BD0BA31A0B96CC /* Pods-TFY_POPControllerKitTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C80C342E7715640043F8CEE3642E1176 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D9FB864557ACF9F28290CFCD10BFEA88 /* Pods_TFY_POPControllerKit.framework */,
+				9540713BEE34632473DB6391101B16B4 /* Pods_TFY_POPControllerKit_TFY_POPControllerKitUITests.framework */,
+				B36A784D36F3048F12CF09F9C6BF0112 /* Pods_TFY_POPControllerKitTests.framework */,
+				1901CDF70D23A68CA0B9E02D2F70C422 /* TFY_AutoLayout.framework */,
+				1FF45DA6BD3263474314B951A5B7F5D3 /* TFY_LayoutCategoryKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				68C893BEE9FCB8B0BE0C4FF797BA2826 /* Pods */,
+				C80C342E7715640043F8CEE3642E1176 /* Products */,
+				BAD0E4802E0778C6A148D4C1F2470F8E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D3E33DF75A3C527DEE585E3FE6D48310 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				6E62A49CE723076EC2821E6745C1C0CE /* TFY_AutoLayoutHerder.h */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		DE7FA1553119D12568E9C720329F72F8 /* TFY_ChainBase */ = {
+			isa = PBXGroup;
+			children = (
+				D72807571B5EA7C2E9CE11FB70080AA3 /* TFY_ChainBaseModel.h */,
+				3D61ECB5563FC965FCBF23FCC379D34E /* TFY_ChainBaseModel.m */,
+				C85B74C245EA6CD81B7E021FD2C3EBED /* TFY_ChainBaseModel+TFY_Tools.h */,
+				BE318BBAE95B34230BB13406EFADB9E3 /* TFY_ChainDefine.h */,
+			);
+			name = TFY_ChainBase;
+			sourceTree = "<group>";
+		};
+		E41AD218759003717F73D98682E6C12A /* TFY_UI */ = {
+			isa = PBXGroup;
+			children = (
+				C91C2359C9683DFFA35A82A48F785793 /* TFY_UIHeader.h */,
+				8B9F0AF0908C9163F798FB6DAA4B404E /* UIButton+TFY_Tools.h */,
+				6C6D28DEBBED7B396F062B9585E6D071 /* UIButton+TFY_Tools.m */,
+				3BDA10CA2BD5665CAFF60AF3307E459E /* UIColor+TFY_Tools.h */,
+				BE62F185D9D372B1DA7C05E11BAC56D6 /* UIColor+TFY_Tools.m */,
+				077A9FE1D7213DF53CD655138EBFC093 /* UIGestureRecognizer+TFY_Tools.h */,
+				F6E174DC089C9E9FB07F6CF921C30A51 /* UIGestureRecognizer+TFY_Tools.m */,
+				ABA595E5CECE12B93F50573312A51C0E /* UIImage+TFY_Tools.h */,
+				6984214AC3F0EA5B37A011260D173591 /* UIImage+TFY_Tools.m */,
+				E73CCB8D3A01A61AE5E8F28D500ADAC5 /* UILabel+TFY_Tools.h */,
+				5D95DCFD520877C2AE4F716DCAEB79B1 /* UILabel+TFY_Tools.m */,
+				2C849D2C9302B66C903247FDF04D508E /* UIScrollView+TFY_Tools.h */,
+				7BFA9942875066712F213A2965A64600 /* UIScrollView+TFY_Tools.m */,
+				A4231D63617E8E86521765E530FB2ACA /* UITableView+TFY_LayoutCell.h */,
+				EE8ECBA8793EF1E122EF08CB21F266EF /* UITableView+TFY_LayoutCell.m */,
+				C7BEA6536ECAB6F606B3DD5DC6B03879 /* UITableViewCell+TFY_Chain.h */,
+				C3AD3FD8028F5CCD90ED88866E4B74E2 /* UITableViewCell+TFY_Chain.m */,
+				0BDDE7602A908547B79EFE7BF4C96344 /* UITextView+TFY_Tools.h */,
+				DC148054A32B855E1B7E00DFCBC452DF /* UITextView+TFY_Tools.m */,
+				B1D8C35593805ED7A7BA86A9C2EA5717 /* UIView+TFY_Tools.h */,
+				2F674580A72891C570691A411FB8BED5 /* UIView+TFY_Tools.m */,
+				4AE5F111155A115EF820043E303F32D8 /* UIViewController+TFY_Tools.h */,
+				D9B06A4FAB9C38046685198574AD42C9 /* UIViewController+TFY_Tools.m */,
+				B7478F0F6243B1074FEE74A92E462F72 /* WKWebView+TFY_Extension.h */,
+				36A9629EBD778D168BD04132F548F476 /* WKWebView+TFY_Extension.m */,
+			);
+			name = TFY_UI;
+			sourceTree = "<group>";
+		};
+		E74B780278129116C006359C26A247E8 /* TFY_Tools */ = {
+			isa = PBXGroup;
+			children = (
+				CA7D80C27BFB1589A893754240696A64 /* TFY_Scene.h */,
+				AD9BE372BC585F25E3F81BCFACA795BD /* TFY_Scene.m */,
+				63DEF5B11765F0451073D0A3E37C2DE5 /* TFY_Timer.h */,
+				5BFF9477C1B78F8A175E7751B67726CF /* TFY_Timer.m */,
+				053CD44E76F22A05CDFAF97C922811A2 /* TFY_ToolsHeader.h */,
+				0B178C2A7E5D6366BD2C5F0209174B16 /* TFY_Utils.h */,
+				C07559966453E0E14C2A1398659A5E5E /* TFY_Utils.m */,
+				3952953ECA0D27BBE8A9B3E0EDDE2D00 /* TFY_Video.h */,
+				E910E06045567F04A14F752B03C48FB4 /* TFY_Video.m */,
+				EA4F63706089BFEC6AE049A14335463E /* UIApplication+TFY_Tools.h */,
+				FEB3B5A0AC9D556DF25F10A5E3A0E02F /* UIApplication+TFY_Tools.m */,
+				7D3F24AE7E49AA921E78669CB4F03461 /* UIWindow+TFY_Tools.h */,
+				A2D71EAE490245160A5C02F35AC52436 /* UIWindow+TFY_Tools.m */,
+			);
+			name = TFY_Tools;
+			sourceTree = "<group>";
+		};
+		F481FC789E49A715FC202F240DC39636 /* TFY_Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				ED44C940DE6F0F4DE76D7F38AAC3FB65 /* NSArray+TFY_Tools.h */,
+				1B372E37363EE0D3C5368F55290D6D1C /* NSArray+TFY_Tools.m */,
+				E2396170DC2739EDB33AADFCB2DD2CC0 /* NSAttributedString+TFY_Tools.h */,
+				0A79E9B02FCDC5B904DE80B6D8EA0CE5 /* NSAttributedString+TFY_Tools.m */,
+				C4D33F56DFC947B1E72EB2F17CE27C4B /* NSData+TFY_Data.h */,
+				B813CBA5D692BC245F056303BD89F8D4 /* NSData+TFY_Data.m */,
+				9E98ED8A914FAC8BDA30A95A6BF96AD1 /* NSDate+TFY_Date.h */,
+				BCB7FD0967CF1D900FFA54E9777BA2D7 /* NSDate+TFY_Date.m */,
+				C33C86E503643F5A4F42BED1E7802521 /* NSDictionary+TFY_Tools.h */,
+				CC99CED28D5B35ABD5C85C5AE97A18B1 /* NSDictionary+TFY_Tools.m */,
+				B80047AFDAA399943BF26985029B16D0 /* NSFileManager+TFY_Tools.h */,
+				646F602DD7618432FCC042A7F79E0EAF /* NSFileManager+TFY_Tools.m */,
+				E2878D0614E87D40D4A70B358450CF10 /* NSNumber+TFY_Tools.h */,
+				670FCCB70E807B2EFC9B8A530F13D3D3 /* NSNumber+TFY_Tools.m */,
+				3BD04D82FBC369ED20C5413A3E9D53EF /* NSObject+TFY_Tools.h */,
+				3BADE62CDCF1470B7972FA73B35922EE /* NSObject+TFY_Tools.m */,
+				11B2FB3283B462EDDEBEDAEFC47535F9 /* NSString+TFY_String.h */,
+				BDA2CE69A377D8CD612904D0CE491A2B /* NSString+TFY_String.m */,
+				2DB2EC94B931DC7C0C00B39D218775BE /* NSTimer+TFY_Tools.h */,
+				392AF085D1BE80991AD4DD01CDC1D1E2 /* NSTimer+TFY_Tools.m */,
+				C9A11BE531569338AF3501FE0E2C0844 /* TFY_FoundationHeader.h */,
+				4A4C80CD73882B3D0DB9D83364109F12 /* UIAlertController+TFY_Chain.h */,
+				9D54EDA5017C6193E334CE011DA68075 /* UIAlertController+TFY_Chain.m */,
+				25D5AB8A7DBDABA5354B8C081FE4F002 /* UIControl+TFY_Tools.h */,
+				DDF6BD4AC0DDD70E3654E09AEF497B0E /* UIControl+TFY_Tools.m */,
+				F79CF5E2B4C80214F1B1CA0658F19E0B /* UIDevice+TFY_Tools.h */,
+				701ADFC584CAA48C5987970283FCB01F /* UIDevice+TFY_Tools.m */,
+				856CBE082422E2E644E6B7A17FBA8B30 /* UIFont+TFY_Tools.h */,
+				FF9915205EB9BE7DC31F91DFB0EA2222 /* UIFont+TFY_Tools.m */,
+				EA7B99B90C8AFDAD83BA5E5BAB5BFA2A /* UIScreen+TFY_Tools.h */,
+				A0AE69943A679566621D658E78400823 /* UIScreen+TFY_Tools.m */,
+				861E98D23583C79755D08091AAF149E0 /* UITextField+TFY_Tools.h */,
+				752C08FE2CBFD82616C3142F1FF29CCA /* UITextField+TFY_Tools.m */,
+			);
+			name = TFY_Foundation;
+			sourceTree = "<group>";
+		};
+		FAA4CCAE56D8F12F12837EEE94346ADF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				04C8B277CDD12DB2B7E8C398D1A491CC /* TFY_LayoutCategoryKit.modulemap */,
+				68959D9B19CD47554426EB392705A7F9 /* TFY_LayoutCategoryKit-dummy.m */,
+				4AE3D4D783A8F14F250A3A14DD9A7E82 /* TFY_LayoutCategoryKit-Info.plist */,
+				9EFA2076FBB6D6B4A0BBA0BE857E9158 /* TFY_LayoutCategoryKit-prefix.pch */,
+				BA36A7EB12917D1E1AF36405E26F8A6B /* TFY_LayoutCategoryKit-umbrella.h */,
+				DCB0BEAA5762C2E3FBAEF63125AAF06E /* TFY_LayoutCategoryKit.debug.xcconfig */,
+				EBE0F08BFCE80A4FF53988D42E4AA9BC /* TFY_LayoutCategoryKit.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TFY_LayoutCategoryKit";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5206A5B18226449BB95B34B0E4CA0EAB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01821FF0C23B1936015A4FDCF7EF1339 /* Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86DCCF4F63CF96AD7666F1C97FECD881 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF68728837299DA304B9503F71EEFBD6 /* CALayer+TFY_Chain.h in Headers */,
+				F261260D273989B8DCAD6B9694D5B1EC /* NSArray+TFY_Tools.h in Headers */,
+				C3C29DB4C7697F1EF06D45F32568B30D /* NSAttributedString+TFY_Tools.h in Headers */,
+				85D28F9A06CED6C6CC5D63AEE44789AE /* NSData+TFY_Data.h in Headers */,
+				715CA05FC2820EE179019C0C263B6C0B /* NSDate+TFY_Date.h in Headers */,
+				9211F7A26B20DED094BA669AB0038C24 /* NSDictionary+TFY_Tools.h in Headers */,
+				53D658BC346B8FAD24E9F9BBD89FCA16 /* NSFileManager+TFY_Tools.h in Headers */,
+				3A8F1DA72824E9530619E75BCFE867FD /* NSNumber+TFY_Tools.h in Headers */,
+				7A7D9B432D9311AFB0FF35278653127E /* NSObject+TFY_Tools.h in Headers */,
+				BC93B84DACD176C0530863DF7422BD20 /* NSString+TFY_String.h in Headers */,
+				62ED30CEE29B04ECB523F368AF6BE7C6 /* NSTimer+TFY_Tools.h in Headers */,
+				2E787D55FA12580FD1017074ED2897FE /* TFY_ActivityIndicatorViewModel.h in Headers */,
+				E5BC2F6A7E22C6532B4DDB6A121912FE /* TFY_BaseControlChainModel.h in Headers */,
+				2B99F2664C3BB4760C01010E17690EC8 /* TFY_BaseGestureChainModel.h in Headers */,
+				7340832E5F99EF3466135D3F386831DB /* TFY_BaseLayerChainModel.h in Headers */,
+				DE153DB90F5E5B0DFF01CF57FEDFCBB4 /* TFY_BaseScrollViewChainModel.h in Headers */,
+				496CE80FDBE97C707D5AAD3BB3776206 /* TFY_BaseViewChainModel+Masonry.h in Headers */,
+				C7F9F6B5BBF63580D21691C24D26230C /* TFY_BaseViewChainModel.h in Headers */,
+				3099EBA4484CADEAEC95CB842260DBD6 /* TFY_ButtonChainModel.h in Headers */,
+				95AD6433FA8406CDBA3317AB144089B3 /* TFY_CategoriesHeader.h in Headers */,
+				20E903B3C2C2B8F899CB5136A6587228 /* TFY_ChainBaseModel+TFY_Tools.h in Headers */,
+				EAB7B1BE4BECA37CEDE8C047DBA8FD8A /* TFY_ChainBaseModel.h in Headers */,
+				D9F6F7143B93D7EADC50AFFB6F6974F4 /* TFY_ChainDefine.h in Headers */,
+				3A7FD807F1D902BB686131F568DBD6D0 /* TFY_ChainHeader.h in Headers */,
+				BA5FD2028107EFC23BB4DF1D51719F3B /* TFY_CollectionViewChainModel.h in Headers */,
+				0E2879E24C05E6AB15F3342DF3491419 /* TFY_ControlChainModel.h in Headers */,
+				557CD4650D17CC08F2B5E1C24FA7A9EE /* TFY_DatePickerViewChainModel.h in Headers */,
+				B09EE7F47A2F3D2CC9E2E431004ABDAD /* TFY_Define.h in Headers */,
+				3DD0F65B87A4513F9C6D8FEE78865FE0 /* TFY_EmiiterLayerChainModel.h in Headers */,
+				796443B562006786A1B098DA68206135 /* TFY_FoundationHeader.h in Headers */,
+				BEE89A4B9AAAF59B434A88DFC5AD7D70 /* TFY_GestureChainHeader.h in Headers */,
+				EEE01AEFCBC57BED23E356825C24CDDD /* TFY_GradientLayerChainModel.h in Headers */,
+				072039F33B4C068B1CAB4CD5255B7CB6 /* TFY_ImageViewChainModel.h in Headers */,
+				3F07EC3C1E9480B28DF0C9C7C6D2043E /* TFY_LabelChainModel.h in Headers */,
+				71DDF9F78BB5ABD1DFFBE6B9A8678B30 /* TFY_LayerChainHeader.h in Headers */,
+				8FC057F0C214FC3727080FC42E04A49A /* TFY_LayerChainModel.h in Headers */,
+				7BE95366D60B9ED3627EC2C0C3D6BE3F /* TFY_LayoutCategoryKit-umbrella.h in Headers */,
+				02145D7FA68D8C2E1AAE2DD7C5E17DFC /* TFY_LayoutCategoryKit.h in Headers */,
+				440B14C9F3A0A8B1FFD47B19790B2C0A /* TFY_LongPressGestureChainModel.h in Headers */,
+				C94E95571DE8559A144F43F6AFBCA61F /* TFY_PanGestureChainModel.h in Headers */,
+				EB33E980C15DFF2D93973F97EDC44A76 /* TFY_PickerViewChainModel.h in Headers */,
+				5D0DF622C511E243066C7F1DDD2237FC /* TFY_PinchGestureChainModel.h in Headers */,
+				0834942C8551807F8BE6A745158D73FB /* TFY_ProgressViewChainModel.h in Headers */,
+				13159C401134180542095D16247B7E2F /* TFY_ReplicatorLayerChainModel.h in Headers */,
+				A191F6F37D3A71E72BA3DF380E5952D9 /* TFY_RotationGestureChainModel.h in Headers */,
+				0D76BDAB4B991D9CCB4D598969A40469 /* TFY_Scene.h in Headers */,
+				5C9D8115610249FAD43A8AAFBDA56AAE /* TFY_ScrollLayerChainModel.h in Headers */,
+				0C0AA518F2034F308ABDE4F6AF2ABBDD /* TFY_ScrollViewChainModel.h in Headers */,
+				3B9BE316ECB49BDA9E998FFBE3E2852B /* TFY_SegmentedControlChainModel.h in Headers */,
+				47C51FFB4C88F5A63B804390F8949361 /* TFY_ShaperLayerChainModel.h in Headers */,
+				41F99C36AD37A9003D00CF7C2ED772FE /* TFY_SliderViewChainModel.h in Headers */,
+				324FD2BDF322965E8BA763190407EA66 /* TFY_SwipeGestureChainModel.h in Headers */,
+				321E6C1A3282B6E2A1F077E22128D132 /* TFY_SwitchChainModel.h in Headers */,
+				D35179BCFB35D6BC5CFEC06E999B6DEE /* TFY_TableViewCellChainModel.h in Headers */,
+				1D6F75B67E3CE98C125F9B15B154AFE5 /* TFY_TableViewChainModel.h in Headers */,
+				EA80AA27DCDDB14668962A6AF502683D /* TFY_TapGestureChainModel.h in Headers */,
+				4756D783C3ED0B958071ADCAF58D3AEE /* TFY_TextFieldChainModel.h in Headers */,
+				BEEBA5AF3668BA7A3C604F4D30076F5F /* TFY_TextLayerChainModel.h in Headers */,
+				33BFA9F0F0F88E6176953E5BF83D0B84 /* TFY_TextViewChainModel.h in Headers */,
+				5D4BD15BD39B731E65B9636A76523AEF /* TFY_TiledLayerChainModel.h in Headers */,
+				E4124A6562586664192CA733DC8C8080 /* TFY_Timer.h in Headers */,
+				2E715095AC26FBE0256BAC543A4820AD /* TFY_ToolsHeader.h in Headers */,
+				35D312B7685563B8D18E934D3CF07296 /* TFY_TransFormLayerChainModel.h in Headers */,
+				39ECCD5368A7D315DC60394C863DC003 /* TFY_UIHeader.h in Headers */,
+				0DE7036976E8101ED6F81C0A15928F69 /* TFY_Utils.h in Headers */,
+				66DC106DB999C5C5B09CD118EF7E6A7D /* TFY_Video.h in Headers */,
+				E34336E8CEE5F49F4B1551B3C008ABDF /* TFY_ViewChainModel.h in Headers */,
+				43E68B0F088DF5BD3CB0935DA567B181 /* TFY_ViewHeader.h in Headers */,
+				DCE744EE3F3AC6FC44AF8714716904DD /* TFY_VisualEffectViewChainModel.h in Headers */,
+				85AB29E3495D37BF5C5CB5FBDE77C591 /* TFY_WebViewChainModel.h in Headers */,
+				F8E8D95BA2F707C03CC8D92B8660FFEC /* UIAlertController+TFY_Chain.h in Headers */,
+				48C5605753F65B4CD030806EDAD537BC /* UIApplication+TFY_Tools.h in Headers */,
+				ABD39ED9230C6148F1E4F82FFDDCAA30 /* UIButton+TFY_Tools.h in Headers */,
+				2A2F8D4D042A03C7B307F075EC1DBD38 /* UIColor+TFY_Tools.h in Headers */,
+				E24BCB06025486D07E85E2EE8BB464BA /* UIControl+TFY_Tools.h in Headers */,
+				08DEF64C18C60C2ACF7DC3B15830B6D6 /* UIDevice+TFY_Tools.h in Headers */,
+				A296D86113A3434D581F2C2B41F082EA /* UIFont+TFY_Tools.h in Headers */,
+				97642A0A94B6F347AA45704FC932E196 /* UIGestureRecognizer+TFY_Tools.h in Headers */,
+				9D819580C37463EF62CB09A5BB646466 /* UIImage+TFY_Tools.h in Headers */,
+				8AEDFFB39ED8CE2878EAE3F6294074A8 /* UILabel+TFY_Tools.h in Headers */,
+				CC849CF2A9D6B250BC41C6F369AF3BA6 /* UIScreen+TFY_Tools.h in Headers */,
+				3A096C6FB43CBAFE8776E9AFB43DBC3F /* UIScrollView+TFY_Tools.h in Headers */,
+				C42E57270D59D2F780A9C4BB4AE286DD /* UITableView+TFY_LayoutCell.h in Headers */,
+				E5725E27D8DC579A62C0A480F97393A6 /* UITableViewCell+TFY_Chain.h in Headers */,
+				567670B2D0786598B1790952C0104ED6 /* UITextField+TFY_Tools.h in Headers */,
+				452D81DA087FCA9136593B0AD6CB8D88 /* UITextView+TFY_Tools.h in Headers */,
+				FDD6277F335D4568785188EFCE9DF8A8 /* UIView+TFY_Chain.h in Headers */,
+				2773CD20704221E52D7EE637A5BEBE98 /* UIView+TFY_Tools.h in Headers */,
+				BF10B3C6C483160FD7DD17CAE4849E45 /* UIViewController+TFY_Tools.h in Headers */,
+				0F0B61A0B21DAAC2C3FBCC5D626616BE /* UIWindow+TFY_Tools.h in Headers */,
+				E25E54476697CC8C3C2D22208BF8D09D /* WKWebView+TFY_Extension.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBDA00A41472150364997FA105F7D718 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6F324CC5979E98B46D61D19458A17A7 /* Pods-TFY_POPControllerKitTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEBED19496A5808F101A3F6AA6305073 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14E2C98F1D2893FCB201AD623D9646DA /* CALayer+TFY_Frame.h in Headers */,
+				ACDE11F3396988A3D68AB96CC5623B5A /* TFY_AutoLayout-umbrella.h in Headers */,
+				3CC58ED68FFB9E8F5AC28FDFEF47B39B /* TFY_AutoLayout.h in Headers */,
+				E2A412918AA3A0A13EBB4380690D3CA0 /* TFY_AutoLayoutHerder.h in Headers */,
+				91B52B120C279C743F33EAD4B76D429E /* UILayoutGuide+TFY_AutoLayout.h in Headers */,
+				84C60702D1BC9B7D20B3BDA3F7DEB112 /* UITableViewCell+TFY_AutoHeightForCell.h in Headers */,
+				160FC0651E54CE2AFDD4DCF0BF58D722 /* UIView+TFY_AutoLayout.h in Headers */,
+				30FF5BACB6A27A587DF185639E1C3B83 /* UIView+TFY_Frame.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3016884FF58ACEF2543B41037D4ABFB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				244E3DCB70C15E434DDAEF604D8367E9 /* Pods-TFY_POPControllerKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		317D10A38D199CFB6B8630CC267AB458 /* Pods-TFY_POPControllerKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C37020FB5CC7B90FAE7F72063604AC4 /* Build configuration list for PBXNativeTarget "Pods-TFY_POPControllerKit" */;
+			buildPhases = (
+				E3016884FF58ACEF2543B41037D4ABFB /* Headers */,
+				1745BBE193C9EFBA15B742467F964F51 /* Sources */,
+				B095AF06D5A9B97334C42F809E6A19EF /* Frameworks */,
+				E5CA9D712974035E58A4A7DCB0F2A3BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B902798032253BA3CDD6B2ECE6374D90 /* PBXTargetDependency */,
+				CE03948C7451D72EFB428622AA899EE4 /* PBXTargetDependency */,
+			);
+			name = "Pods-TFY_POPControllerKit";
+			productName = "Pods-TFY_POPControllerKit";
+			productReference = D9FB864557ACF9F28290CFCD10BFEA88 /* Pods_TFY_POPControllerKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7EF12A99602C111268F084CD322781AD /* Pods-TFY_POPControllerKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D69101FF90756B7C88351AFB187335E0 /* Build configuration list for PBXNativeTarget "Pods-TFY_POPControllerKitTests" */;
+			buildPhases = (
+				BBDA00A41472150364997FA105F7D718 /* Headers */,
+				52B10BDE55165F0ACA93CA356A6D08E1 /* Sources */,
+				4C5782FE4D7D18BEE5620A9D7421DA5A /* Frameworks */,
+				B1D252544705E26A53F6FD30C8AD6768 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB1B44ED55FCABCA0B8EF21504460A5D /* PBXTargetDependency */,
+			);
+			name = "Pods-TFY_POPControllerKitTests";
+			productName = "Pods-TFY_POPControllerKitTests";
+			productReference = B36A784D36F3048F12CF09F9C6BF0112 /* Pods_TFY_POPControllerKitTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9E76FB4A93BC2ADB548F9935D98A4E2C /* TFY_AutoLayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA2BD55CD2C81DD2452C070BF4CA01A1 /* Build configuration list for PBXNativeTarget "TFY_AutoLayout" */;
+			buildPhases = (
+				DEBED19496A5808F101A3F6AA6305073 /* Headers */,
+				5EDE15C56D9341FF08CA03496424CD98 /* Sources */,
+				F07950B655670537139F34260C1ACE79 /* Frameworks */,
+				2AC68618FEA38CCDEC3FEF7D341D44BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TFY_AutoLayout;
+			productName = TFY_AutoLayout;
+			productReference = 1901CDF70D23A68CA0B9E02D2F70C422 /* TFY_AutoLayout.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D08D22F5551C5F9ABB28FB0E702B65FA /* Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60767369D1DDE11E7ACF619A5A4236A4 /* Build configuration list for PBXNativeTarget "Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests" */;
+			buildPhases = (
+				5206A5B18226449BB95B34B0E4CA0EAB /* Headers */,
+				E4AD3577B601710F43FE4056C40867B1 /* Sources */,
+				2B5ABAED71A5261C557F2B9078BD7F9B /* Frameworks */,
+				186492F8E9CDBB0CFD4A182AFEADE390 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E95EC0419E86E721EE7743F40AD37418 /* PBXTargetDependency */,
+				E9163BBBA9CD98E48F713254DD31AA1F /* PBXTargetDependency */,
+			);
+			name = "Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests";
+			productName = "Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests";
+			productReference = 9540713BEE34632473DB6391101B16B4 /* Pods_TFY_POPControllerKit_TFY_POPControllerKitUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EB38751CB9B6AE62A4CBCBDA7BDC7A8A /* TFY_LayoutCategoryKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 759E3F0FEC1E65564324AF592A95D3B7 /* Build configuration list for PBXNativeTarget "TFY_LayoutCategoryKit" */;
+			buildPhases = (
+				86DCCF4F63CF96AD7666F1C97FECD881 /* Headers */,
+				1081E2215FD23D2F54A56477837DE380 /* Sources */,
+				8621BCA4B44919DBE2B5FCC52D0D118A /* Frameworks */,
+				B10AC85746E43411DCDA0E6CEC186060 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TFY_LayoutCategoryKit;
+			productName = TFY_LayoutCategoryKit;
+			productReference = 1FF45DA6BD3263474314B951A5B7F5D3 /* TFY_LayoutCategoryKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1210;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = C80C342E7715640043F8CEE3642E1176 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				317D10A38D199CFB6B8630CC267AB458 /* Pods-TFY_POPControllerKit */,
+				D08D22F5551C5F9ABB28FB0E702B65FA /* Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests */,
+				7EF12A99602C111268F084CD322781AD /* Pods-TFY_POPControllerKitTests */,
+				9E76FB4A93BC2ADB548F9935D98A4E2C /* TFY_AutoLayout */,
+				EB38751CB9B6AE62A4CBCBDA7BDC7A8A /* TFY_LayoutCategoryKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		186492F8E9CDBB0CFD4A182AFEADE390 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AC68618FEA38CCDEC3FEF7D341D44BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B10AC85746E43411DCDA0E6CEC186060 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1D252544705E26A53F6FD30C8AD6768 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5CA9D712974035E58A4A7DCB0F2A3BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1081E2215FD23D2F54A56477837DE380 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECB52837378BD038F58AACF55323F1EE /* CALayer+TFY_Chain.m in Sources */,
+				DB761A7D0930D46F4BCE1F714D9A6C17 /* NSArray+TFY_Tools.m in Sources */,
+				A9585B581B420A7DE7497963294CD7DA /* NSAttributedString+TFY_Tools.m in Sources */,
+				55E33106A223D3EBF2C655172530ECF5 /* NSData+TFY_Data.m in Sources */,
+				DD0965102247F4AF1F193468BCD0D37C /* NSDate+TFY_Date.m in Sources */,
+				E9215AA809A16E77D13FA6A26F9108F2 /* NSDictionary+TFY_Tools.m in Sources */,
+				1A22D792798A8995AECB0F7F94CB7011 /* NSFileManager+TFY_Tools.m in Sources */,
+				0FA627FEB822B03EA6DAE59A7C61A01D /* NSNumber+TFY_Tools.m in Sources */,
+				9EB550453E53EB1F48CFDA47B795952B /* NSObject+TFY_Tools.m in Sources */,
+				F9CDCED83085AACA14C1B82380E4C6B8 /* NSString+TFY_String.m in Sources */,
+				D980818C645EFF098F1144AB993BD674 /* NSTimer+TFY_Tools.m in Sources */,
+				B25075F4298944A18D9B7185A41ECB81 /* TFY_ActivityIndicatorViewModel.m in Sources */,
+				C23D512EA0098FBD8FF9AFC3082825B3 /* TFY_BaseControlChainModel.m in Sources */,
+				5E317F23F2FBBC7F1A39A041087C962A /* TFY_BaseGestureChainModel.m in Sources */,
+				CCB35FD3965A9758CE21A5D2B3CAD5AB /* TFY_BaseLayerChainModel.m in Sources */,
+				D12E0DCEDE5AD40F16CB4C3D1241C242 /* TFY_BaseScrollViewChainModel.m in Sources */,
+				E3230E4B271584BF24D3424144D00572 /* TFY_BaseViewChainModel+Masonry.m in Sources */,
+				39DABA535D0805F812CE05ADE0D00FB3 /* TFY_BaseViewChainModel.m in Sources */,
+				31BE834AFA7F1E425D62A0888BF70AF6 /* TFY_ButtonChainModel.m in Sources */,
+				A792A3AF3A0F24A1B759194131EEFE97 /* TFY_ChainBaseModel.m in Sources */,
+				439C55038170C4812A1EADF7B52832FF /* TFY_CollectionViewChainModel.m in Sources */,
+				04B33CB0BC41BFD99552AD1821428366 /* TFY_ControlChainModel.m in Sources */,
+				78182098EF8A2E365E72F6EBDEBB93D3 /* TFY_DatePickerViewChainModel.m in Sources */,
+				C35D0CB6AA6DDB3B66433734DD9E90AB /* TFY_EmiiterLayerChainModel.m in Sources */,
+				59AACEDAE67F930F7872D16D082EB5CB /* TFY_GradientLayerChainModel.m in Sources */,
+				C97C78081AE9577AC1CB9C3CE42AB9D6 /* TFY_ImageViewChainModel.m in Sources */,
+				1A2B3BCE15BC2206954882FFE3F25656 /* TFY_LabelChainModel.m in Sources */,
+				45A3FCAE484AF98D6733B0D94F55D1C5 /* TFY_LayerChainModel.m in Sources */,
+				B53E27A109A7100C5D06C0B3C969E3CC /* TFY_LayoutCategoryKit-dummy.m in Sources */,
+				A718F406EF1E5903C19D95F0AD30E9B0 /* TFY_LongPressGestureChainModel.m in Sources */,
+				B760C4F5333EEDC39C72CC2ABCBC2E6A /* TFY_PanGestureChainModel.m in Sources */,
+				2BE24024577227E770DA41168CCB5141 /* TFY_PickerViewChainModel.m in Sources */,
+				99F360D363B6EE54050C76281919E0AD /* TFY_PinchGestureChainModel.m in Sources */,
+				194E2058FD21D0826C47D853BF522D5E /* TFY_ProgressViewChainModel.m in Sources */,
+				935B6DAC73468B0BB13CC938C0FED962 /* TFY_ReplicatorLayerChainModel.m in Sources */,
+				EF2AE7B256CEEF5A362E09E602733549 /* TFY_RotationGestureChainModel.m in Sources */,
+				DB1CB6DB7C3A464BB406A01DA796CA40 /* TFY_Scene.m in Sources */,
+				06089C12E2B975BE3190A53E08E5D331 /* TFY_ScrollLayerChainModel.m in Sources */,
+				178E9D6C98D7DF9839A7CA5BB4E828B5 /* TFY_ScrollViewChainModel.m in Sources */,
+				7491132B875181F82DE6B8E1E624BD73 /* TFY_SegmentedControlChainModel.m in Sources */,
+				71AFBAF9460E83120003690BFE2871AC /* TFY_ShaperLayerChainModel.m in Sources */,
+				12C6E1B090D2CF4324BD3F316A3772A7 /* TFY_SliderViewChainModel.m in Sources */,
+				9CD6E3B0822E521E9266DBE3E2D0A201 /* TFY_SwipeGestureChainModel.m in Sources */,
+				1F51CC1F39546072D1DEFDC9C34BC287 /* TFY_SwitchChainModel.m in Sources */,
+				BDE7A01C18595A2AC854ECE86E157C97 /* TFY_TableViewCellChainModel.m in Sources */,
+				A5ACC9EEB66263B18E04A63C9E0231E0 /* TFY_TableViewChainModel.m in Sources */,
+				12A3BF44906DDE3A4B3BA8B48195FB0B /* TFY_TapGestureChainModel.m in Sources */,
+				F450F83B5061D39BEB654B2C5DE5691B /* TFY_TextFieldChainModel.m in Sources */,
+				EF3A224018D98A6390AA31CECABD987C /* TFY_TextLayerChainModel.m in Sources */,
+				DC1842E9B5AF6DE076DDDBE6C094AD4B /* TFY_TextViewChainModel.m in Sources */,
+				34BB0190A0B41984DE999F790B3D179C /* TFY_TiledLayerChainModel.m in Sources */,
+				EBF76B7A2AE1C1F12A38C2DDA365D37E /* TFY_Timer.m in Sources */,
+				899E5995D516754AFD444C1FF8556406 /* TFY_TransFormLayerChainModel.m in Sources */,
+				9E64329837CA3D718D7B6F7B07DE00BE /* TFY_Utils.m in Sources */,
+				63C291BB79BDE819D64A73E761E58416 /* TFY_Video.m in Sources */,
+				F2BA9B35A45CA927F184F7304123C351 /* TFY_ViewChainModel.m in Sources */,
+				64C36B22BBD2D5647974408AC2E0F13E /* TFY_VisualEffectViewChainModel.m in Sources */,
+				D61C8B119F51E4B1F29B9745D44FD6D7 /* TFY_WebViewChainModel.m in Sources */,
+				71A9DC360872542DE0C4D0505233C298 /* UIAlertController+TFY_Chain.m in Sources */,
+				2D370F2F46F42728BBB784B61C9DDBFD /* UIApplication+TFY_Tools.m in Sources */,
+				0B7A3114D9590518B47E289F91B52526 /* UIButton+TFY_Tools.m in Sources */,
+				A02BA477E4896815AB51C170F55BC3A5 /* UIColor+TFY_Tools.m in Sources */,
+				7E969B47AF1F6FB427BE39B9EE472FEF /* UIControl+TFY_Tools.m in Sources */,
+				21BF1AF6AF9272ABC140830C38F28573 /* UIDevice+TFY_Tools.m in Sources */,
+				73C8F1D49095A14CCE35E1DADCC817DD /* UIFont+TFY_Tools.m in Sources */,
+				FB9AEBB56A2251F390FC32DE4BC5C5D4 /* UIGestureRecognizer+TFY_Tools.m in Sources */,
+				A80590567FB057088A44F0C37D1EEA94 /* UIImage+TFY_Tools.m in Sources */,
+				EEB680AC29FEE3328967E2FDBFC18676 /* UILabel+TFY_Tools.m in Sources */,
+				B0CAD2D7B8E55D301C5FF590221F6189 /* UIScreen+TFY_Tools.m in Sources */,
+				C40A96B0023BB6BAF47A1BFC5520BD34 /* UIScrollView+TFY_Tools.m in Sources */,
+				565FC8A96BAA738D1E32DC4DC89C770D /* UITableView+TFY_LayoutCell.m in Sources */,
+				0247BBFDF9A1912298366F6E061CF883 /* UITableViewCell+TFY_Chain.m in Sources */,
+				20B76EF20AB979B5286A510DA0B0F6F4 /* UITextField+TFY_Tools.m in Sources */,
+				13AAB86F92B9B5EE55FB55A1656149A9 /* UITextView+TFY_Tools.m in Sources */,
+				C5C50E4691129792B3F3A5896C619376 /* UIView+TFY_Chain.m in Sources */,
+				D9DA8DC55891ECC72E5E42EC47608440 /* UIView+TFY_Tools.m in Sources */,
+				5E55EF416D2CB1AA6830AC4BEB19CD1C /* UIViewController+TFY_Tools.m in Sources */,
+				28F3CD257732028E62AEA31506B903AD /* UIWindow+TFY_Tools.m in Sources */,
+				5957E74326D82670D031FB7F5B516494 /* WKWebView+TFY_Extension.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1745BBE193C9EFBA15B742467F964F51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				014EED78AF0D6D8062862E18455AA1A9 /* Pods-TFY_POPControllerKit-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52B10BDE55165F0ACA93CA356A6D08E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9633756EB3C588AE53AA718850788559 /* Pods-TFY_POPControllerKitTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EDE15C56D9341FF08CA03496424CD98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				651369F92C28B1DB321BB0107E35D8AF /* CALayer+TFY_Frame.m in Sources */,
+				FA61D28ECD5E79A49713289E4925C734 /* TFY_AutoLayout-dummy.m in Sources */,
+				EA0DC5FD0810BE278AFB6E334BF8FD90 /* UILayoutGuide+TFY_AutoLayout.m in Sources */,
+				5BE23D40EA8AF5641BF3C175A035951B /* UITableViewCell+TFY_AutoHeightForCell.m in Sources */,
+				646B86D03ABC71A38806C20BFC709536 /* UIView+TFY_AutoLayout.m in Sources */,
+				E97F7D6526F4AD2FBF3911968E1D2109 /* UIView+TFY_Frame.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4AD3577B601710F43FE4056C40867B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48058D953CD31F9F1A07BEAA5EA61694 /* Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B902798032253BA3CDD6B2ECE6374D90 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TFY_AutoLayout;
+			target = 9E76FB4A93BC2ADB548F9935D98A4E2C /* TFY_AutoLayout */;
+			targetProxy = DAF7FF6ED10872B5CB5A82EEEAE4FAD6 /* PBXContainerItemProxy */;
+		};
+		CE03948C7451D72EFB428622AA899EE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TFY_LayoutCategoryKit;
+			target = EB38751CB9B6AE62A4CBCBDA7BDC7A8A /* TFY_LayoutCategoryKit */;
+			targetProxy = 78A44F262A2881D79C6BC658BB3F44C0 /* PBXContainerItemProxy */;
+		};
+		E9163BBBA9CD98E48F713254DD31AA1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TFY_LayoutCategoryKit;
+			target = EB38751CB9B6AE62A4CBCBDA7BDC7A8A /* TFY_LayoutCategoryKit */;
+			targetProxy = AF2846649F6F2CCFA0317003852BDD97 /* PBXContainerItemProxy */;
+		};
+		E95EC0419E86E721EE7743F40AD37418 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TFY_AutoLayout;
+			target = 9E76FB4A93BC2ADB548F9935D98A4E2C /* TFY_AutoLayout */;
+			targetProxy = D3D5F6BD7AFC37BC3D72C93AE7A446B3 /* PBXContainerItemProxy */;
+		};
+		FB1B44ED55FCABCA0B8EF21504460A5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-TFY_POPControllerKit";
+			target = 317D10A38D199CFB6B8630CC267AB458 /* Pods-TFY_POPControllerKit */;
+			targetProxy = 60D59E0041A2DC702ED65EF3719427A2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2B9E26EAE2CD392AD762421F663075A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		47EB3DDA8CDAA2A71061DEDAD09AE257 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DCAEAD2CD0953BBA1A78C48835B67E3 /* TFY_AutoLayout.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TFY_AutoLayout/TFY_AutoLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TFY_AutoLayout/TFY_AutoLayout-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TFY_AutoLayout/TFY_AutoLayout.modulemap";
+				PRODUCT_MODULE_NAME = TFY_AutoLayout;
+				PRODUCT_NAME = TFY_AutoLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		682B93398C5CBAE3C5E68CA1A4EE00B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCB0BEAA5762C2E3FBAEF63125AAF06E /* TFY_LayoutCategoryKit.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TFY_LayoutCategoryKit/TFY_LayoutCategoryKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TFY_LayoutCategoryKit/TFY_LayoutCategoryKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TFY_LayoutCategoryKit/TFY_LayoutCategoryKit.modulemap";
+				PRODUCT_MODULE_NAME = TFY_LayoutCategoryKit;
+				PRODUCT_NAME = TFY_LayoutCategoryKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6D6B1A35257B5789F1F0C106588C01C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBE0F08BFCE80A4FF53988D42E4AA9BC /* TFY_LayoutCategoryKit.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TFY_LayoutCategoryKit/TFY_LayoutCategoryKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TFY_LayoutCategoryKit/TFY_LayoutCategoryKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TFY_LayoutCategoryKit/TFY_LayoutCategoryKit.modulemap";
+				PRODUCT_MODULE_NAME = TFY_LayoutCategoryKit;
+				PRODUCT_NAME = TFY_LayoutCategoryKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7FCF32355628696D9F52D212692EFA6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F6B50A4F0F10D916AEA437E44AD65ED /* Pods-TFY_POPControllerKitTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TFY_POPControllerKitTests/Pods-TFY_POPControllerKitTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TFY_POPControllerKitTests/Pods-TFY_POPControllerKitTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8374CF9317593AD5B73618AEE6157758 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 693C593C3A0BE659440A85E2A40181D4 /* Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests/Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests/Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		86ED817C185BDF64AA31C3895E5A35CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87E993C715C948D901B27A7806B07B3E /* Pods-TFY_POPControllerKit.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TFY_POPControllerKit/Pods-TFY_POPControllerKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TFY_POPControllerKit/Pods-TFY_POPControllerKit.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9FC62020544FC02133C8CB87620B8E99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF379946CDE3AB285B68244406B4B8E7 /* Pods-TFY_POPControllerKit.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TFY_POPControllerKit/Pods-TFY_POPControllerKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TFY_POPControllerKit/Pods-TFY_POPControllerKit.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AE0F9DB38D1E22D3C72A7141B6894A1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31C417EFDCECA68925807AC5383452B2 /* Pods-TFY_POPControllerKitTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TFY_POPControllerKitTests/Pods-TFY_POPControllerKitTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TFY_POPControllerKitTests/Pods-TFY_POPControllerKitTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BB2A2F380614885F6F6EEDCB8710BE72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B00A62817E87E8324BD34164D7F6A0E6 /* Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests/Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests/Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C67D0C64AA32E3B9CA61C9BA7AC030C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8C9AC52218EFCFC5624757994ACCFCA /* TFY_AutoLayout.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TFY_AutoLayout/TFY_AutoLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TFY_AutoLayout/TFY_AutoLayout-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TFY_AutoLayout/TFY_AutoLayout.modulemap";
+				PRODUCT_MODULE_NAME = TFY_AutoLayout;
+				PRODUCT_NAME = TFY_AutoLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0C37020FB5CC7B90FAE7F72063604AC4 /* Build configuration list for PBXNativeTarget "Pods-TFY_POPControllerKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86ED817C185BDF64AA31C3895E5A35CC /* Debug */,
+				9FC62020544FC02133C8CB87620B8E99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B9E26EAE2CD392AD762421F663075A1 /* Debug */,
+				63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60767369D1DDE11E7ACF619A5A4236A4 /* Build configuration list for PBXNativeTarget "Pods-TFY_POPControllerKit-TFY_POPControllerKitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB2A2F380614885F6F6EEDCB8710BE72 /* Debug */,
+				8374CF9317593AD5B73618AEE6157758 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		759E3F0FEC1E65564324AF592A95D3B7 /* Build configuration list for PBXNativeTarget "TFY_LayoutCategoryKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				682B93398C5CBAE3C5E68CA1A4EE00B5 /* Debug */,
+				6D6B1A35257B5789F1F0C106588C01C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA2BD55CD2C81DD2452C070BF4CA01A1 /* Build configuration list for PBXNativeTarget "TFY_AutoLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C67D0C64AA32E3B9CA61C9BA7AC030C7 /* Debug */,
+				47EB3DDA8CDAA2A71061DEDAD09AE257 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D69101FF90756B7C88351AFB187335E0 /* Build configuration list for PBXNativeTarget "Pods-TFY_POPControllerKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FCF32355628696D9F52D212692EFA6B /* Debug */,
+				AE0F9DB38D1E22D3C72A7141B6894A1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_TFY_POPControllerKit_TFY_POPControllerKitUITests : NSObject
+@end
+@implementation PodsDummy_Pods_TFY_POPControllerKit_TFY_POPControllerKitUITests
+@end
