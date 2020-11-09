@@ -405,9 +405,6 @@ typedef NS_ENUM(NSUInteger, Temperature) {
 /***   保存模型id*/
 +(void)saveValueInUD:(id)value forKey:(NSString *)key;
 
-/**将视图添加最上层的--Window--*/
-+(UIWindow *)lastWindow;
-
 /***  获取保存的id*/
 +(id)getValueInUDWithKey:(NSString *)key;
 
@@ -433,10 +430,10 @@ typedef NS_ENUM(NSUInteger, Temperature) {
 +(NSData *)getdataValueInUDWithKey:(NSString *)key;
 
 /***   归档*/
-+ (void)keyedArchiverObject:(id)object ForKey:(NSString *)key ToFile:(NSString *)path;
++ (void)keyedArchiverObject:(id)object ToFile:(NSString *)path;
 
 /***  反归档*/
-+(NSArray *)keyedUnArchiverForKey:(NSString *)key FromFile:(NSString *)path;
++(id)keyedUnArchiverForKey:(id)object FromFile:(NSString *)path;
 
 /***  将数组拆分成固定长度的子数组*/
 +(NSArray *)splitArray:(NSArray *)array withSubSize:(int)subSize;

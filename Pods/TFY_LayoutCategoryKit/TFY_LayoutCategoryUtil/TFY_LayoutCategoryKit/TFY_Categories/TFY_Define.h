@@ -208,12 +208,12 @@ CG_INLINE CGFloat kNavigationBarHeight() {
 }
 
 //获取最适合的控制器
-CG_INLINE UIViewController *getTheLatestViewController(UIViewController *vc) {
+CG_INLINE UIViewController *TFY_getTheLatestViewController(UIViewController *vc) {
     if (vc.presentedViewController == nil) {return vc;}
-    return getTheLatestViewController(vc.presentedViewController);
+    return TFY_getTheLatestViewController(vc.presentedViewController);
 }
 
-CG_INLINE UIWindow *LastWindow() {
+CG_INLINE UIWindow *TFY_LastWindow() {
     NSEnumerator  *frontToBackWindows = [[TFY_Scene defaultPackage].windows reverseObjectEnumerator];
     for (UIWindow *window in frontToBackWindows) {
         BOOL windowOnMainScreen = window.screen == UIScreen.mainScreen;
@@ -226,11 +226,31 @@ CG_INLINE UIWindow *LastWindow() {
 }
 
 //最上层容器
-CG_INLINE UIViewController *RootpresentMenuView() {
-    UIViewController *rootVC = getTheLatestViewController(LastWindow().rootViewController);
+CG_INLINE UIViewController *TFY_RootpresentMenuView() {
+    UIViewController *rootVC = TFY_getTheLatestViewController(TFY_LastWindow().rootViewController);
     return rootVC;
 }
 
+//跳转指定控制器
+CG_INLINE void TFY_PopToViewController(UIViewController *vc) {
+    for(UIViewController * tempvc in [UIApplication currentTopViewController].navigationController.childViewControllers){
+       if([tempvc isKindOfClass:vc.class]){
+          [[UIApplication currentTopViewController].navigationController popToViewController:tempvc animated:true];
+       }
+    }
+}
+
+//返回更控制器
+CG_INLINE void TFY_DismissViewController(UIViewController *vc){
+    UIViewController * tempvc = vc.presentingViewController;
+    while (tempvc.presentingViewController) {
+        tempvc = tempvc.presentingViewController;
+        if([tempvc isKindOfClass:[UIViewController class]]){break;}
+    }
+    [tempvc dismissViewControllerAnimated:true completion:nil];
+}
+
+//方法和类交互
 CG_INLINE void TFY_Method_exchangeImp(Class _class, SEL _originSelector, SEL _newSelector) {
     Method oriMethod = class_getInstanceMethod(_class, _originSelector);
     Method newMethod = class_getInstanceMethod(_class, _newSelector);
