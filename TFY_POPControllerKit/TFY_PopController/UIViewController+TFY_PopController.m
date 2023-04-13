@@ -151,7 +151,7 @@ static inline BOOL HW_FLOAT_VALUE_IS_ZERO(CGFloat value) {
 
 @end
 
-UIViewController *HWGetTopMostViewController() {
+UIViewController *GetTopMostViewController(void) {
     UIWindow *keyWindow = [UIApplication sharedApplication].keyWindow;
     UIViewController *topVC = keyWindow.rootViewController;
     while (topVC.presentedViewController) {
@@ -172,7 +172,7 @@ UIViewController *HWGetTopMostViewController() {
 @implementation UIViewController (Pop)
 
 - (TFY_PopController *)popup {
-     return [self popupWithPopType:PopTypeGrowIn dismissType:DismissTypeFadeOut position:PopPositionCenter inViewController:HWGetTopMostViewController() dismissOnBackgroundTouch:YES];
+     return [self popupWithPopType:PopTypeGrowIn dismissType:DismissTypeFadeOut position:PopPositionCenter inViewController:GetTopMostViewController() dismissOnBackgroundTouch:YES];
 }
 
 - (TFY_PopController *)popupWithPopType:(PopType)popType dismissType:(DismissType)dismissType{
@@ -182,14 +182,14 @@ UIViewController *HWGetTopMostViewController() {
 - (TFY_PopController *)popupWithPopType:(PopType)popType
                           dismissType:(DismissType)dismissType
                              position:(PopPosition)popPosition {
-    return [self popupWithPopType:popType dismissType:dismissType position:popPosition inViewController:HWGetTopMostViewController() dismissOnBackgroundTouch:YES];
+    return [self popupWithPopType:popType dismissType:dismissType position:popPosition inViewController:GetTopMostViewController() dismissOnBackgroundTouch:YES];
 }
 
 - (TFY_PopController *)popupWithPopType:(PopType)popType
                           dismissType:(DismissType)dismissType
                              position:(PopPosition)popPosition
              dismissOnBackgroundTouch:(BOOL)shouldDismissOnBackgroundTouch {
-    return [self popupWithPopType:popType dismissType:dismissType position:popPosition inViewController:HWGetTopMostViewController() dismissOnBackgroundTouch:shouldDismissOnBackgroundTouch];
+    return [self popupWithPopType:popType dismissType:dismissType position:popPosition inViewController:GetTopMostViewController() dismissOnBackgroundTouch:shouldDismissOnBackgroundTouch];
 }
 
 - (TFY_PopController *)popupWithPopType:(PopType)popType
