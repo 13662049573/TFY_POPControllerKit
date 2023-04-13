@@ -28,8 +28,11 @@
     label.textColor = [UIColor whiteColor];
 
     [self.view addSubview:label];
-    
-    label.tfy_Center(0, 0).tfy_size(200, 40);
+    [label mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.center.equalTo(self.view).offset(0);
+        make.size.mas_equalTo(CGSizeMake(200, 40));
+    }];
+
 }
 
 - (void)didTapToDismiss {

@@ -1,16 +1,9 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
-## TFY_AutoLayout
+## Masonry
 
-
-The MIT License (MIT)
-
-Copyright (c) 2019 田风有 The MIT License (MIT)
-
-Copyright (c) 2019 田风有
-
-Copyright (c) 2019-2026 YJSettingTableView Software Foundation (https://github.com/13662049573/TFY_AutoLayout)
+Copyright (c) 2011-2012 Masonry Team - https://github.com/Masonry
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -39,7 +32,7 @@ Copyright (c) 2019 田风有 The MIT License (MIT)
 
 Copyright (c) 2019 田风有
 
-Copyright (c) 2019-2026 YJSettingTableView Software Foundation (https://github.com/13662049573/TFY_LayoutCategoryUtil.git)
+Copyright (c) 2019-2036 YJSettingTableView Software Foundation (https://github.com/13662049573/TFY_LayoutCategoryUtil.git)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

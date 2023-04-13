@@ -35,16 +35,22 @@
 }
 
 - (void)setupView {
-    [self.view addSubview:self.titleLabel];
-    [self.view addSubview:[self nextButton]];
-    [self setupViewConstraints];
-}
-
-- (void)setupViewConstraints {
-   
-    self.titleLabel.tfy_LeftSpace(10).tfy_RightSpace(10).tfy_CenterY(0).tfy_HeightAuto();
-
-    self.nextButton.tfy_LeftSpace(0).tfy_RightSpace(0).tfy_BottomSpace(0).tfy_Height(55);
+    self.titleLabel.makeChain
+    .addToSuperView(self.view)
+    .makeMasonry(^(MASConstraintMaker * _Nonnull make) {
+        make.left.equalTo(self.view).offset(10);
+        make.right.equalTo(self.view).offset(-10);
+        make.centerY.equalTo(self.view).offset(0);
+        make.height.mas_greaterThanOrEqualTo(0);
+    });
+    
+    self.nextButton.makeChain
+    .addToSuperView(self.view)
+    .makeMasonry(^(MASConstraintMaker * _Nonnull make) {
+        make.left.top.bottom.equalTo(self.view).offset(0);
+        make.height.mas_equalTo(55);
+    });
+    
 }
 
 #pragma mark - touch action

@@ -20,16 +20,31 @@
     [super viewDidLoad];
     self.contentSizeInPop = CGSizeMake([UIScreen mainScreen].bounds.size.width - 80, 150);
     
-    [self.view addSubview:self.contentView];
-    [self.contentView addSubview:self.label];
+    self.contentView.makeChain
+    .addToSuperView(self.view)
+    .makeMasonry(^(MASConstraintMaker * _Nonnull make) {
+        make.left.top.bottom.equalTo(self.view).offset(0);
+        make.width.mas_equalTo(self.contentSizeInPop.width);
+    });
+    
+    self.label.makeChain
+    .addToSuperView(self.view)
+    .makeMasonry(^(MASConstraintMaker * _Nonnull make) {
+        make.left.equalTo(self.view).offset(15);
+        make.top.equalTo(self.view).offset(10);
+        make.height.mas_greaterThanOrEqualTo(0);
+    });
+    
     [self.contentView addSubview:self.growButton];
+    self.growButton.makeChain
+    .addToSuperView(self.contentView)
+    .makeMasonry(^(MASConstraintMaker * _Nonnull make) {
+        make.left.equalTo(self.view).offset(15);
+        make.right.equalTo(self.view).offset(-15);
+        make.height.mas_equalTo(50);
+        make.top.equalTo(self.label.mas_bottom).offset(20);
+    });
 
-    self.contentView.tfy_LeftSpace(0).tfy_TopSpace(0).tfy_BottomSpace(0).tfy_Width(self.contentSizeInPop.width);
-    
-    self.label.tfy_LeftSpace(15).tfy_RightSpace(15).tfy_TopSpace(10).tfy_HeightAuto();
-    
-    self.growButton.tfy_LeftSpace(15).tfy_RightSpace(15).tfy_Height(50).tfy_TopSpaceToView(20, self.label);
-    
     [self.view layoutIfNeeded];
     
     CGFloat height = CGRectGetMaxY(self.growButton.frame) + 10;

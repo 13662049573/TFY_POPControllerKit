@@ -25,19 +25,33 @@
 
 - (void)setupView {
     self.view.backgroundColor = [UIColor whiteColor];
-    [self.view addSubview:self.closeButton];
-    [self.view addSubview:self.tipLabel];
-    [self.view addSubview:self.confirmButton];
-
-    [self setupViewConstraints];
-}
-
-- (void)setupViewConstraints {
-    self.confirmButton.tfy_LeftSpace(30).tfy_RightSpace(30).tfy_BottomSpace(15).tfy_Height(60);
     
-    self.closeButton.tfy_RightSpace(5).tfy_TopSpace(5).tfy_size(30, 30);
-   
-    self.tipLabel.tfy_LeftSpace(15).tfy_RightSpace(15).tfy_CenterY(0).tfy_Height(40);
+    self.closeButton.makeChain
+    .addToSuperView(self.view)
+    .makeMasonry(^(MASConstraintMaker * _Nonnull make) {
+        make.left.equalTo(self.view).offset(30);
+        make.right.equalTo(self.view).offset(-30);
+        make.bottom.equalTo(self.view).offset(-15);
+        make.height.mas_equalTo(60);
+    });
+    
+    self.tipLabel.makeChain
+    .addToSuperView(self.view)
+    .makeMasonry(^(MASConstraintMaker * _Nonnull make) {
+        make.left.equalTo(self.view).offset(15);
+        make.right.equalTo(self.view).offset(-15);
+        make.centerY.equalTo(self.view).offset(0);
+        make.height.mas_equalTo(40);
+    });
+    
+     self.confirmButton.makeChain
+    .addToSuperView(self.view)
+    .makeMasonry(^(MASConstraintMaker * _Nonnull make) {
+        make.left.equalTo(self.view).offset(30);
+        make.right.equalTo(self.view).offset(-30);
+        make.bottom.equalTo(self.view).offset(-15);
+        make.height.mas_equalTo(40);
+    });
 
 }
 

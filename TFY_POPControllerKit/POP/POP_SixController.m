@@ -27,20 +27,30 @@
 
 
 - (void)setupView {
-    [self.view addSubview:self.titleLabel];
-    [self.view addSubview:self.cancelButton];
-    [self.view addSubview:self.doneButton];
-    [self setupViewConstraints];
-}
-
-- (void)setupViewConstraints {
-    self.titleLabel.tfy_CenterX(0).tfy_TopSpace(10).tfy_size(200, 30);
+    self.titleLabel.makeChain
+    .addToSuperView(self.view)
+    .makeMasonry(^(MASConstraintMaker * _Nonnull make) {
+        make.centerX.equalTo(self.view).offset(0);
+        make.top.equalTo(self.view).offset(10);
+        make.size.mas_equalTo(CGSizeMake(200, 30));
+    });
     
-    self.cancelButton.tfy_size(80, 40).tfy_BottomSpace(10).tfy_LeftSpace(8);
+    self.cancelButton.makeChain
+    .addToSuperView(self.view)
+    .makeMasonry(^(MASConstraintMaker * _Nonnull make) {
+        make.size.mas_equalTo(CGSizeMake(80, 40));
+        make.bottom.equalTo(self.view).offset(-10);
+        make.left.equalTo(self.view).offset(8);
+    });
+   
+    self.doneButton.makeChain
+    .addToSuperView(self.view)
+    .makeMasonry(^(MASConstraintMaker * _Nonnull make) {
+        make.left.equalTo(self.cancelButton.mas_right).offset(20);
+        make.bottom.equalTo(self.cancelButton.mas_bottom).offset(0);
+    });
     
-    self.doneButton.tfy_LeftSpaceToView(20, self.cancelButton).tfy_BottomSpaceEqualView(self.cancelButton).tfy_RightSpace(8);
 }
-
 - (void)didTapToDismiss {
     [self.popController dismiss];
 }

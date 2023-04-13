@@ -14,14 +14,7 @@
 		</dict>
 		<dict>
 			<key>FooterText</key>
-			<string>
-The MIT License (MIT)
-
-Copyright (c) 2019 田风有 The MIT License (MIT)
-
-Copyright (c) 2019 田风有
-
-Copyright (c) 2019-2026 YJSettingTableView Software Foundation (https://github.com/13662049573/TFY_AutoLayout)
+			<string>Copyright (c) 2011-2012 Masonry Team - https://github.com/Masonry
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -43,7 +36,7 @@ THE SOFTWARE.</string>
 			<key>License</key>
 			<string>MIT</string>
 			<key>Title</key>
-			<string>TFY_AutoLayout</string>
+			<string>Masonry</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>
@@ -56,7 +49,7 @@ Copyright (c) 2019 田风有 The MIT License (MIT)
 
 Copyright (c) 2019 田风有
 
-Copyright (c) 2019-2026 YJSettingTableView Software Foundation (https://github.com/13662049573/TFY_LayoutCategoryUtil.git)
+Copyright (c) 2019-2036 YJSettingTableView Software Foundation (https://github.com/13662049573/TFY_LayoutCategoryUtil.git)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

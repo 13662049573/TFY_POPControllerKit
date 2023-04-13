@@ -39,12 +39,17 @@
     button.layer.cornerRadius = 6.f;
 
     [self.view addSubview:imageView];
+    [imageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.view).offset(30);
+        make.center.equalTo(self.view).offset(0);
+    }];
+    
     [self.view addSubview:button];
-    
-    imageView.tfy_TopSpace(30).tfy_Center(0, 0);
-    
-    button.tfy_LeftSpace(15).tfy_BottomSpace(15).tfy_RightSpace(15).tfy_Height(60);
-    
+    [button mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.view).offset(15);
+        make.right.bottom.equalTo(self.view).offset(-15);
+        make.height.mas_equalTo(60);
+    }];
 }
 - (void)imageClick {
     [self.navigationController popViewControllerAnimated:YES];

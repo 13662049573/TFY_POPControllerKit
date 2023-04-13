@@ -25,8 +25,11 @@
     self.title = @"Animation Style";
     self.view.backgroundColor = [UIColor whiteColor];
 
-    [self.view addSubview:self.tableView];
-    [self.tableView tfy_AutoSize:0 top:0 right:0 bottom:0];
+    self.tableView.makeChain
+    .addToSuperView(self.view)
+    .makeMasonry(^(MASConstraintMaker * _Nonnull make) {
+        make.edges.equalTo(self.view).offset(0);
+    });
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {

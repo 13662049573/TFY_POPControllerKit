@@ -24,20 +24,25 @@
 }
 
 - (void)setupView {
-    [self.view addSubview:self.centerDialog];
-    [self.centerDialog addSubview:self.tipsLabel];
-    [self.view addSubview:self.closeButton];
-    [self setupViewConstraints];
+    
+    self.centerDialog.makeChain
+    .addToSuperView(self.view)
+    .makeMasonry(^(MASConstraintMaker * _Nonnull make) {
+        make.left.equalTo(self.view).offset(30);
+        make.right.equalTo(self.view).offset(-30);
+        make.centerY.equalTo(self.view).offset(0);
+        make.height.mas_equalTo(300);
+    });
+    
+    self.tipsLabel.makeChain
+    .addToSuperView(self.centerDialog)
+    .makeMasonry(^(MASConstraintMaker * _Nonnull make) {
+        make.center.equalTo(self.centerDialog).offset(0);
+        make.size.mas_equalTo(CGSizeMake(200, 30));
+    });
+
 }
 
-- (void)setupViewConstraints {
-    self.centerDialog.tfy_LeftSpace(30).tfy_RightSpace(30).tfy_CenterY(0).tfy_Height(300);
-    
-    self.tipsLabel.tfy_Center(0, 0).tfy_size(200, 30);
-    
-    self.closeButton.tfy_CenterX(0).tfy_TopSpaceToView(30, self.centerDialog).tfy_size(60, 60);
-    
-}
 
 - (void)didTapToClose {
     [self dismissViewControllerAnimated:YES completion:^{

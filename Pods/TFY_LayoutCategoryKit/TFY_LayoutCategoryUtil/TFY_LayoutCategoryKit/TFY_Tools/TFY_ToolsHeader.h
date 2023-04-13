@@ -13,5 +13,12 @@
 #import "TFY_Video.h"
 #import "UIWindow+TFY_Tools.h"
 #import "TFY_Timer.h"
+#import "UIView+Toast.h"
+#import "TFY_WKWebView.h"
+#import "TFY_Reflection.h"
+#import "TFY_AudioPlayer.h"
+
+#import "TFY_GCDTimer.h"
+#import "TFY_GCDSemaphore.h"
 
 #endif /* TFY_ToolsHeader_h */

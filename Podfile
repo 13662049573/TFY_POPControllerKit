@@ -3,7 +3,7 @@ platform :ios, '12.0'
 target 'TFY_POPControllerKit' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-  pod 'TFY_AutoLayout'
+  pod 'Masonry'
   pod 'TFY_LayoutCategoryKit'
   # Pods for TFY_POPControllerKit
 
