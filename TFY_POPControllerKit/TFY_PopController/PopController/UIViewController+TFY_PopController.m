@@ -51,7 +51,7 @@ static inline BOOL HW_FLOAT_VALUE_IS_ZERO(CGFloat value) {
     [self tfy_DidLoad];
 
     CGSize contentSize;
-    switch ([UIApplication sharedApplication].statusBarOrientation) {
+    switch ([UIApplication sharedApplication].windows.firstObject.windowScene.interfaceOrientation) {
         case UIInterfaceOrientationLandscapeLeft:
         case UIInterfaceOrientationLandscapeRight:{
             contentSize = self.contentSizeInPopWhenLandscape;
@@ -99,7 +99,7 @@ static inline BOOL HW_FLOAT_VALUE_IS_ZERO(CGFloat value) {
 
 - (void)setContentSizeInPop:(CGSize)contentSizeInPop {
     if (!CGSizeEqualToSize(contentSizeInPop, CGSizeZero) && HW_FLOAT_VALUE_IS_ZERO(contentSizeInPop.width)) {
-        switch ([UIApplication sharedApplication].statusBarOrientation) {
+        switch ([UIApplication sharedApplication].windows.firstObject.windowScene.interfaceOrientation) {
             case UIInterfaceOrientationLandscapeLeft:
             case UIInterfaceOrientationLandscapeRight:{
                 contentSizeInPop.width = [UIScreen mainScreen].bounds.size.height;
@@ -122,7 +122,7 @@ static inline BOOL HW_FLOAT_VALUE_IS_ZERO(CGFloat value) {
 
 - (void)setContentSizeInPopWhenLandscape:(CGSize)contentSizeInPopWhenLandscape {
     if (!CGSizeEqualToSize(contentSizeInPopWhenLandscape, CGSizeZero) && HW_FLOAT_VALUE_IS_ZERO(contentSizeInPopWhenLandscape.width)) {
-        switch ([UIApplication sharedApplication].statusBarOrientation) {
+        switch ([UIApplication sharedApplication].windows.firstObject.windowScene.interfaceOrientation) {
             case UIInterfaceOrientationLandscapeLeft:
             case UIInterfaceOrientationLandscapeRight:{
                 contentSizeInPopWhenLandscape.width = [UIScreen mainScreen].bounds.size.width;
@@ -151,8 +151,30 @@ static inline BOOL HW_FLOAT_VALUE_IS_ZERO(CGFloat value) {
 
 @end
 
+CG_INLINE UIWindow* appKeyWindow(void) {
+    UIWindow *keywindow = nil;
+    if (@available(iOS 13.0, *)) {
+    for (UIWindowScene *scene in UIApplication.sharedApplication.connectedScenes) {
+    if (scene. activationState == UISceneActivationStateForegroundActive) {
+    if (@available(iOS 15.0, *)) {
+    keywindow = scene.keyWindow;
+    }
+    if (keywindow == nil) {
+    for (UIWindow *window in scene.windows) {
+    if (window. windowLevel == UIWindowLevelNormal && window. hidden == NO && CGRectEqualToRect(window. bounds, UIScreen.mainScreen.bounds)) {
+    keywindow = window;
+    break;
+    }
+    }
+    }
+    }
+    }
+    }
+    return keywindow;
+}
+
 UIViewController *GetTopMostViewController(void) {
-    UIWindow *keyWindow = [UIApplication sharedApplication].keyWindow;
+    UIWindow *keyWindow = appKeyWindow();
     UIViewController *topVC = keyWindow.rootViewController;
     while (topVC.presentedViewController) {
         topVC = topVC.presentedViewController;

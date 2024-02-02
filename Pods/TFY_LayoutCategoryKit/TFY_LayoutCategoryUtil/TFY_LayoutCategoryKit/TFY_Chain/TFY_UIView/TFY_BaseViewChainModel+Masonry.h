@@ -7,13 +7,11 @@
 //
 
 #import "TFY_BaseViewChainModel.h"
-
 #if __has_include(<Masonry.h>)
 #import <Masonry.h>
 #elif __has_include("Masonry.h")
 #import "Masonry.h"
 #endif
-
 NS_ASSUME_NONNULL_BEGIN
 @class MASConstraintMaker;
 typedef void(^TFY_MasonryLoad)(MASConstraintMaker *make);

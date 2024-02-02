@@ -26,15 +26,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    
     self.delegate = self;
 }
 
-
 - (void)adjustContentSizeBy:(UIViewController *)controller {
-
-    switch ([UIApplication sharedApplication].statusBarOrientation) {
+    switch ([UIApplication sharedApplication].windows.firstObject.windowScene.interfaceOrientation) {
         case UIInterfaceOrientationLandscapeLeft:
         case UIInterfaceOrientationLandscapeRight: {
             CGSize contentSize = controller.contentSizeInPopWhenLandscape;

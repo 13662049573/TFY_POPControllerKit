@@ -24,8 +24,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    [self.view addSubview:self.tableView];
+    self.tableView.makeChain
+    .addToSuperView(self.view)
+    .makeMasonry(^(MASConstraintMaker * _Nonnull make) {
+        make.top.equalTo(self.view).offset(TFY_kNavBarHeight());
+        make.left.right.bottom.equalTo(self.view).offset(0);
+    });
 }
 
 - (UITableView *)tableView {
@@ -33,7 +37,6 @@
         _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
         _tableView.rowHeight = 55;
         [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:NSStringFromClass(UITableViewCell.class)];
-
         _tableView.delegate = self;
         _tableView.dataSource = self;
     }

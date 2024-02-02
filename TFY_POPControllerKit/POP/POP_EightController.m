@@ -47,7 +47,7 @@
     self.nextButton.makeChain
     .addToSuperView(self.view)
     .makeMasonry(^(MASConstraintMaker * _Nonnull make) {
-        make.left.top.bottom.equalTo(self.view).offset(0);
+        make.left.top.right.equalTo(self.view).offset(0);
         make.height.mas_equalTo(55);
     });
     
@@ -61,9 +61,7 @@
 }
 
 - (void)closeAction {
-    [self dismissViewControllerAnimated:YES completion:^{
-        
-    }];
+    [self dismissViewControllerAnimated:YES completion:^{}];
 }
 
 #pragma mark - Getter
@@ -74,7 +72,6 @@
         _titleLabel.textAlignment = NSTextAlignmentCenter;
         _titleLabel.text = @"When you use UINavigationController in HWPopController, You can dynamic change the pop size.";
         _titleLabel.numberOfLines = 0;
-
     }
     return _titleLabel;
 }

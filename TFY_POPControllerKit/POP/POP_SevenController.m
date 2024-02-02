@@ -31,6 +31,7 @@
     .addToSuperView(self.view)
     .makeMasonry(^(MASConstraintMaker * _Nonnull make) {
         make.left.equalTo(self.view).offset(15);
+        make.right.equalTo(self.view).offset(-15);
         make.top.equalTo(self.view).offset(10);
         make.height.mas_greaterThanOrEqualTo(0);
     });

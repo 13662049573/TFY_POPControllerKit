@@ -291,10 +291,33 @@ TFY_PopViewManager *PopViewM(void) {
     _infoView.frame = CGRectMake(pop_ScreenWidth()-70, pop_IsIphoneX_ALL()? 40:20, 60, 10);
     _infoView.layer.cornerRadius = 1;
     _infoView.layer.masksToBounds = YES;
-    UIView *superView = [UIApplication sharedApplication].keyWindow;
+    UIView *superView = self.appKeyWindow;
     [superView addSubview:_infoView];
     return _infoView;
 }
+
+- (UIWindow *)appKeyWindow {
+UIWindow *keywindow = nil;
+if (@available(iOS 13.0, *)) {
+for (UIWindowScene *scene in UIApplication.sharedApplication.connectedScenes) {
+if (scene. activationState == UISceneActivationStateForegroundActive) {
+if (@available(iOS 15.0, *)) {
+keywindow = scene.keyWindow;
+}
+if (keywindow == nil) {
+for (UIWindow *window in scene.windows) {
+if (window. windowLevel == UIWindowLevelNormal && window. hidden == NO && CGRectEqualToRect(window. bounds, UIScreen.mainScreen.bounds)) {
+keywindow = window;
+break;
+}
+}
+}
+}
+}
+}
+return keywindow;
+}
+
 
 - (NSMutableArray *)popViewMarr {
     if(_popViewMarr) return _popViewMarr;
@@ -341,7 +364,7 @@ static const NSTimeInterval PopViewDefaultDuration = -1.0f;
 
 @end
 
-@interface TFY_PopView ()<UIGestureRecognizerDelegate>
+@interface TFY_PopView ()<UIGestureRecognizerDelegate,UIContentContainer>
 /** 弹窗容器 默认是app UIWindow 可指定view作为容器 */
 @property (nonatomic, weak) UIView *container;
 /** 背景层 */
@@ -375,7 +398,7 @@ static const NSTimeInterval PopViewDefaultDuration = -1.0f;
 @end
 
 @implementation TFY_PopView
-
+@synthesize preferredContentSize;
 #pragma mark - ***** 初始化 *****
 
 - (instancetype)initWithFrame:(CGRect)frame {
@@ -459,7 +482,7 @@ static const NSTimeInterval PopViewDefaultDuration = -1.0f;
     TFY_PopView *popView = [[TFY_PopView alloc] initWithFrame:popViewFrame];
     popView.backgroundColor = [UIColor clearColor];
 
-    popView.container = parentView? parentView : [UIApplication sharedApplication].keyWindow;
+    popView.container = parentView? parentView : self.appKeyWindow;
 
     popView.customView = customView;
     popView.backgroundView = [[TFY_PopViewBgView alloc] initWithFrame:popView.bounds];
@@ -480,15 +503,6 @@ static const NSTimeInterval PopViewDefaultDuration = -1.0f;
     popView.panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:popView action:@selector(pan:)];
     popView.panGesture.delegate = popView;
     [popView.customView addGestureRecognizer:popView.panGesture];
-    
-    //    [popView.backgroundView addTarget:popView action:@selector(popViewBgViewTap:) forControlEvents:UIControlEventTouchUpInside];;
-    
-    
-    //    UILongPressGestureRecognizer *customViewLP = [[UILongPressGestureRecognizer alloc] initWithTarget:popView action:@selector(bgLongPressEvent:)];
-    //    [popView.backgroundView addGestureRecognizer:customViewLP];
-    
-    //    UITapGestureRecognizer *customViewTap = [[UITapGestureRecognizer alloc] initWithTarget:popView action:@selector(customViewClickEvent:)];
-    //    [popView.customView addGestureRecognizer:customViewTap];
     
     //键盘将要显示
     [[NSNotificationCenter defaultCenter] addObserver:popView
@@ -521,16 +535,36 @@ static const NSTimeInterval PopViewDefaultDuration = -1.0f;
                                                  name:UIKeyboardDidHideNotification
                                                object:nil];
     //屏幕旋转
-    [[NSNotificationCenter defaultCenter] addObserver:popView
-                                             selector:@selector(statusBarOrientationChange:)
-                                                 name:UIApplicationDidChangeStatusBarOrientationNotification
-                                               object:nil];
+//    [[NSNotificationCenter defaultCenter] addObserver:popView
+//                                             selector:@selector(statusBarOrientationChange:)
+//                                                 name:UIApplicationDidChangeStatusBarOrientationNotification
+//                                               object:nil];
     //监听customView frame
     [popView.customView addObserver:popView
                          forKeyPath:@"frame"
                             options:NSKeyValueObservingOptionOld
                             context:NULL];
     return popView;
+}
+//屏幕旋转
+- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator {
+    [self statusBarOrientationChange:coordinator];
+}
+
+- (void)preferredContentSizeDidChangeForChildContentContainer:(id <UIContentContainer>)container API_AVAILABLE(ios(8.0)) {
+    
+}
+
+- (void)systemLayoutFittingSizeDidChangeForChildContentContainer:(id <UIContentContainer>)container API_AVAILABLE(ios(8.0)) {
+    
+}
+
+- (CGSize)sizeForChildContentContainer:(id <UIContentContainer>)container withParentContainerSize:(CGSize)parentSize API_AVAILABLE(ios(8.0)) {
+    return CGSizeMake(pop_ScreenWidth(), pop_ScreenHeight());
+}
+
+- (void)willTransitionToTraitCollection:(UITraitCollection *)newCollection withTransitionCoordinator:(id <UIViewControllerTransitionCoordinator>)coordinator API_AVAILABLE(ios(8.0)) {
+    
 }
 
 - (void)dealloc {
@@ -545,6 +579,28 @@ static const NSTimeInterval PopViewDefaultDuration = -1.0f;
     }
     
     [_popViewDidDismissBlocks removeAllObjects];
+}
+
++ (UIWindow *)appKeyWindow {
+    UIWindow *keywindow = nil;
+    if (@available(iOS 13.0, *)) {
+    for (UIWindowScene *scene in UIApplication.sharedApplication.connectedScenes) {
+        if (scene. activationState == UISceneActivationStateForegroundActive) {
+        if (@available(iOS 15.0, *)) {
+            keywindow = scene.keyWindow;
+    }
+    if (keywindow == nil) {
+    for (UIWindow *window in scene.windows) {
+    if (window. windowLevel == UIWindowLevelNormal && window. hidden == NO && CGRectEqualToRect(window. bounds, UIScreen.mainScreen.bounds)) {
+    keywindow = window;
+    break;
+    }
+    }
+    }
+    }
+    }
+    }
+    return keywindow;
 }
 
 - (void)removeFromSuperview {
@@ -874,7 +930,7 @@ static const NSTimeInterval PopViewDefaultDuration = -1.0f;
                         startTimer = YES;
                     } else {//隐藏显示
                         if (!self.parentView) {
-                            self.container = [UIApplication sharedApplication].keyWindow;
+                            self.container = self.appKeyWindow;
                         }
                         [TFY_PopViewManager savePopView:self];
                         return;
@@ -916,6 +972,28 @@ static const NSTimeInterval PopViewDefaultDuration = -1.0f;
     
     //保存popView
     if (!isOutStack) { [TFY_PopViewManager savePopView:self]; }
+}
+
+- (UIWindow *)appKeyWindow {
+UIWindow *keywindow = nil;
+if (@available(iOS 13.0, *)) {
+for (UIWindowScene *scene in UIApplication.sharedApplication.connectedScenes) {
+if (scene. activationState == UISceneActivationStateForegroundActive) {
+if (@available(iOS 15.0, *)) {
+keywindow = scene.keyWindow;
+}
+if (keywindow == nil) {
+for (UIWindow *window in scene.windows) {
+if (window. windowLevel == UIWindowLevelNormal && window. hidden == NO && CGRectEqualToRect(window. bounds, UIScreen.mainScreen.bounds)) {
+keywindow = window;
+break;
+}
+}
+}
+}
+}
+}
+return keywindow;
 }
 
 - (void)popAnimationWithPopStyle:(PopStyle)popStyle duration:(NSTimeInterval)duration {
@@ -1155,7 +1233,7 @@ static const NSTimeInterval PopViewDefaultDuration = -1.0f;
         case DismissStyleCardDropToRight:
         {
             CGPoint startPosition = self.customView.layer.position;
-            BOOL isLandscape = UIInterfaceOrientationIsLandscape([UIApplication sharedApplication].statusBarOrientation);
+            BOOL isLandscape = UIInterfaceOrientationIsLandscape([UIApplication sharedApplication].windows.firstObject.windowScene.interfaceOrientation);
             __block CGFloat rotateEndY = 0.0f;
             [UIView animateWithDuration:duration delay:0 usingSpringWithDamping:0.5 initialSpringVelocity:1.0 options:UIViewAnimationOptionCurveEaseIn animations:^{
                 if (dismissStyle == DismissStyleCardDropToLeft) {
@@ -1209,39 +1287,7 @@ static const NSTimeInterval PopViewDefaultDuration = -1.0f;
 
 //按钮的压下事件 按钮缩小
 - (void)bgLongPressEvent:(UIGestureRecognizer *)ges {
-    
-    //    [self.delegateMarr enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-    //
-    //        if ([obj respondsToSelector:@selector(tfy_PopViewBgLongPressForPopView:)]) {
-    //            [obj tfy_PopViewBgLongPressForPopView:self];
-    //        }
-    //
-    //    }];
-    
     self.bgLongPressBlock? self.bgLongPressBlock():nil;
-
-    //    switch (ges.state) {
-    //        case UIGestureRecognizerStateBegan:
-    //        {
-    //            CGFloat scale = 0.95;
-    //            [UIView animateWithDuration:0.35 animations:^{
-    //                ges.view.transform = CGAffineTransformMakeScale(scale, scale);
-    //            }];
-    //        }
-    //            break;
-    //        case UIGestureRecognizerStateEnded:
-    //        case UIGestureRecognizerStateCancelled:
-    //        {
-    //            [UIView animateWithDuration:0.35 animations:^{
-    //                ges.view.transform = CGAffineTransformMakeScale(1.0, 1.0);
-    //            } completion:^(BOOL finished) {
-    //            }];
-    //        }
-    //            break;
-    //
-    //        default:
-    //            break;
-    //    }
 }
 
 - (void)customViewClickEvent:(UIGestureRecognizer *)ges {
@@ -1260,14 +1306,6 @@ static const NSTimeInterval PopViewDefaultDuration = -1.0f;
 }
 
 - (void)popViewBgViewTap:(UIButton *)tap {
-    
-    //    [self.delegateMarr enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-    //
-    //        if ([obj respondsToSelector:@selector(tfy_PopViewBgClickForPopView:)]) {
-    //            [obj tfy_PopViewBgClickForPopView:self];
-    //        }
-    //
-    //    }];
     
     if (self.bgClickBlock) {
         if (self.isShowKeyboard) {
@@ -1432,7 +1470,7 @@ static const NSTimeInterval PopViewDefaultDuration = -1.0f;
 
 #pragma mark - ***** 横竖屏改变 *****
 
-- (void)statusBarOrientationChange:(NSNotification *)notification {
+- (void)statusBarOrientationChange:(id<UIViewControllerTransitionCoordinator>)notification {
     if (self.isObserverScreenRotation) {
         CGRect originRect = self.customView.frame;
         self.frame = CGRectMake(0, 0, pop_ScreenWidth(), pop_ScreenHeight());
@@ -1569,7 +1607,7 @@ static const NSTimeInterval PopViewDefaultDuration = -1.0f;
     // 获取手指的偏移量
     CGPoint transP = [panGestureRecognizer translationInView:self.customView];
 
-    CGPoint velocity = [panGestureRecognizer velocityInView:[UIApplication sharedApplication].keyWindow];
+    CGPoint velocity = [panGestureRecognizer velocityInView:self.appKeyWindow];
     if(self.isDragScrollView) {//含有tableView,collectionView,scrollView
         //如果当前拖拽的是tableView
         if(self.scrollerView.contentOffset.y <= 0) {
@@ -1842,6 +1880,5 @@ static const NSTimeInterval PopViewDefaultDuration = -1.0f;
         PopViewM().infoView = nil;
     }
 }
-
 
 @end

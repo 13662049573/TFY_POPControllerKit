@@ -26,7 +26,7 @@ static NSMutableSet * _Nonnull _retainedPopControllers;
 
 @end
 
-@interface TFY_PopController ()
+@interface TFY_PopController ()<UIContentContainer>
 @property (nonatomic, strong) PopContainerViewController * _Nullable containerViewController;
 @property (nonatomic, strong) UIViewController * _Nullable topViewController;
 
@@ -43,6 +43,7 @@ static NSMutableSet * _Nonnull _retainedPopControllers;
 @end
 
 @implementation TFY_PopController
+@synthesize preferredContentSize;
 + (void)load {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -125,7 +126,7 @@ static NSMutableSet * _Nonnull _retainedPopControllers;
         return;
 
     // Observe orientation change
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(orientationDidChange) name:UIApplicationDidChangeStatusBarOrientationNotification object:nil];
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(orientationDidChange) name:UIApplicationDidChangeStatusBarOrientationNotification object:nil];
 
     // Observe keyboard
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
@@ -133,6 +134,27 @@ static NSMutableSet * _Nonnull _retainedPopControllers;
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
 
     self.isObserving = YES;
+}
+
+//屏幕旋转
+- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator {
+    [self orientationDidChange];
+}
+
+- (void)preferredContentSizeDidChangeForChildContentContainer:(id <UIContentContainer>)container API_AVAILABLE(ios(8.0)) {
+    
+}
+
+- (void)systemLayoutFittingSizeDidChangeForChildContentContainer:(id <UIContentContainer>)container API_AVAILABLE(ios(8.0)) {
+    
+}
+
+- (CGSize)sizeForChildContentContainer:(id <UIContentContainer>)container withParentContainerSize:(CGSize)parentSize API_AVAILABLE(ios(8.0)) {
+    return CGSizeMake(self.containerViewController.view.bounds.size.width, self.containerViewController.view.bounds.size.height);
+}
+
+- (void)willTransitionToTraitCollection:(UITraitCollection *)newCollection withTransitionCoordinator:(id <UIViewControllerTransitionCoordinator>)coordinator API_AVAILABLE(ios(8.0)) {
+    
 }
 
 - (void)destroyObserver {
@@ -189,7 +211,7 @@ static NSMutableSet * _Nonnull _retainedPopControllers;
     CGFloat textFieldBottomY = [currentTextInput convertPoint:CGPointZero toView:self.containerViewController.view].y + currentTextInput.bounds.size.height;
     CGFloat keyboardHeight = [self.keyboardInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue].size.height;
     // For iOS 7
-    UIInterfaceOrientation orientation = [UIApplication sharedApplication].statusBarOrientation;
+    UIInterfaceOrientation orientation = [UIApplication sharedApplication].windows.firstObject.windowScene.interfaceOrientation;
     if (NSFoundationVersionNumber <= NSFoundationVersionNumber_iOS_7_1 &&
             (orientation == UIInterfaceOrientationLandscapeLeft || orientation == UIInterfaceOrientationLandscapeRight)) {
         keyboardHeight = [self.keyboardInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue].size.width;
@@ -199,7 +221,7 @@ static NSMutableSet * _Nonnull _retainedPopControllers;
     if (self.popPosition == PopPositionBottom) {
         offsetY = keyboardHeight - _safeAreaInsets.bottom;
     } else {
-        CGFloat statusBarHeight = [UIApplication sharedApplication].statusBarFrame.size.height;
+        CGFloat statusBarHeight = [UIApplication sharedApplication].windows.firstObject.windowScene.statusBarManager.statusBarFrame.size.height;
         if (self.containerView.bounds.size.height <= self.containerViewController.view.bounds.size.height - keyboardHeight - statusBarHeight) {
             offsetY = self.containerView.frame.origin.y - (statusBarHeight + (self.containerViewController.view.bounds.size.height - keyboardHeight - statusBarHeight - self.containerView.bounds.size.height) / 2);
         } else {
@@ -328,7 +350,8 @@ static NSMutableSet * _Nonnull _retainedPopControllers;
 - (CGSize)contentSizeOfTopView {
     UIViewController *topViewController = self.topViewController;
     CGSize contentSize;
-    switch ([UIApplication sharedApplication].statusBarOrientation) {
+    UIInterfaceOrientation interfaceOrientation = [UIApplication sharedApplication].windows.firstObject.windowScene.interfaceOrientation;
+    switch (interfaceOrientation) {
         case UIInterfaceOrientationLandscapeLeft:
         case UIInterfaceOrientationLandscapeRight: {
             contentSize = topViewController.contentSizeInPopWhenLandscape;

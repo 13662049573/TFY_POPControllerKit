@@ -28,7 +28,8 @@
     self.tableView.makeChain
     .addToSuperView(self.view)
     .makeMasonry(^(MASConstraintMaker * _Nonnull make) {
-        make.edges.equalTo(self.view).offset(0);
+        make.top.equalTo(self.view).offset(TFY_kNavBarHeight());
+        make.left.right.bottom.equalTo(self.view).offset(0);
     });
 }
 
@@ -82,7 +83,6 @@
     popController.popType = self.popType;
     popController.dismissType = self.dismissType;
     popController.popPosition = self.position;
-
     [popController presentInViewController:self];
 }
 
