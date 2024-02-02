@@ -3,7 +3,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "TFY_PopController"
 
-  spec.version      = "1.0.5"
+  spec.version      = "1.0.6"
 
   spec.summary      = "控制器弹出框"
 
@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
   
   spec.author       = { "田风有" => "420144542@qq.com" }
   
-  spec.platform     = :ios, "12.0"
+  spec.platform     = :ios, "13.0"
 
   spec.source       = { :git => "https://github.com/13662049573/TFY_POPControllerKit.git", :tag => spec.version }
 
